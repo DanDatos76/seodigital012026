@@ -15,6 +15,29 @@ import Django from './components/Django';
 import CSharp from './components/Csharp';
 import Angular from './components/Angular';
 import Python from './components/Python';
+import Agriculture from './components/IndusriaModel';
+import BancaPage from './components/Banca';
+import FinanzasPage from './components/Finanzas';
+import SeguroPage from './components/Seguro';
+import InmueblePage from './components/Inmueble';
+import TelecomunicacionesPage from './components/Telecomunicaciones';
+import AutomotrizPage from './components/Automotor';
+import ConstruccionPage from './components/Construccion';
+import FintechPage from './components/Fintech';
+import MarketingPage from './components/Marketing';
+import MinoristaPage from './components/Pormenor';
+import TransportePage from './components/Transporte';
+import AviacionPage from './components/Aviacion';
+import DiversionPage from './components/Diversion';
+import SanidadPage from './components/Sanitaria';
+import PetroleroPage from './components/Petrolero';
+import SuministroPage from './components/Suministro';
+import ViajesPage from './components/Viajes';
+import BlogPage from './components/Blogpage';
+import Works from './components/OurWork';
+import BackendPage from './components/Backend';
+import IadePage from './components/Iadev';
+import IadevPage from './components/Iadev';
 
 function App() {
   return (
@@ -44,6 +67,28 @@ function App() {
         <Route path="/iasection" element={<Django />} />
          <Route path="/cmasmas" element={<Django />} />
          <Route path="/vuejs" element={<Django />} />
+         <Route path="/agricultura" element={<Agriculture />} />
+         <Route path="/banca" element={<BancaPage />} />
+         <Route path="/finanzas" element={<FinanzasPage />} />
+         <Route path="/seguro" element={<SeguroPage />} />
+         <Route path="/inmueble" element={<InmueblePage />} />
+         <Route path="/telecomunicaciones" element={<TelecomunicacionesPage />} />
+         <Route path="/automotor" element={<AutomotrizPage />} />
+         <Route path="/construccion" element={<ConstruccionPage />} />
+         <Route path="/fintech" element={<FintechPage />} />
+         <Route path="/marketing" element={<MarketingPage />} />
+         <Route path="/minorista" element={<MinoristaPage />} />
+         <Route path="/transporte" element={<TransportePage />} />
+         <Route path="/aviacion" element={<AviacionPage />} />
+         <Route path="/diversion" element={<DiversionPage />} />
+         <Route path="/sanidad" element={<SanidadPage />} />
+         <Route path="/petroleo" element={<PetroleroPage />} />
+         <Route path="/suministro" element={<SuministroPage />} />
+         <Route path="/viajes" element={<ViajesPage />} />
+         <Route path="/blog" element={<BlogPage />} />
+         <Route path="/our-work" element={<Works />} />
+         <Route path="/backend" element={<BackendPage />} />
+         <Route path="/iadev" element={<IadevPage />} />
         
       </Routes>
 

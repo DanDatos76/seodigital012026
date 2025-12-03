@@ -20,8 +20,10 @@ const MegaMenu2 = () => {
           </div>
         </div>
 
-        <div className="mega-column-group">
+         
           <div className="mega-column">
+                      <h4><span className="dot" /> </h4> {/* Aquí no hay un título específico como "TOP SOLUTIONS", así que lo dejamos vacío o lo ajustamos */}
+
             <ul>
               <li><a href="/python">Python</a></li>
               <li><a href="/node">Node js</a></li>
@@ -31,6 +33,8 @@ const MegaMenu2 = () => {
           </div>
 
           <div className="mega-column">
+                      <h4><span className="dot" /> </h4> {/* Aquí no hay un título específico como "TOP SOLUTIONS", así que lo dejamos vacío o lo ajustamos */}
+
             <ul>
               <li><a href="iasection">IA</a></li>
               <li><a href="/csharp">CSharp</a></li>
@@ -40,6 +44,8 @@ const MegaMenu2 = () => {
           </div>
 
           <div className="mega-column">
+                      <h4><span className="dot" /> </h4> {/* Aquí no hay un título específico como "TOP SOLUTIONS", así que lo dejamos vacío o lo ajustamos */}
+
             <ul>
               <li><a href="/angular">Angular</a></li>
               <li><a href="/cmasmas">C++</a></li>
@@ -48,11 +54,9 @@ const MegaMenu2 = () => {
             </ul>
           </div>
         </div>
-      </div>
       
-      <div className="full-width-link">
-        <a href="#">Todas las tecnologías →</a>
-      </div>
+      
+     
     </div>
   );
 };

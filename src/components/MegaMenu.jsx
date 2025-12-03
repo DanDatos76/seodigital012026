@@ -29,8 +29,8 @@ const MegaMenu = () => {
         <div className="mega-column">
           <h4><span className="dot" /> TOP SOLUTIONS</h4>
           <ul>
-            <li><a href="#">AI Development</a></li>
-            <li><a href="#">Back-end Development</a></li>
+            <li><a href="/iadev">AI Development</a></li>
+            <li><a href="/backend">Back-end Development</a></li>
             <li><a href="#">CMS Development</a></li>
             <li><a href="#">Cryptocurrency & Blockchain</a></li>
             <li><a href="#">Front-end Development</a></li>

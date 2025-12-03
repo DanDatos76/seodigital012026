@@ -61,12 +61,12 @@
 }
 
 .nav-link:hover {
-  color: #e60023; /* Color rojo al pasar el ratón, como en el botón */
+  color: #6223cc; /* Color rojo al pasar el ratón, como en el botón */
 }
 
 /* Estilo para el elemento de menú activo/abierto */
 .nav-item.active .nav-link {
-  color: #e60023; /* Rojo para el elemento activo */
+  color: #6223cc; /* Rojo para el elemento activo */
   position: relative; /* Necesario para el indicador de subrayado */
 }
 
@@ -78,7 +78,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #e60023; /* Color rojo del subrayado */
+  background-color: #6223cc; /* Color rojo del subrayado */
 }
 
 
@@ -112,11 +112,11 @@
 }
 
 .blog-link:hover {
-  color: #e60023;
+  color: #6223cc;
 }
 
 .call-button {
-  background-color: #e60023; /* Rojo */
+  background-color: #6223cc; /* Rojo */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -129,7 +129,7 @@
 }
 
 .call-button:hover {
-  background-color: #cc001f; /* Rojo más oscuro al pasar el ratón */
+  background-color: #320d74; /* Rojo más oscuro al pasar el ratón */
 }
 
 
@@ -191,7 +191,7 @@
     border: none;
     font-size: 40px; /* Haz el icono más grande y proporcional al logo */
     cursor: pointer;
-    color: #333; /* Color oscuro para el icono, como en la referencia */
+    color: #6223cc; /* Color oscuro para el icono, como en la referencia */
     padding: 0; /* Sin padding interno para el icono */
     z-index: 1001; /* Asegura que esté por encima de otros elementos */
   }
@@ -205,7 +205,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #8d72bb;
     padding: 0; /* Elimina padding general para controlar cada item */
     border-top: 1px solid #eee; /* Separador visual del header */
     height: calc(100vh - 90px); /* Ocupa el resto de la altura de la ventana */
@@ -239,7 +239,7 @@
     /* Asegura que el nav-link tome el ancho completo para que el clic funcione bien */
     justify-content: space-between; /* Espacia el texto y la flecha */
     font-size: 18px; /* Haz los enlaces del menú más grandes */
-    color: #333; /* Asegura el color por defecto */
+    color: #6223cc; /* Asegura el color por defecto */
     font-weight: 600; /* Mantiene el bold */
   }
 

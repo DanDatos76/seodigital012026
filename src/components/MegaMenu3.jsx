@@ -24,25 +24,24 @@ const MegaMenu3 = () => {
         <div className="mega-column">
           <h4><span className="dot" /> </h4> {/* Aquí no hay un título específico como "TOP SOLUTIONS", así que lo dejamos vacío o lo ajustamos */}
           <ul>
-            <li><a href="#">Agricultura</a></li>
-            <li><a href="#">Banca</a></li>
-            <li><a href="#">Finanzas</a></li>
-            <li><a href="#">Seguro</a></li>
-            <li><a href="#">Bien inmueble</a></li>
-            <li><a href="#">Telecomunicaciones</a></li>
-            <li><a href="#">Todas las industrias →</a></li> {/* Este enlace va al final de la primera columna de industrias */}
+            <li><a href="/agricultura">Agricultura</a></li>
+            <li><a href="/banca">Banca</a></li>
+            <li><a href="/finanzas">Finanzas</a></li>
+            <li><a href="/seguro">Seguro</a></li>
+            <li><a href="/inmueble">Bien inmueble</a></li>
+            <li><a href="/telecomunicaciones">Telecomunicaciones</a></li>
           </ul>
         </div>
 
         <div className="mega-column">
           <h4><span className="dot" /> </h4> {/* Vacío o ajustado */}
           <ul>
-            <li><a href="#">Automotor</a></li>
-            <li><a href="#">Construcción</a></li>
-            <li><a href="#">Fintech</a></li>
-            <li><a href="#">Tecnología de marketing</a></li>
-            <li><a href="#">Venta al por menor</a></li>
-            <li><a href="#">Transporte y logística</a></li>
+            <li><a href="/automotor">Automotor</a></li>
+            <li><a href="/construccion">Construcción</a></li>
+            <li><a href="/fintech">Fintech</a></li>
+            <li><a href="/marketing">Tecnología de marketing</a></li>
+            <li><a href="/minorista">Venta al por menor</a></li>
+            <li><a href="/transporte">Transporte y logística</a></li>
             {/* Si hubiera más enlaces en esta columna, irían aquí */}
           </ul>
         </div>
@@ -50,12 +49,12 @@ const MegaMenu3 = () => {
         <div className="mega-column">
           <h4><span className="dot" /> </h4> {/* Vacío o ajustado */}
           <ul>
-            <li><a href="#">Aviación</a></li>
-            <li><a href="#">Diversión</a></li>
-            <li><a href="#">Atención sanitaria</a></li>
-            <li><a href="#">Petróleo y gas</a></li>
-            <li><a href="#">Cadena de suministro</a></li>
-            <li><a href="#">Viajes y hospitalidad</a></li>
+            <li><a href="/aviacion">Aviación</a></li>
+            <li><a href="/diversion">Diversión</a></li>
+            <li><a href="/sanidad">Atención sanitaria</a></li>
+            <li><a href="/petroleo">Petróleo y gas</a></li>
+            <li><a href="/suministro">Cadena de suministro</a></li>
+            <li><a href="/viajes">Viajes y hospitalidad</a></li>
             {/* Si hubiera más enlaces en esta columna, irían aquí */}
           </ul>
         </div>

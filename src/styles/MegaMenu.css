@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center; /* Centra el contenido del menú */
   z-index: 999;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px #6223cc;
   box-sizing: border-box; /* Asegura que el padding no añada al ancho */
 }
 
@@ -23,15 +23,15 @@
 .mega-column {
   flex-basis: 0; /* Permite que flex-grow distribuya el espacio */
   flex-grow: 1; /* Distribuye el espacio equitativamente */
-  padding: 0 20px; /* Padding interno para las columnas */
+  padding:  20px; /* Padding interno para las columnas */
 }
 
 .left-column {
   flex-grow: 1.2; /* Dale un poco más de espacio a la columna izquierda si es necesario */
   max-width: 300px; /* Mantiene un ancho máximo para la columna izquierda */
   border-right: 1px solid #eee;
-  padding-right: 40px; /* Ajustado el padding derecho */
-  padding-left: 0; /* Elimina el padding izquierdo extra si existe */
+  padding-right: 20px;  /*Ajustado el padding derecho */
+  padding-left: 20p; /* Elimina el padding izquierdo extra si existe */
 }
 
 .mega-column h3 {
@@ -44,7 +44,7 @@
 .mega-column h4 {
   font-size: 13px; /* Ajustado el tamaño de la fuente */
   font-weight: 700; /* Hecho más negrita */
-  color: #555;
+  color: #6223cc;
   margin-bottom: 15px;
   letter-spacing: 0.8px; /* Ajustado el espaciado entre letras */
   text-transform: uppercase;
@@ -55,7 +55,7 @@
 .dot {
   height: 8px;
   width: 8px;
-  background: #ff5722;
+  background: #6223cc;
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
@@ -64,6 +64,7 @@
 .mega-column ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .mega-column ul li {
@@ -72,15 +73,16 @@
 
 .mega-column ul li a {
   text-decoration: none;
-  color: #222;
+  color: #000000;
   font-size: 14px;
   transition: 0.3s;
   display: block; /* Para que el área de clic sea más grande */
-  padding: 2px 0; /* Pequeño padding para los enlaces */
+  padding: 10px ; /* Pequeño padding para los enlaces */
+  
 }
 
 .mega-column ul li a:hover {
-  color: #ff5722;
+  color:#6223cc;
 }
 
 /* Estilos específicos para los enlaces principales en la columna izquierda */
@@ -106,12 +108,12 @@
 }
 
 .client-quote p {
-  color: #555;
+  color: #6223cc;
   line-height: 1.5; /* Mejor espaciado de línea */
 }
 
 .client-quote a {
-  color: #ff5722;
+  color: #6223cc;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -125,3 +127,145 @@ img.logo {
   height: 120px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
   object-fit: contain;
 }
+
+/* =============================== */
+/*   RESPONSIVE MEGA MENU          */
+/* =============================== */
+
+
+/* 🔵 1) PANTALLAS GRANDES < 1200px */
+@media (max-width: 1200px) {
+  .mega-menu {
+    padding: 25px 40px;
+  }
+
+  .mega-menu-inner-content {
+    gap: 30px;
+  }
+
+  .mega-column h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* 🟡 2) TABLET < 992px */
+@media (max-width: 992px) {
+  .mega-menu-inner-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .left-column {
+    max-width: 100%;
+    padding-right: 0;
+    border-right: none;
+    margin-bottom: 30px;
+  }
+
+  .mega-column {
+    flex-basis: calc(50% - 20px); /* 2 columnas */
+    padding: 10px 0;
+  }
+
+  .mega-column h4 {
+    font-size: 12px;
+  }
+
+  .mega-column ul li a {
+    font-size: 13px;
+  }
+
+  .client-quote {
+    max-width: 90%;
+  }
+}
+
+
+/* 🟢 3) MOBILE GRANDE < 768px */
+@media (max-width: 768px) {
+  .mega-menu {
+    padding: 25px 20px;
+    top: unset;
+    margin-top: 0;
+  }
+
+  .mega-menu-inner-content {
+    display: block;
+  }
+
+  .mega-column {
+    width: 100%;
+    flex-basis: 100%; /* 1 columna */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mega-column:last-child {
+    border-bottom: none;
+  }
+
+  .mega-column h3 {
+    font-size: 20px;
+  }
+
+  .mega-column ul li {
+    margin-bottom: 10px;
+  }
+
+  .client-quote img {
+    height: 18px;
+  }
+
+  .client-quote {
+    font-size: 12px;
+  }
+}
+
+
+/* 🔴 4) MOBILE PEQUEÑO < 480px */
+@media (max-width: 480px) {
+  .mega-menu {
+    padding: 20px 16px;
+  }
+
+  .mega-column h3 {
+    font-size: 18px;
+  }
+
+  .mega-column h4 {
+    font-size: 11px;
+  }
+
+  .mega-column ul li a {
+    font-size: 12.5px;
+  }
+
+  .client-quote p {
+    font-size: 12px;
+  }
+}
+
+/* OCULTAR PRIMERA COLUMNA EN TABLET Y MOBILE */
+@media (max-width: 992px) {
+  .left-column {
+    display: none !important;
+  }
+
+  .mega-menu-inner-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .mega-column {
+    flex-basis: 50%; /* 2 columnas en tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .mega-column {
+    flex-basis: 100%; /* 1 columna en mobile */
+  }
+}
+

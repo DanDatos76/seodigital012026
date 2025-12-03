@@ -169,18 +169,33 @@ const Header = () => {
             ))}
             {/* Botón de llamada que SOLO aparece en el menú móvil cuando está abierto */}
             {isMobileMenuOpen && (
-              <li className="nav-item mobile-call-button-wrapper">
-                <button className="call-button mobile-only-button" onClick={() => { /* Lógica para la llamada */ setIsMobileMenuOpen(false); }}>
-                  Programe una llamada
-                </button>
-              </li>
+                  <li className="nav-item mobile-call-button-wrapper">
+                      <button
+                        className="call-button mobile-only-button"
+                        onClick={() => {
+                          window.open("https://wa.me/5491128937499", "_blank");
+                          setIsMobileMenuOpen(false);
+                        }}
+                      >
+                        Nuestro WhatsApp
+                      </button>
+                    </li>
+
             )}
           </ul>
         </nav>
 
         <div className="header-actions">
           {/* Este botón ES el botón de escritorio y se OCULTARÁ en móvil */}
-          <button className="call-button">Programe una llamada</button>
+          <button
+                        className="call-button mobile-only-button"
+                        onClick={() => {
+                          window.open("https://wa.me/5491128937499", "_blank");
+                          setIsMobileMenuOpen(false);
+                        }}
+                      >
+                        Nuestro WhatsApp
+                      </button>
         </div>
       </div>
     </header>
