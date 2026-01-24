@@ -7,40 +7,31 @@ const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 // Datos del FAQ
 const faqItems = [
   {
-    title: "Tech Companies Building Scalable Apps",
+    title: "  ¿Qué tecnologías utilizan principalmente para el desarrollo de IA?",
     content:
-      "Companies developing SaaS, fintech, marketplaces, and AI platforms rely on advanced backend architectures to scale securely.",
+      "  Nos especializamos en Python y Node.js para el núcleo de IA, utilizando frameworks como TensorFlow, PyTorch y LangChain para la integración de modelos de lenguaje y aprendizaje profundo.",
   },
   {
-    title: "Enterprises Requiring System Integrations",
+    title: "  ¿Pueden integrarse con un equipo de desarrollo ya existente?",
     content:
-      "Large organizations need APIs, microservices, automation workflows, and secure data exchange between internal systems.",
+      "  Absolutamente. Trabajamos bajo metodologías ágiles que nos permiten colaborar directamente con su equipo interno o gestionar el proyecto de forma independiente según sus necesidades.",
   },
   {
-    title: "Startups Needing MVPs and Fast Launch",
+    title: "  ¿Cómo garantizan la seguridad de los datos en aplicaciones de IA?",
     content:
-      "Startups use custom backend development to validate ideas quickly, deploy MVPs, and ensure future scalability.",
+      "  Implementamos protocolos de cifrado de extremo a extremo, cumplimos con normativas como GDPR o HIPAA y realizamos auditorías de seguridad periódicas en cada capa del backend.",
   },
   {
-    title: "E-commerce and Retail Platforms",
+    title: "  ¿Cuánto tiempo toma desarrollar un MVP funcional?",
     content:
-      "Retailers rely on inventory systems, payment gateways, analytics engines, and high-availability backend services.",
+      "  Dependiendo de la complejidad, un MVP sólido suele estar listo entre 6 a 10 semanas, enfocándonos en las características críticas para su lanzamiento.",
   },
   {
-    title: "Healthcare and Government Platforms",
+    title: " ¿Ofrecen soporte después del lanzamiento?",
     content:
-      "They require secure, compliant, and high-performance backend solutions with audit trails and data protection.",
+      "  Sí, ofrecemos planes de mantenimiento preventivo, monitoreo 24/7 y escalado proactivo para asegurar que la plataforma crezca junto con su base de usuarios.",
   },
-  {
-    title: "Educational Platforms and LMS Providers",
-    content:
-      "Backends power user management, course delivery, analytics, real-time communication, and content automation.",
-  },
-  {
-    title: "Logistics, Transportation and IoT Systems",
-    content:
-      "Companies need real-time tracking, geolocation, sensor data pipelines, and automated logistics workflows.",
-  },
+   
 ];
 
 // Componente principal
@@ -61,19 +52,19 @@ export default function IadevPage() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            IA Development
-            <span> IA development for modern applications.</span>
+             Desarrollo de IA
+            <span>  Inteligencia Artificial avanzada para aplicaciones modernas.</span>
           </h1>
 
           <p className="hero-sub">
-            Power your product with high-performance APIs, databases, and cloud architectures.
+             Potencia tu producto con APIs de alto rendimiento, bases de datos inteligentes y arquitecturas en la nube diseñadas para escalar.
           </p>
 
-          <button className="cta">Level Up Your Backend Development</button>
+          <button className="cta"> Impulsa tu Desarrollo Backend </button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% backend engineers
+               +500 empresas confían en nuestro top 1% de ingenieros expertos.
             </div>
 
             <ul className="badge-list">
@@ -96,72 +87,74 @@ export default function IadevPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Backend development services we provide
+             Servicios de desarrollo backend
+
           </h2>
 
           <p className="lead">
-            We build powerful backend systems designed for performance, security, and
-            scalability. From APIs to microservices, we provide end-to-end backend development
-            for startups, enterprises, and fast-growing platforms.
+             Construimos sistemas potentes enfocados en el desempeño, la seguridad y la escalabilidad.
+              Ofrecemos desarrollo backend de extremo a extremo, desde APIs hasta microservicios,
+               para startups, corporaciones y plataformas en expansión.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom API & Microservices Architecture</h3>
+              <h3> Arquitectura de APIs y Microservicios</h3>
               <p>
-                High-performance REST/GraphQL APIs, microservices, serverless architectures,
-                and event-driven systems.
+                  Sistemas backend potentes diseñados para el rendimiento, seguridad y escalabilidad. Desde APIs 
+                  REST/GraphQL hasta microservicios distribuidos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Database Design & Optimization</h3>
+              <h3> Diseño y Optimización de Bases de Datos</h3>
               <p>
-                PostgreSQL, MongoDB, Redis, MySQL — indexing, replication, sharding, and
-                real-time data pipelines.
+                 Experiencia en PostgreSQL, MongoDB, Redis y MySQL. Implementamos replicación, sharding y tuberías de datos
+                  en tiempo real.
               </p>
             </article>
 
             <article className="service">
-              <h3>Cloud Backend Development</h3>
+              <h3> Desarrollo Backend en la Nube</h3>
               <p>
-                AWS, Azure, and Google Cloud solutions using Docker, Kubernetes, CI/CD, and
-                infrastructure automation.
+                 Soluciones en AWS, Azure y Google Cloud utilizando Docker,
+                  Kubernetes, CI/CD y automatización de infraestructura.
               </p>
             </article>
 
             <article className="service">
-              <h3>Authentication & Security Systems</h3>
+              <h3> Sistemas de Autenticación y Seguridad</h3>
               <p>
-                OAuth2, JWT, identity management, encryption, access control, and compliance
-                implementations.
+                 Implementación de OAuth2, JWT, gestión de identidad y cumplimiento de
+                  normativas de protección de datos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Integration with Third-Party Services</h3>
+              <h3> Integración con Servicios de Terceros</h3>
               <p>
-                Payment gateways, messaging APIs, analytics engines, CRMs, ERPs, AI models,
-                and more.
+                 Conectamos tu ecosistema con pasarelas de pago, mensajería, analítica,
+                  CRMs y modelos de IA externos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Backend Testing & Performance Engineering</h3>
+              <h3> Pruebas y Rendimiento (QA)</h3>
               <p>
-                Unit, integration, load, and stress testing. Performance optimization for
-                large-scale applications.
+                 Pruebas unitarias, de integración y de carga para garantizar estabilidad. Optimización de latencia para aplicaciones a gran escala.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4> Caso de éxito</h4>
             <p>
-              How a global SaaS platform scaled to 3M users using our microservices backend —
-              reducing downtime by 92% and increasing response speed by 40%.
+                Cómo una plataforma SaaS global escaló a 50 millones de usuarios usando nuestro backend de 
+                microservicios — reduciendo el tiempo de inactividad en un 90% y aumentando la velocidad 
+                de respuesta en un 60%.
+
             </p>
           </div>
         </div>
@@ -169,18 +162,18 @@ export default function IadevPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>Specialized backend engineering teams</li>
-              <li>Cloud-native architectures</li>
-              <li>API-first development approach</li>
+              <li>Equipo de ingeniería backend especializado.</li>
+              <li>Arquitectos nativos de la nube.</li>
+              <li>Enfoque de desarrollo centrado en APIs.</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Backend Architecture Guides</div>
-            <div className="card">API Best Practices</div>
-            <div className="card">Case Studies</div>
+            <div className="card"> Guías de Arquitectura Backend</div>
+            <div className="card"> Mejores Prácticas de APIs</div>
+            <div className="card"> Casos de Estudio</div>
           </div>
         </aside>
       </main>
@@ -188,12 +181,12 @@ export default function IadevPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which companies benefit from custom backend development?
+            ¿Qué industrias se benefician?
         </h2>
 
         <p className="faq-intro">
-          Custom backend services provide the core functionality that powers digital products.
-          They are essential for:
+           Los servicios backend personalizados proporcionan la funcionalidad principal que impulsa
+            los productos digitales. Son esenciales para:
         </p>
 
         <div className="faq-list">
@@ -222,10 +215,9 @@ export default function IadevPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From APIs to microservices — power your product with world-class backend
-            engineering.
+             Desde API hasta microservicios: potencie su producto con ingeniería de backend de primer nivel.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Programe una llamada</button>
         </div>
       </footer>
     </div>

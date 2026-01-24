@@ -127,7 +127,9 @@ img.logo {
   height: 120px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
   object-fit: contain;
 }
-
+#mega-menu-tecnologias > div > div.mega-column.left-column > div > img,#mega-menu-industries > div > div.mega-column.left-column > div > img{
+  height: 150px;
+}
 /* =============================== */
 /*   RESPONSIVE MEGA MENU          */
 /* =============================== */

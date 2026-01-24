@@ -16,7 +16,7 @@ import CSharp from './components/Csharp';
 import Angular from './components/Angular';
 import Python from './components/Python';
 import Agriculture from './components/IndusriaModel';
-import BancaPage from './components/Banca';
+ 
 import FinanzasPage from './components/Finanzas';
 import SeguroPage from './components/Seguro';
 import InmueblePage from './components/Inmueble';
@@ -38,6 +38,25 @@ import Works from './components/OurWork';
 import BackendPage from './components/Backend';
 import IadePage from './components/Iadev';
 import IadevPage from './components/Iadev';
+import CmsPage from './components/Cms';
+import CriptoPage from './components/Cripto';
+import FrontendPage from './components/Frontend';
+import MlearningPage from './components/Mlearning';
+import QatestingPage from './components/Qatesting';
+import UxuiPage from './components/Uxui';
+import BackupPage from './components/Backup';
+import BigdataPage from './components/Bigdata';
+import CloudPage from './components/Cloud';
+import CybersecurityPage from './components/Cybersecurity';
+import DevopsPage from './components/Devops';
+import ErpPage from './components/ErpDevelopment';
+import TransformacionDigitalPage from './components/tdigital';
+import NodeJS from './components/Node';
+import IADevelopment from './components/Iasection';
+import Golang from './components/Goexpert';
+import CPP from './components/Cms';
+import VueJS from './components/Vuej';
+import BankingPage from './components/bancaria';
 
 function App() {
   return (
@@ -58,17 +77,18 @@ function App() {
           } 
         />
         <Route path="/about" element={<About />} />
-        <Route path="/go-experts" element={<GoExpertsPage />} />
+        <Route path="/go-experts" element={<Golang />} />
         <Route path="/django" element={<Django />} />
         <Route path="/csharp" element={<CSharp />} />
         <Route path="/angular" element={<Angular />} />
         <Route path="/python" element={<Python />} />
-        <Route path="/node" element={<Django />} />
-        <Route path="/iasection" element={<Django />} />
-         <Route path="/cmasmas" element={<Django />} />
-         <Route path="/vuejs" element={<Django />} />
+        <Route path="/node" element={<NodeJS />} />
+        <Route path="/iasection" element={<IADevelopment />} />
+         <Route path="/cmasmas" element={<CPP />} />
+         <Route path="/vuejs" element={<VueJS />} />
          <Route path="/agricultura" element={<Agriculture />} />
-         <Route path="/banca" element={<BancaPage />} />
+         
+         
          <Route path="/finanzas" element={<FinanzasPage />} />
          <Route path="/seguro" element={<SeguroPage />} />
          <Route path="/inmueble" element={<InmueblePage />} />
@@ -89,7 +109,21 @@ function App() {
          <Route path="/our-work" element={<Works />} />
          <Route path="/backend" element={<BackendPage />} />
          <Route path="/iadev" element={<IadevPage />} />
-        
+         <Route path="/cms" element={<CmsPage />} />
+         <Route path="/cripto" element={<CriptoPage />} />
+         <Route path="/frontend" element={<FrontendPage />} />
+         <Route path="/mlearning" element={<MlearningPage />} />
+         <Route path="/qatesting" element={<QatestingPage />} />
+         <Route path="/uxui" element={<UxuiPage />} />
+         <Route path="/backup" element={<BackupPage />} />
+         <Route path="/bigdata" element={<BigdataPage />} />
+         <Route path="/cloud" element={<CloudPage />} />
+         <Route path="/cyberseguridad" element={<CybersecurityPage />} />
+         <Route path="/devops" element={<DevopsPage />} />
+         <Route path="/erp" element={<ErpPage />} />
+         <Route path="/tdigital" element={<TransformacionDigitalPage />} />
+         <Route path="/python" element={<Python />} />
+         <Route path="/banca" element={< BankingPage />} />
       </Routes>
 
       <Footer />

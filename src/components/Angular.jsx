@@ -1,153 +1,116 @@
+ // src/pages/Angular.jsx
 import React from "react";
-import "../styles/Csharp.css";
-import csharpLogo from "../assets/csharp-logo.png"; // imagen del hero (ícono C#)
-import devTeam from "../assets/dev-team.jfif"; // imagen de desarrolladores
-import clientImg from "../assets/client.jfif"; // imagen testimonial
+import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos
+import angularLogo from "../assets/Angular.png"; // logo de Angular
+import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 
-const CSharp = () => {
+const Angular = () => {
   return (
-    <div className="csharp-page">
-      {/* ===== HERO ===== */}
-      <section className="csharp-hero">
+    <div className="django-page">
+      
+      {/* ====== HERO ====== */}
+      <section className="django-hero">
         <div className="hero-text">
-          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE C# CON TALENTO NEARSHORE</p>
+          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE ANGULAR</p>
           <h1>
-            Escale su desarrollo de <span className="highlight">C#</span> 
+            Escala tu desarrollo de <span className="highlight">Angular</span> 
             <br />con talento nearshore.
           </h1>
           <p className="subtitle">
-            Nuestros servicios de desarrollo de C# ya tienen 500+ compromisos activos. 
-            Por lo general, entregamos nuestros proyectos en 2 semanas, para que pueda 
-            comenzar a acelerar resultados sin perder calidad.
+            Nuestros servicios de desarrollo de Angular impulsan ciclos de entrega más rápidos. 
+            Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
+            comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de C#</button>
+          <button className="cta-btn">Acceder a desarrollo de Angular</button>
         </div>
 
         <div className="hero-img">
-          <img src={csharpLogo} alt="C# Logo" />
+          <img src={angularLogo} alt="Angular" />
         </div>
       </section>
 
-      {/* ===== LOGOS ===== */}
+      {/* ====== LOGOS ====== */}
       <section className="trusted-logos">
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
             <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/microsoft.png" alt="Microsoft" />
+            <img src="/logos/pinterest.png" alt="Pinterest" />
             <img src="/logos/adobe.png" alt="Adobe" />
             <img src="/logos/ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
 
-      {/* ===== CONTENIDO PRINCIPAL ===== */}
-      <section className="main-content">
-        <div className="main-left">
-          <h2>Servicios de desarrollo de C# que brindamos</h2>
-
-          <div className="services-grid">
-            <div className="service-item">
-              <h3>Desarrollo de C# personalizado</h3>
-              <p>
-                Creamos soluciones empresariales adaptadas a sus necesidades, 
-                con arquitectura sólida, alta escalabilidad y rendimiento.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de aplicaciones web en C#</h3>
-              <p>
-                Diseñamos aplicaciones web interactivas y seguras usando ASP.NET Core 
-                y las mejores prácticas del ecosistema Microsoft.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de APIs RESTful</h3>
-              <p>
-                Construimos APIs rápidas y confiables para conectar sus sistemas 
-                internos y externos de forma segura y eficiente.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de aplicaciones móviles con C#</h3>
-              <p>
-                Usamos .NET MAUI y Xamarin para crear apps multiplataforma con una 
-                sola base de código, reduciendo tiempo y costos.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de software empresarial en C#</h3>
-              <p>
-                Implementamos ERP, CRM y soluciones SaaS robustas usando la 
-                potencia del framework .NET y Azure Cloud.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de juegos con C#</h3>
-              <p>
-                Creamos experiencias interactivas con Unity y C#, integrando gráficos 3D 
-                y físicas avanzadas para juegos de alto nivel.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Integraciones y migraciones</h3>
-              <p>
-                Modernizamos sistemas heredados, migramos datos y optimizamos procesos 
-                con integraciones seguras y eficientes.
-              </p>
-            </div>
-            <div className="service-item">
-              <h3>Desarrollo de IoT y Software Embebido</h3>
-              <p>
-                Usamos C# para construir soluciones IoT escalables y seguras 
-                que conectan hardware con la nube.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* ===== SIDEBAR ===== */}
-        <aside className="main-right">
-          <div className="sidebar-section">
-            <h4>Servicios relacionados</h4>
-            <ul>
-              <li>Desarrollo .NET</li>
-              <li>Desarrollo de APIs</li>
-              <li>Consultoría en Azure</li>
-              <li>Desarrollo de Backend</li>
-            </ul>
-          </div>
-
-          <div className="sidebar-section quote">
-            <p className="quote-text">
-              “Colaborar con este equipo nos permitió escalar nuestros proyectos 
-              de software tres veces más rápido.”
-            </p>
-            <span className="quote-author">CTO - Fintech LATAM</span>
-          </div>
-
-          <div className="sidebar-section">
-            <img src={clientImg} alt="Client" />
-          </div>
-        </aside>
-      </section>
-
-      {/* ===== TESTIMONIO / CTA ===== */}
-      <section className="case-study">
-        <div className="case-card">
-          <img src={devTeam} alt="Developers" />
-          <div className="case-text">
-            <h3>Historia de éxito: Autodesk</h3>
+      {/* ====== SERVICIOS ====== */}
+      <section className="django-services">
+        <h2>Servicios de desarrollo de Angular que brindamos</h2>
+        <div className="services-grid">
+          <div className="service-item">
+            <h3>Desarrollo de SPAs con Angular</h3>
             <p>
-              “El equipo de ingeniería de BairesDev fue fundamental para la expansión 
-              de nuestras soluciones .NET en todo el mundo.”
+              Creamos aplicaciones de una sola página (SPA) dinámicas, escalables y de alto rendimiento.
             </p>
-            <button className="cta-btn">Ver Caso</button>
+          </div>
+          <div className="service-item">
+            <h3>Migración y Upgrades de Angular</h3>
+            <p>
+              Actualizamos tus sistemas legados o versiones antiguas a las versiones más recientes de Angular.
+            </p>
+          </div>
+          <div className="service-item">
+            <h3>Arquitecturas basadas en Componentes</h3>
+            <p>
+              Diseñamos interfaces modulares que optimizan el rendimiento del front-end y la mantenibilidad.
+            </p>
+          </div>
+          <div className="service-item">
+            <h3>Angular Enterprise Solutions</h3>
+            <p>
+              Creamos plataformas corporativas modernas, responsivas y altamente eficientes con Angular.
+            </p>
           </div>
         </div>
       </section>
+
+      {/* ====== WHY CHOOSE ====== */}
+      <section className="why-django">
+        <h2>Why Choose BairesDev for Angular Development</h2>
+        <div className="why-grid">
+          <div className="why-item">
+            <h4>Nearshore, Timezone-aligned Talent</h4>
+            <p>
+              Equipos que trabajan en tu misma zona horaria para garantizar comunicación fluida.
+            </p>
+          </div>
+          <div className="why-item">
+            <h4>Diverse Range of Talent</h4>
+            <p>
+              Accede a expertos Angular, diseñadores UX/UI y arquitectos Front-end bajo un mismo equipo.
+            </p>
+          </div>
+          <div className="why-item">
+            <h4>Flexible Engagement Models</h4>
+            <p>
+              Modelos de contratación adaptables a tus necesidades: staff augmentation o proyectos completos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ====== IMAGEN FINAL / CTA ====== */}
+      <section className="django-end">
+        <div className="end-img">
+          <img src={teamImage} alt="Team working with Angular" />
+        </div>
+        <div className="end-text">
+          <h3>¿Listo para acelerar tu proyecto Angular?</h3>
+          <button className="cta-btn">Comenzar ahora</button>
+        </div>
+      </section>
+
     </div>
   );
 };
 
-export default CSharp;
+export default Angular;

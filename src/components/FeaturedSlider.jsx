@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import "../styles/FeaturedSlider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
@@ -10,22 +10,22 @@ const slides = [
   {
     title: "FINANCIAL TIMES",
     description:
-      "We were recognized by Financial Times in the America's Fastest-growing Companies list of 2024, showcasing significant revenue growth between 2019 and 2022.",
+      "Fuimos reconocidos por Financial Times en la lista de las Empresas de Más Rápido Crecimiento en América de 2024, destacando un crecimiento significativo de ingresos entre 2019 y 2022.",
   },
   {
     title: "FORBES",
     description:
-      "BairesDev was highlighted by Forbes as a leading nearshore software outsourcing firm in LATAM for tech innovation and delivery.",
+      "Fuimos destacados por Forbes como una empresa líder en outsourcing de software nearshore en LATAM por nuestra innovación tecnológica y capacidad de entrega.",
   },
   {
     title: "INSIDER",
     description:
-      "Insider covered our expansion into new markets and our role in transforming global software teams.",
+      "Insider cubrió nuestra expansión hacia nuevos mercados y nuestro papel en la transformación de equipos de software a nivel global.",
   },
   {
     title: "CNBC",
     description:
-      "CNBC recognized our contributions to digital acceleration and enterprise solutions in the U.S. market.",
+      "CNBC reconoció nuestras contribuciones a la aceleración digital y soluciones empresariales en el mercado de EE. UU.",
   },
 ];
 
@@ -33,7 +33,7 @@ const FeaturedSlider = () => {
   return (
     <section className="featured-section">
       <div className="featured-header">
-        <span>As featured in...</span>
+        <span>Mencionados en...</span>
         <div className="media-logos">
           <span>CNBC</span>
           <span>Forbes</span>

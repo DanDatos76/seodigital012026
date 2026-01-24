@@ -1,31 +1,31 @@
-// src/pages/Django.jsx
+ // src/pages/IADevelopment.jsx
 import React from "react";
-import "../styles/Django.css";
-import djangoLogo from "../assets/django-logo.png"; // coloca aquí el logo o imagen del hero
-import teamImage from "../assets/django-team.jfif";  // imagen de equipo o desarrollo (opcional)
+import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos
+import aiLogo from "../assets/ia.jpg"; // logo de IA
+import teamImage from "../assets/team-python.jpg"; // imagen de equipo/IA
 
-const Django = () => {
+const IADevelopment = () => {
   return (
     <div className="django-page">
       
       {/* ====== HERO ====== */}
       <section className="django-hero">
         <div className="hero-text">
-          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE DJANGO</p>
+          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE IA</p>
           <h1>
-            Escala tu desarrollo de <span className="highlight">Django</span> 
+            Escala tu desarrollo de <span className="highlight">IA</span> 
             <br />con talento nearshore.
           </h1>
           <p className="subtitle">
-            Nuestros servicios de desarrollo de Django impulsan ciclos de entrega más rápidos. 
+            Nuestros servicios de desarrollo de Inteligencia Artificial impulsan ciclos de innovación más rápidos. 
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de Django</button>
+          <button className="cta-btn">Acceder a desarrollo de IA</button>
         </div>
 
         <div className="hero-img">
-          <img src={djangoLogo} alt="Django" />
+          <img src={aiLogo} alt="Inteligencia Artificial" />
         </div>
       </section>
 
@@ -44,31 +44,30 @@ const Django = () => {
 
       {/* ====== SERVICIOS ====== */}
       <section className="django-services">
-        <h2>Servicios de desarrollo de Django que brindamos</h2>
+        <h2>Servicios de desarrollo de IA que brindamos</h2>
         <div className="services-grid">
           <div className="service-item">
-            <h3>Desarrollo de aplicaciones con Django</h3>
+            <h3>Modelos de Aprendizaje Automático</h3>
             <p>
-              Creamos aplicaciones web escalables, seguras y de alto rendimiento usando Django.
+              Creamos algoritmos inteligentes que aprenden de tus datos para predecir tendencias y automatizar decisiones.
             </p>
           </div>
           <div className="service-item">
-            <h3>Desarrollo de servicios de back-end y APIs</h3>
+            <h3>Procesamiento de Lenguaje Natural</h3>
             <p>
-              Construimos APIs RESTful rápidas y confiables que impulsan soluciones digitales 
-              modernas.
+              Construimos sistemas capaces de entender, interpretar y generar lenguaje humano de forma fluida y natural.
             </p>
           </div>
           <div className="service-item">
-            <h3>Diseño de arquitecturas con Django</h3>
+            <h3>Visión por Computadora</h3>
             <p>
-              Diseñamos arquitecturas limpias que optimizan el rendimiento y la mantenibilidad.
+              Diseñamos soluciones que permiten a las máquinas identificar y procesar imágenes y videos con precisión.
             </p>
           </div>
           <div className="service-item">
-            <h3>Django Template Design</h3>
+            <h3>IA Conversacional & Chatbots</h3>
             <p>
-              Creamos interfaces profesionales con plantillas Django modernas y responsivas.
+              Creamos agentes virtuales inteligentes modernos, responsivos y altamente eficientes para mejorar la atención.
             </p>
           </div>
         </div>
@@ -76,7 +75,7 @@ const Django = () => {
 
       {/* ====== WHY CHOOSE ====== */}
       <section className="why-django">
-        <h2>Why Choose BairesDev for Django Development</h2>
+        <h2>Why Choose BairesDev for AI Development</h2>
         <div className="why-grid">
           <div className="why-item">
             <h4>Nearshore, Timezone-aligned Talent</h4>
@@ -87,7 +86,7 @@ const Django = () => {
           <div className="why-item">
             <h4>Diverse Range of Talent</h4>
             <p>
-              Accede a expertos Django, diseñadores UX/UI y DevOps bajo un mismo equipo.
+              Accede a expertos en IA, científicos de datos y arquitectos Cloud bajo un mismo equipo.
             </p>
           </div>
           <div className="why-item">
@@ -102,10 +101,10 @@ const Django = () => {
       {/* ====== IMAGEN FINAL / CTA ====== */}
       <section className="django-end">
         <div className="end-img">
-          <img src={teamImage} alt="Team working with Django" />
+          <img src={teamImage} alt="Team working with AI" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto Django?</h3>
+          <h3>¿Listo para acelerar tu proyecto de IA?</h3>
           <button className="cta-btn">Comenzar ahora</button>
         </div>
       </section>
@@ -114,4 +113,4 @@ const Django = () => {
   );
 };
 
-export default Django;
+export default IADevelopment;

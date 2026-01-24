@@ -1,45 +1,45 @@
-// Archivo JSX: BackendPage.jsx
+ // Archivo JSX: BackendPage.jsx
 import React, { useState } from 'react';
 import '../styles/Industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 
-// Datos del FAQ
+// Datos del FAQ traducidos
 const faqItems = [
   {
-    title: "Tech Companies Building Scalable Apps",
+    title: "Empresas tecnológicas que construyen apps escalables",
     content:
-      "Companies developing SaaS, fintech, marketplaces, and AI platforms rely on advanced backend architectures to scale securely.",
+      "Las empresas que desarrollan SaaS, fintech, marketplaces y plataformas de IA confían en arquitecturas backend avanzadas para escalar de forma segura.",
   },
   {
-    title: "Enterprises Requiring System Integrations",
+    title: "Corporaciones que requieren integración de sistemas",
     content:
-      "Large organizations need APIs, microservices, automation workflows, and secure data exchange between internal systems.",
+      "Las grandes organizaciones necesitan APIs, microservicios, flujos de trabajo automatizados e intercambio seguro de datos entre sus sistemas internos.",
   },
   {
-    title: "Startups Needing MVPs and Fast Launch",
+    title: "Startups que necesitan MVPs y lanzamientos rápidos",
     content:
-      "Startups use custom backend development to validate ideas quickly, deploy MVPs, and ensure future scalability.",
+      "Las startups utilizan el desarrollo backend a medida para validar ideas rápidamente, desplegar MVPs y garantizar la escalabilidad futura.",
   },
   {
-    title: "E-commerce and Retail Platforms",
+    title: "Plataformas de E-commerce y Retail",
     content:
-      "Retailers rely on inventory systems, payment gateways, analytics engines, and high-availability backend services.",
+      "Los minoristas dependen de sistemas de inventario, pasarelas de pago, motores de analítica y servicios backend de alta disponibilidad.",
   },
   {
-    title: "Healthcare and Government Platforms",
+    title: "Plataformas de Salud y Gobierno",
     content:
-      "They require secure, compliant, and high-performance backend solutions with audit trails and data protection.",
+      "Requieren soluciones backend de alto rendimiento, seguras y que cumplan con normativas legales, incluyendo registros de auditoría y protección de datos.",
   },
   {
-    title: "Educational Platforms and LMS Providers",
+    title: "Plataformas Educativas y proveedores de LMS",
     content:
-      "Backends power user management, course delivery, analytics, real-time communication, and content automation.",
+      "El backend gestiona a los usuarios, la entrega de cursos, analíticas, comunicación en tiempo real y automatización de contenidos.",
   },
   {
-    title: "Logistics, Transportation and IoT Systems",
+    title: "Sistemas de Logística, Transporte e IoT",
     content:
-      "Companies need real-time tracking, geolocation, sensor data pipelines, and automated logistics workflows.",
+      "Las empresas necesitan seguimiento en tiempo real, geolocalización, tuberías de datos para sensores y flujos logísticos automatizados.",
   },
 ];
 
@@ -55,25 +55,25 @@ export default function BackendPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Services &gt; Backend Development</header>
+      <header className="breadcrumb">Inicio &gt; Servicios &gt; Desarrollo Backend</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Robust, scalable, secure
-            <span> backend development for modern applications.</span>
+            Desarrollo backend
+            <span> robusto, escalable y seguro para aplicaciones modernas.</span>
           </h1>
 
           <p className="hero-sub">
-            Power your product with high-performance APIs, databases, and cloud architectures.
+            Potencia tu producto con APIs de alto rendimiento, bases de datos y arquitecturas en la nube.
           </p>
 
-          <button className="cta">Level Up Your Backend Development</button>
+          <button className="cta">Impulsa tu Desarrollo Backend</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% backend engineers
+              Más de 500 empresas confían en nuestro top 1% de ingenieros backend
             </div>
 
             <ul className="badge-list">
@@ -87,7 +87,7 @@ export default function BackendPage() {
         <div className="hero-image">
           <img
             src="/backend.png"
-            alt="Backend Engineering"
+            alt="Ingeniería Backend"
           />
         </div>
       </section>
@@ -96,72 +96,72 @@ export default function BackendPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Backend development services we provide
+            Servicios de desarrollo backend que ofrecemos
           </h2>
 
           <p className="lead">
-            We build powerful backend systems designed for performance, security, and
-            scalability. From APIs to microservices, we provide end-to-end backend development
-            for startups, enterprises, and fast-growing platforms.
+            Construimos sistemas backend potentes diseñados para el rendimiento, la seguridad y la
+            escalabilidad. Desde APIs hasta microservicios, proporcionamos desarrollo backend integral
+            para startups, corporaciones y plataformas de rápido crecimiento.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom API & Microservices Architecture</h3>
+              <h3>Arquitectura de APIs a Medida y Microservicios</h3>
               <p>
-                High-performance REST/GraphQL APIs, microservices, serverless architectures,
-                and event-driven systems.
+                APIs REST/GraphQL de alto rendimiento, microservicios, arquitecturas serverless
+                y sistemas orientados a eventos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Database Design & Optimization</h3>
+              <h3>Diseño y Optimización de Bases de Datos</h3>
               <p>
-                PostgreSQL, MongoDB, Redis, MySQL — indexing, replication, sharding, and
-                real-time data pipelines.
+                PostgreSQL, MongoDB, Redis, MySQL: indexación, replicación, sharding y
+                tuberías de datos en tiempo real.
               </p>
             </article>
 
             <article className="service">
-              <h3>Cloud Backend Development</h3>
+              <h3>Desarrollo Backend en la Nube</h3>
               <p>
-                AWS, Azure, and Google Cloud solutions using Docker, Kubernetes, CI/CD, and
-                infrastructure automation.
+                Soluciones en AWS, Azure y Google Cloud utilizando Docker, Kubernetes, CI/CD y
+                automatización de infraestructura.
               </p>
             </article>
 
             <article className="service">
-              <h3>Authentication & Security Systems</h3>
+              <h3>Sistemas de Autenticación y Seguridad</h3>
               <p>
-                OAuth2, JWT, identity management, encryption, access control, and compliance
-                implementations.
+                OAuth2, JWT, gestión de identidad, cifrado, control de acceso y cumplimiento
+                de normativas técnicas.
               </p>
             </article>
 
             <article className="service">
-              <h3>Integration with Third-Party Services</h3>
+              <h3>Integración con Servicios de Terceros</h3>
               <p>
-                Payment gateways, messaging APIs, analytics engines, CRMs, ERPs, AI models,
-                and more.
+                Pasarelas de pago, APIs de mensajería, motores de analítica, CRMs, ERPs, modelos de IA
+                y más.
               </p>
             </article>
 
             <article className="service">
-              <h3>Backend Testing & Performance Engineering</h3>
+              <h3>Pruebas de Backend e Ingeniería de Rendimiento</h3>
               <p>
-                Unit, integration, load, and stress testing. Performance optimization for
-                large-scale applications.
+                Pruebas unitarias, de integración, de carga y de estrés. Optimización del rendimiento para
+                aplicaciones a gran escala.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de éxito</h4>
             <p>
-              How a global SaaS platform scaled to 3M users using our microservices backend —
-              reducing downtime by 92% and increasing response speed by 40%.
+              Cómo una plataforma SaaS global escaló a 3 millones de usuarios usando nuestro backend de microservicios,
+              reduciendo el tiempo de inactividad en un 92% y aumentando la velocidad de respuesta en un 40%.
             </p>
           </div>
         </div>
@@ -169,18 +169,18 @@ export default function BackendPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>Specialized backend engineering teams</li>
-              <li>Cloud-native architectures</li>
-              <li>API-first development approach</li>
+              <li>Equipos especializados en ingeniería backend</li>
+              <li>Arquitecturas nativas de la nube</li>
+              <li>Enfoque de desarrollo centrado en APIs</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Backend Architecture Guides</div>
-            <div className="card">API Best Practices</div>
-            <div className="card">Case Studies</div>
+            <div className="card">Guías de Arquitectura Backend</div>
+            <div className="card">Mejores Prácticas de APIs</div>
+            <div className="card">Casos de Estudio</div>
           </div>
         </aside>
       </main>
@@ -188,12 +188,12 @@ export default function BackendPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which companies benefit from custom backend development?
+          ¿Qué empresas se benefician del desarrollo backend a medida?
         </h2>
 
         <p className="faq-intro">
-          Custom backend services provide the core functionality that powers digital products.
-          They are essential for:
+          Los servicios backend personalizados proporcionan la funcionalidad central que impulsa los productos digitales.
+          Son esenciales para:
         </p>
 
         <div className="faq-list">
@@ -222,10 +222,10 @@ export default function BackendPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From APIs to microservices — power your product with world-class backend
-            engineering.
+            Desde APIs hasta microservicios: potencia tu producto con ingeniería backend
+            de clase mundial.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Programar una Llamada</button>
         </div>
       </footer>
     </div>

@@ -1,6 +1,6 @@
-import React from "react";
+ import React from "react";
 import '../styles/MegaMenu.css';
-import RollsRoyceLogo from '../assets/logo2.png'; // Asegúrate de tener esta imagen o ajusta la ruta
+import RollsRoyceLogo from '../assets/27001.png'; // Asegúrate de tener esta imagen o ajusta la ruta
 
 const MegaMenu = () => {
   return (
@@ -8,50 +8,47 @@ const MegaMenu = () => {
       <div className="mega-menu-inner-content">
         
         <div className="mega-column left-column">
-          <h3>Solutions.</h3>
+          <h3>Soluciones.</h3>
           <ul>
-            {/* El primer elemento es un texto descriptivo, no un enlace de navegación principal */}
+            {/* El primer elemento es un texto descriptivo */}
             <li>
-              <p>Get <strong>software development</strong> services, built <br/> around your needs.</p>
+              <p>Obtenga servicios de <strong>desarrollo de software</strong>, creados <br/> a la medida de sus necesidades.</p>
             </li>
-            <li><a href="#">Staff Augmentation</a></li>
-            <li><a href="#">Dedicated Teams</a></li>
-            <li><a href="#">Software Outsourcing</a></li>
+            <li><a href="#">Staff  </a></li>
+            <li><a href="#">Equipos Dedicados</a></li>
+            <li><a href="#">Outsourcing de Software</a></li>
           </ul>
 
           <div className="client-quote">
-            {/* Aquí puedes poner el logo de Rolls-Royce si lo tienes */}
             <img className="logo" src={RollsRoyceLogo} alt="Rolls-Royce" /> 
-            <p>We built an app for real-time nuclear plant monitoring. <a href="#">Read case study.</a></p>
+            <p>Desarrollamos una aplicación para el monitoreo de plantas nucleares en tiempo real. <a href="#">Leer caso de estudio.</a></p>
           </div>
         </div>
 
         <div className="mega-column">
-          <h4><span className="dot" /> TOP SOLUTIONS</h4>
+          <h4><span className="dot" /> SOLUCIONES DESTACADAS</h4>
           <ul>
-            <li><a href="/iadev">AI Development</a></li>
-            <li><a href="/backend">Back-end Development</a></li>
-            <li><a href="#">CMS Development</a></li>
-            <li><a href="#">Cryptocurrency & Blockchain</a></li>
-            <li><a href="#">Front-end Development</a></li>
-            <li><a href="#">Machine Learning</a></li>
-            <li><a href="#">QA Testing & Automation</a></li>
-            <li><a href="#">UX/UI Design</a></li>
-            <li><a href="#"><strong>All Solutions →</strong></a></li> {/* Asegura que el strong esté aquí */}
+            <li><a href="/iadev">Desarrollo de IA</a></li>
+            <li><a href="/backend">Desarrollo Backend</a></li>
+            <li><a href="/cms">Desarrollo de CMS</a></li>
+            <li><a href="/cripto">Criptomonedas y Blockchain</a></li>
+            <li><a href="/frontend">Desarrollo Frontend</a></li>
+            <li><a href="/mlearning">Machine Learning</a></li>
+            <li><a href="/qatesting">Pruebas de QA y Automatización</a></li>
+            <li><a href="/uxui">Diseño UX/UI</a></li>
           </ul>
         </div>
 
         <div className="mega-column">
-          <h4><span className="dot" /> ENTERPRISE FOCUSED</h4>
+          <h4><span className="dot" /> ENFOQUE EMPRESARIAL</h4>
           <ul>
-            <li><a href="#">Backup Solutions</a></li>
-            <li><a href="#">Big Data</a></li>
-            <li><a href="#">Cloud Applications</a></li>
-            <li><a href="#">CRM Systems</a></li>
-            <li><a href="#">Cybersecurity</a></li>
-            <li><a href="#">DevOps</a></li>
-            <li><a href="#">Digital Transformation</a></li>
-            <li><a href="#">ERP Development</a></li>
+            <li><a href="/backup">Soluciones de Backup</a></li>
+            <li><a href="/bigdata">Big Data</a></li>
+            <li><a href="/cloud">Aplicaciones en la Nube</a></li>
+            <li><a href="/cyberseguridad">Ciberseguridad</a></li>
+            <li><a href="/devops">DevOps</a></li>
+            <li><a href="/tdigital">Transformación Digital</a></li>
+            <li><a href="/erp">Desarrollo de ERP</a></li>
           </ul>
         </div>
       </div>

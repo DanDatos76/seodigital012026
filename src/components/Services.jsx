@@ -5,38 +5,38 @@ import '../styles/Services.css';
 const services = [
   {
     icon: '💻',
-    title: 'Custom Software Development',
-    description: 'Tailored applications built to meet your business goals with full-stack development capabilities.',
+    title: ' Desarrollo de Software a Medida',
+    description: '  Aplicaciones personalizadas creadas para alcanzar sus objetivos comerciales con capacidades de desarrollo full-stack.',
     color: 'red'
   },
   {
     icon: '🌐',
-    title: 'Web Development',
-    description: 'Responsive, SEO-friendly websites using the latest technologies like React, Node.js and Next.js.',
+    title: ' Desarrollo Web',
+    description: '  Sitios web responsivos y optimizados para SEO utilizando las últimas tecnologías como React, Node.js y Next.js.',
     color: 'blue'
   },
   {
     icon: '📱',
-    title: 'Mobile App Development',
-    description: 'Build intuitive mobile apps for iOS and Android that offer smooth performance and great UX.',
+    title: ' Desarrollo de Aplicaciones Móviles',
+    description: '  Creamos aplicaciones móviles intuitivas para iOS y Android que ofrecen un rendimiento fluido y una excelente experiencia de usuario (UX).',
     color: 'orange'
   },
   {
     icon: '🎨',
-    title: 'UI/UX Design',
-    description: 'Create engaging, user-centered interfaces that enhance usability and conversion rates.',
+    title: ' Diseño UI/UX',
+    description: ' Creamos interfaces atractivas centradas en el usuario que mejoran la usabilidad y las tasas de conversión.',
     color: 'green'
   },
   {
     icon: '☁️',
-    title: 'Cloud Solutions',
-    description: 'Migrate, deploy, and manage cloud infrastructures with AWS, Azure or Google Cloud.',
+    title: ' Soluciones en la Nube',
+    description: 'Migración, despliegue y gestión de infraestructuras en la nube con AWS, Azure o Google Cloud.',
     color: 'purple'
   },
   {
     icon: '📊',
-    title: 'Agile Consulting',
-    description: 'Drive team productivity with agile coaching, scrum practices, and product management.',
+    title: ' Consultoría Ágil',
+    description: ' Impulse la productividad de su equipo con coaching ágil, prácticas de scrum y gestión de productos.',
     color: 'pink'
   }
 ];
@@ -45,9 +45,10 @@ const ExpertiseBlock = () => {
   return (
     <section className="expertise-block">
       <div className="expertise-header">
-        <h2>Our Services</h2>
+        <h2> Nuestros Servicios</h2>
         <p>
-          We provide modern and scalable digital solutions to help your business thrive in the digital world.
+           Ofrecemos soluciones digitales modernas y escalables para ayudar a su empresa a prosperar en el mundo digital.
+
         </p>
       </div>
       <div className="expertise-grid">

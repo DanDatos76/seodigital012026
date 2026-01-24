@@ -1,45 +1,45 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: AgriculturePage.jsx
 import React, { useState } from 'react';
 import '../styles/Industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 
-// Datos del FAQ
+// Datos del FAQ Traducidos
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Granjas y Productores Agrícolas",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Los productores utilizan soluciones personalizadas para la gestión de granjas, agricultura de precisión y seguimiento del ganado.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Cooperativas Agrícolas",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Las cooperativas emplean plataformas centralizadas para agilizar la gestión de miembros, la distribución y la generación de informes.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Empresas de Agronegocios",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Los agronegocios dependen de herramientas de automatización para gestionar la logística, la cadena de suministro, la distribución y el control de calidad.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Instituciones de Investigación Agrícola",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Los grupos de investigación utilizan análisis de datos, teledetección y plataformas de modelado científico.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Departamentos Agrícolas Gubernamentales",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Los departamentos requieren plataformas digitales para el monitoreo, cumplimiento, subsidios y programas de apoyo al agricultor.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Servicios de Extensión Agrícola",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Utilizan datos de campo, aplicaciones de asesoría para agricultores, herramientas educativas y plataformas de capacitación remota.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "ONGs enfocadas en la Agricultura",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Las ONGs utilizan herramientas para gestionar el impacto de sus programas, informes, desarrollo rural y asignación de recursos.",
   },
 ];
 
@@ -55,23 +55,23 @@ export default function AgriculturePage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Agricultura</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom agriculture software solutions.</span>
+            Optimice sus operaciones con
+            <span> soluciones de software agrícola a medida.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">Obtenga experiencia especializada y aumente la eficiencia.</p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Acelere su Hoja de Ruta</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -85,7 +85,7 @@ export default function AgriculturePage() {
         <div className="hero-image">
           <img
             src="/agro.jfif"
-            alt="Agriculture"
+            alt="Agricultura"
           />
         </div>
       </section>
@@ -94,68 +94,69 @@ export default function AgriculturePage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo agrícola que ofrecemos
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones personalizadas para la industria agrícola con el fin de optimizar las 
+            operaciones de cultivo, implementar técnicas de agricultura de precisión, agilizar la recopilación 
+            y el análisis de datos, y aprovechar las prácticas sostenibles modernas.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Gestión Agrícola Personalizada</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Plataformas web y móviles para la gestión de granjas: planificación de cultivos, 
+                gestión de mano de obra, seguimiento de rendimiento y facturación.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Agricultura de Precisión e IoT</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Integración de sensores, procesamiento de datos de drones y tableros de control 
+                para obtener información agronómica accionable.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Análisis de Imágenes Satelitales y Drones</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Flujos de procesamiento de imágenes para el monitoreo de la salud de los cultivos, 
+                índices NDVI y alertas.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Cadena de Suministro y Logística Agrícola</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Inventario, seguimiento de cadena de frío y optimización de rutas para productos perecederos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Clima y Gestión de Riesgos</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Modelos de pronóstico localizados y notificaciones automáticas de riesgos climáticos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>ERP Agrícola y Gestión Financiera</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Módulos ERP para contabilidad, adquisiciones y gestión de cumplimiento normativo.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una gran explotación redujo sus pérdidas utilizando nuestro monitoreo de precisión e 
+              irrigación automatizada: 18% menos de uso de agua y 12% más de rendimiento.
             </p>
           </div>
         </div>
@@ -163,18 +164,18 @@ export default function AgriculturePage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>+100 proyectos personalizados desde 2009</li>
+              <li>Equipo especializado en agrotech</li>
+              <li>Entrega de ciclo completo</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Suscripción al boletín</div>
+            <div className="card">Informes del sector</div>
+            <div className="card">Historias de clientes</div>
           </div>
         </aside>
       </main>
@@ -182,12 +183,12 @@ export default function AgriculturePage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Qué instituciones se benefician del desarrollo de software agrícola a medida?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          Los servicios de desarrollo de software agrícola personalizado benefician a numerosas 
+          instituciones en toda la industria. Algunos ejemplos incluyen:
         </p>
 
         <div className="faq-list">
@@ -216,9 +217,9 @@ export default function AgriculturePage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Del concepto a la realidad. Cientos de soluciones de software personalizadas creadas desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

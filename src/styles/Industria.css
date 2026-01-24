@@ -12,6 +12,7 @@ body{
   margin:0;
   color:var(--text);
   background:var(--bg);
+  margin-top: 180PX;
 }
 
 /* ---- LAYOUT GENERAL ---- */
@@ -36,7 +37,7 @@ body{
 
 .hero-content{ flex:1; }
 .hero-image{ width:720px; flex-shrink:0; }
-.hero-image img{ width:100%; border-radius:8px; height: 100%; }
+.hero-image img{ width:500px; border-radius:12px; height: 300px; }
 
 .hero-title{
   font-size:28px;
@@ -193,7 +194,7 @@ body{
 /* FOOTER CTA */
 .footer-cta{
   margin-top:40px;
-  background:#05243b;
+  background:#000000;
   color:#fff;
   padding:18px;
   border-radius:10px;

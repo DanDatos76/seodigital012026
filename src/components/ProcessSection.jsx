@@ -1,4 +1,4 @@
-// src/components/ProcessSection.jsx
+ // src/components/ProcessSection.jsx
 import React, { useRef } from "react";
 
 import "../styles/ProcessSection.css";
@@ -8,12 +8,12 @@ const ProcessSection = () => {
     <section className="process-container">
       <div className="process-image">
         <h1>
-          Our process. <br />
+          Nuestro proceso. <br />
           Simple, <br />
-          seamless, <br />
-          <span className="dot">streamlined.</span>
+          fluido, <br />
+          <span className="dot">optimizado.</span>
         </h1>
-        <img src= " C:\Users\Usuario\Documents\gustavo\src\assets\cafe.jpg" alt="Man with coffee" /> 
+        <img src= "cafe.jpg" alt="Man with coffee" /> 
       </div>
 
       <div className="process-content">
@@ -23,12 +23,12 @@ const ProcessSection = () => {
           <div className="step">
             <div className="icon">📞</div>
             <div className="step-text">
-              <h4>STEP 1</h4>
-              <h3>Join exploration call.</h3>
+              <h4>PASO 1</h4>
+              <h3>Llamada de exploración.</h3>
               <p>
-                Tell us more about your business on a discovery call. We’ll
-                discuss team structure and approach, success criteria, timescale,
-                budget, and required skill sets to see how we can help.
+                Cuéntanos más sobre tu negocio en una llamada de descubrimiento. 
+                Discutiremos la estructura del equipo, el enfoque, los criterios de éxito, 
+                plazos, presupuesto y las habilidades necesarias para ver cómo podemos ayudarte.
               </p>
             </div>
           </div>
@@ -36,11 +36,11 @@ const ProcessSection = () => {
           <div className="step">
             <div className="icon">🗓️</div>
             <div className="step-text">
-              <h4>STEP 2</h4>
-              <h3>Discuss solution and team structure.</h3>
+              <h4>PASO 2</h4>
+              <h3>Definición de solución y equipo.</h3>
               <p>
-                In a matter of days, we will finalize your project specifications,
-                agree on an engagement model, select and onboard your team.
+                en pocos días, finalizaremos las especificaciones de tu proyecto, 
+                acordaremos un modelo de trabajo, seleccionaremos e integraremos a tu equipo.
               </p>
             </div>
           </div>
@@ -48,14 +48,14 @@ const ProcessSection = () => {
           <div className="step">
             <div className="icon">🚀</div>
             <div className="step-text">
-              <h4>STEP 3</h4>
-              <h3>Get started and track performance.</h3>
+              <h4>PASO 3</h4>
+              <h3>Inicio y seguimiento de desempeño.</h3>
               <p>
-                Once we’ve agreed on milestones, we’ll immediately get to work.
-                We’ll track progress, report updates, and continuously adapt to
-                your needs.
+                Una vez acordados los hitos, nos pondremos a trabajar de inmediato. 
+                Realizaremos un seguimiento del progreso, enviaremos actualizaciones 
+                y nos adaptaremos continuamente a tus necesidades.
               </p>
-              <button className="cta-button">Schedule a Call</button>
+              <button className="cta-button">Programar una Llamada</button>
             </div>
           </div>
         </div>

@@ -1,31 +1,31 @@
-// src/pages/Django.jsx
+ // src/pages/NodeJS.jsx
 import React from "react";
-import "../styles/Django.css";
-import djangoLogo from "../assets/django-logo.png"; // coloca aquí el logo o imagen del hero
-import teamImage from "../assets/django-team.jfif";  // imagen de equipo o desarrollo (opcional)
+import "../styles/Django.css"; // Se mantiene el mismo CSS por las etiquetas
+import nodeLogo from "../assets/node.svg"; // logo de Node.js
+import teamImage from "../assets/team-python.jpg"; // imagen de equipo
 
-const Django = () => {
+const NodeJS = () => {
   return (
     <div className="django-page">
       
       {/* ====== HERO ====== */}
       <section className="django-hero">
         <div className="hero-text">
-          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE DJANGO</p>
+          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE NODE.JS</p>
           <h1>
-            Escala tu desarrollo de <span className="highlight">Django</span> 
+            Escala tu desarrollo de <span className="highlight">Node.js</span> 
             <br />con talento nearshore.
           </h1>
           <p className="subtitle">
-            Nuestros servicios de desarrollo de Django impulsan ciclos de entrega más rápidos. 
+            Nuestros servicios de desarrollo de Node.js impulsan ciclos de entrega más rápidos. 
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de Django</button>
+          <button className="cta-btn">Acceder a desarrollo de Node.js</button>
         </div>
 
         <div className="hero-img">
-          <img src={djangoLogo} alt="Django" />
+          <img src={nodeLogo} alt="Node.js" />
         </div>
       </section>
 
@@ -44,31 +44,31 @@ const Django = () => {
 
       {/* ====== SERVICIOS ====== */}
       <section className="django-services">
-        <h2>Servicios de desarrollo de Django que brindamos</h2>
+        <h2>Servicios de desarrollo de Node.js que brindamos</h2>
         <div className="services-grid">
           <div className="service-item">
-            <h3>Desarrollo de aplicaciones con Django</h3>
+            <h3>Desarrollo de aplicaciones con Node.js</h3>
             <p>
-              Creamos aplicaciones web escalables, seguras y de alto rendimiento usando Django.
+              Creamos aplicaciones web escalables, seguras y de alto rendimiento usando Node.js.
             </p>
           </div>
           <div className="service-item">
-            <h3>Desarrollo de servicios de back-end y APIs</h3>
+            <h3>Desarrollo de back-end y Microservicios</h3>
             <p>
-              Construimos APIs RESTful rápidas y confiables que impulsan soluciones digitales 
+              Construimos arquitecturas de microservicios rápidas y confiables que impulsan soluciones digitales 
               modernas.
             </p>
           </div>
           <div className="service-item">
-            <h3>Diseño de arquitecturas con Django</h3>
+            <h3>Diseño de arquitecturas con Node.js</h3>
             <p>
-              Diseñamos arquitecturas limpias que optimizan el rendimiento y la mantenibilidad.
+              Diseñamos arquitecturas orientadas a eventos que optimizan el rendimiento y la mantenibilidad.
             </p>
           </div>
           <div className="service-item">
-            <h3>Django Template Design</h3>
+            <h3>Real-time App Development</h3>
             <p>
-              Creamos interfaces profesionales con plantillas Django modernas y responsivas.
+              Creamos aplicaciones en tiempo real modernas, responsivas y altamente eficientes con Node.js.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Django = () => {
 
       {/* ====== WHY CHOOSE ====== */}
       <section className="why-django">
-        <h2>Why Choose BairesDev for Django Development</h2>
+        <h2>Why Choose BairesDev for Node.js Development</h2>
         <div className="why-grid">
           <div className="why-item">
             <h4>Nearshore, Timezone-aligned Talent</h4>
@@ -87,7 +87,7 @@ const Django = () => {
           <div className="why-item">
             <h4>Diverse Range of Talent</h4>
             <p>
-              Accede a expertos Django, diseñadores UX/UI y DevOps bajo un mismo equipo.
+              Accede a expertos Node.js, diseñadores UX/UI y DevOps bajo un mismo equipo.
             </p>
           </div>
           <div className="why-item">
@@ -102,10 +102,10 @@ const Django = () => {
       {/* ====== IMAGEN FINAL / CTA ====== */}
       <section className="django-end">
         <div className="end-img">
-          <img src={teamImage} alt="Team working with Django" />
+          <img src={teamImage} alt="Team working with Node.js" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto Django?</h3>
+          <h3>¿Listo para acelerar tu proyecto Node.js?</h3>
           <button className="cta-btn">Comenzar ahora</button>
         </div>
       </section>
@@ -114,4 +114,4 @@ const Django = () => {
   );
 };
 
-export default Django;
+export default NodeJS;

@@ -2,22 +2,24 @@ import React from "react";
 import "../styles/Hero.css";
 import heroImg from "../assets/hero-img.jpg";
 
+
+
+
 const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-left">
         <h1>
-          Accelerate Your <br />
-          Roadmap With Our <br />
+           Acelera tu Roadmap con nuestro Talento Tecnológico Nearshore Verificado.
+ <br />
           <span className="highlight-orange">
-            Vetted Nearshore <br /> Tech Talent.
+             Talento Tecnológico <br />  de Primer Nivel.
           </span>
         </h1>
         <p>
-          Access 4,000+ timezone-aligned software engineers <br />
-          with experience in 100+ technologies.
+           Accede a más de 4,000 ingenieros de software <br />alineados a tu zona horaria y con experiencia en más de 100 tecnologías.
         </p>
-        <button className="hero-button">Schedule a Call</button>
+        <button className="hero-button">Programa una Llamada</button>
       </div>
 
       <div className="hero-right">

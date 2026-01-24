@@ -1,31 +1,31 @@
-// src/pages/Django.jsx
+ // src/pages/VueJS.jsx
 import React from "react";
-import "../styles/Django.css";
-import djangoLogo from "../assets/django-logo.png"; // coloca aquí el logo o imagen del hero
-import teamImage from "../assets/django-team.jfif";  // imagen de equipo o desarrollo (opcional)
+import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos y etiquetas
+import vueLogo from "../assets/vue.png"; // logo de Vue.js
+import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 
-const Django = () => {
+const VueJS = () => {
   return (
     <div className="django-page">
       
       {/* ====== HERO ====== */}
       <section className="django-hero">
         <div className="hero-text">
-          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE DJANGO</p>
+          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE VUE.JS</p>
           <h1>
-            Escala tu desarrollo de <span className="highlight">Django</span> 
+            Escala tu desarrollo de <span className="highlight">Vue.js</span> 
             <br />con talento nearshore.
           </h1>
           <p className="subtitle">
-            Nuestros servicios de desarrollo de Django impulsan ciclos de entrega más rápidos. 
+            Nuestros servicios de desarrollo de Vue.js impulsan ciclos de entrega más rápidos. 
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de Django</button>
+          <button className="cta-btn">Acceder al desarrollo de Vue.js</button>
         </div>
 
         <div className="hero-img">
-          <img src={djangoLogo} alt="Django" />
+          <img src={vueLogo} alt="Vue.js" />
         </div>
       </section>
 
@@ -44,31 +44,30 @@ const Django = () => {
 
       {/* ====== SERVICIOS ====== */}
       <section className="django-services">
-        <h2>Servicios de desarrollo de Django que brindamos</h2>
+        <h2>Servicios de desarrollo de Vue.js que brindamos</h2>
         <div className="services-grid">
           <div className="service-item">
-            <h3>Desarrollo de aplicaciones con Django</h3>
+            <h3>Desarrollo de aplicaciones con Vue.js</h3>
             <p>
-              Creamos aplicaciones web escalables, seguras y de alto rendimiento usando Django.
+              Creamos interfaces de usuario interactivas, escalables y de alto rendimiento usando Vue.js 2 y 3.
             </p>
           </div>
           <div className="service-item">
-            <h3>Desarrollo de servicios de back-end y APIs</h3>
+            <h3>Migración a la Composition API</h3>
             <p>
-              Construimos APIs RESTful rápidas y confiables que impulsan soluciones digitales 
-              modernas.
+              Actualizamos tus aplicaciones existentes para aprovechar las últimas ventajas de rendimiento y mantenibilidad de Vue.
             </p>
           </div>
           <div className="service-item">
-            <h3>Diseño de arquitecturas con Django</h3>
+            <h3>Diseño de arquitecturas con Vue.js</h3>
             <p>
-              Diseñamos arquitecturas limpias que optimizan el rendimiento y la mantenibilidad.
+              Diseñamos arquitecturas modulares basadas en componentes que optimizan la velocidad del front-end.
             </p>
           </div>
           <div className="service-item">
-            <h3>Django Template Design</h3>
+            <h3>Desarrollo de UI personalizado</h3>
             <p>
-              Creamos interfaces profesionales con plantillas Django modernas y responsivas.
+              Creamos componentes de interfaz modernos, responsivos y altamente eficientes integrados con Vue.
             </p>
           </div>
         </div>
@@ -76,24 +75,24 @@ const Django = () => {
 
       {/* ====== WHY CHOOSE ====== */}
       <section className="why-django">
-        <h2>Why Choose BairesDev for Django Development</h2>
+        <h2>Por qué elegir a SEOdigital para el desarrollo de Vue.js</h2>
         <div className="why-grid">
           <div className="why-item">
-            <h4>Nearshore, Timezone-aligned Talent</h4>
+            <h4>Talento Nearshore, alineado a tu zona horaria</h4>
             <p>
-              Equipos que trabajan en tu misma zona horaria para garantizar comunicación fluida.
+              Equipos que trabajan en tu misma zona horaria para garantizar una comunicación fluida.
             </p>
           </div>
           <div className="why-item">
-            <h4>Diverse Range of Talent</h4>
+            <h4>Amplia gama de talento</h4>
             <p>
-              Accede a expertos Django, diseñadores UX/UI y DevOps bajo un mismo equipo.
+              Accede a expertos en Vue.js, diseñadores UI/UX y especialistas en DevOps bajo un mismo equipo.
             </p>
           </div>
           <div className="why-item">
-            <h4>Flexible Engagement Models</h4>
+            <h4>Modelos de contratación flexibles</h4>
             <p>
-              Modelos de contratación adaptables a tus necesidades: staff augmentation o proyectos completos.
+              Modelos de contratación adaptables a tus necesidades: aumento de personal o proyectos completos.
             </p>
           </div>
         </div>
@@ -102,10 +101,10 @@ const Django = () => {
       {/* ====== IMAGEN FINAL / CTA ====== */}
       <section className="django-end">
         <div className="end-img">
-          <img src={teamImage} alt="Team working with Django" />
+          <img src={teamImage} alt="Equipo trabajando con Vue.js" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto Django?</h3>
+          <h3>¿Listo para acelerar tu proyecto Vue.js?</h3>
           <button className="cta-btn">Comenzar ahora</button>
         </div>
       </section>
@@ -114,4 +113,4 @@ const Django = () => {
   );
 };
 
-export default Django;
+export default VueJS;
