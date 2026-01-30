@@ -1,6 +1,6 @@
  import React from "react";
 import "../styles/megaMenu.css";
-import CeoDavos from "../assets/ceo-davos.jpg";
+import CeoDavos from "../assets/gustavo.png";
 
 const MegaMenuAbout = () => {
   return (
