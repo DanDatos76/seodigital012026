@@ -49,7 +49,7 @@ const PressReleases = () => {
           <div className="feature-image">
             <img
               src="https://images.unsplash.com/photo-1527980965255-d3b416303d12"
-              alt="Desarrollador e inteligencia artificial"
+              alt="Desarrollador trabajando con inteligencia artificial"
             />
           </div>
         </div>
@@ -60,7 +60,10 @@ const PressReleases = () => {
 
           <ul className="press-list">
             <li>
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" />
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+                alt="Equipo tecnológico trabajando"
+              />
               <div>
                 <span>Forbes</span>
                 <p>
@@ -71,7 +74,10 @@ const PressReleases = () => {
             </li>
 
             <li>
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" />
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+                alt="Equipo corporativo en reunión"
+              />
               <div>
                 <span>Clutch</span>
                 <p>
@@ -81,7 +87,10 @@ const PressReleases = () => {
             </li>
 
             <li>
-              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" />
+              <img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+                alt="Tecnología y desarrollo de software"
+              />
               <div>
                 <span>TechCrunch</span>
                 <p>
@@ -92,7 +101,10 @@ const PressReleases = () => {
             </li>
 
             <li>
-              <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" />
+              <img
+                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+                alt="Reunión estratégica empresarial"
+              />
               <div>
                 <span>Business Insider</span>
                 <p>
@@ -108,7 +120,7 @@ const PressReleases = () => {
       <section className="press-grid">
         <div className="grid-header">
           <h2>Comunicados de prensa</h2>
-          <a href="#">Ver todos los comunicados →</a>
+          <a href="/prensa">Ver todos los comunicados →</a>
         </div>
 
         <div className="grid">
@@ -116,7 +128,7 @@ const PressReleases = () => {
             <div className="card" key={i}>
               <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                alt="Comunicado de prensa"
+                alt="Imagen ilustrativa de comunicado de prensa"
               />
               <h4>
                 BairesDev genera impacto con su nueva estrategia de expansión

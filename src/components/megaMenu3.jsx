@@ -1,27 +1,43 @@
  import React from "react";
-import '../styles/megaMenu.css'; 
+import "../styles/megaMenu.css";
+import CertificacionLogo from "../assets/27001.png";
 
 const MegaMenu3 = () => {
   return (
     <div className="mega-menu" id="mega-menu-industries">
       <div className="mega-menu-inner-content">
-        
+
         <div className="mega-column left-column">
           <h3>Industrias.</h3>
+
           <ul>
             <li>
-              <p>Hemos entregado más de 1250 proyectos <br/> en más de 130 sectores. ¿Busca experiencia en <br/> su industria? La tenemos.</p>
+              <p>
+                Hemos entregado más de 1250 proyectos <br />
+                en más de 130 sectores. ¿Busca experiencia en <br />
+                su industria? La tenemos.
+              </p>
             </li>
           </ul>
 
           <div className="client-quote">
-            <img src="/27001.png" alt="Logo Certificación" /> 
-            <p>Escalamos las plataformas de <br/> investigación clínica de IQVIA con React. <a href="#">Lea el caso de estudio.</a></p>
+            <img
+              className="logo"
+              src={CertificacionLogo}
+              alt="Certificación ISO"
+            />
+            <p>
+              Escalamos las plataformas de investigación clínica de IQVIA con
+              React. <a href="#">Lea el caso de estudio.</a>
+            </p>
           </div>
         </div>
 
         <div className="mega-column">
-          <h4><span className="dot" /> SECTOR FINANCIERO</h4> 
+          <h4>
+            <span className="dot" /> SECTOR FINANCIERO
+          </h4>
+
           <ul>
             <li><a href="/agricultura">Agricultura</a></li>
             <li><a href="/banca">Banca</a></li>
@@ -33,7 +49,10 @@ const MegaMenu3 = () => {
         </div>
 
         <div className="mega-column">
-          <h4><span className="dot" /> INFRAESTRUCTURA</h4> 
+          <h4>
+            <span className="dot" /> INFRAESTRUCTURA
+          </h4>
+
           <ul>
             <li><a href="/automotriz">Automotriz</a></li>
             <li><a href="/construccion">Construcción</a></li>
@@ -45,7 +64,10 @@ const MegaMenu3 = () => {
         </div>
 
         <div className="mega-column">
-          <h4><span className="dot" /> SERVICIOS</h4> 
+          <h4>
+            <span className="dot" /> SERVICIOS
+          </h4>
+
           <ul>
             <li><a href="/aviacion">Aviación</a></li>
             <li><a href="/medios">Entretenimiento y Medios</a></li>
