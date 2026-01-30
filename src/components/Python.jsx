@@ -1,6 +1,6 @@
  // src/pages/Python.jsx
 import React from "react";
-import "../styles/Django.css"; // Usa el mismo CSS de Django
+import "../styles/django.css"; // Usa el mismo CSS de Django
 import pythonLogo from "../assets/pyton-logo.png"; // Logo de Python
 import teamImage from "../assets/team-python.jpg"; // Imagen de equipo Python
 

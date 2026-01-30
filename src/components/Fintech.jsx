@@ -1,50 +1,50 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: FintechPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
-const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
+const badgeItems = ['Stripe', 'Visa', 'Mastercard', 'PayPal'];
 
-// Datos del FAQ
+// Datos del FAQ adaptados a Fintech
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Startups Fintech y Neobancos",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos plataformas financieras digitales para pagos, cuentas virtuales, onboarding de usuarios, KYC y gestión de operaciones en tiempo real.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Bancos y Entidades Financieras",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Modernizamos sistemas core bancarios, canales digitales, integraciones API y arquitecturas seguras para la banca digital.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Plataformas de Pago y Procesadores",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Creamos soluciones escalables para procesamiento de pagos, conciliaciones automáticas, antifraude y transacciones de alto volumen.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Empresas de Préstamos y Crédito Digital",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Implementamos sistemas para scoring crediticio, originación de préstamos, gestión de cobranzas y análisis de riesgo basado en datos.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Plataformas de Inversión y Trading",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Desarrollamos aplicaciones para trading online, gestión de carteras, análisis financiero y operaciones en tiempo real.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Empresas de Blockchain y Criptoactivos",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Creamos soluciones para billeteras digitales, contratos inteligentes, tokenización de activos y cumplimiento regulatorio.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "Organismos Reguladores y Cumplimiento",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Desarrollamos plataformas para reporting financiero, prevención de lavado de dinero (AML) y cumplimiento normativo.",
   },
 ];
 
 // Componente principal
-export default function FintechPage() {
+export default function TelecomPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +55,25 @@ export default function FintechPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Fintech</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Fintech software solutions.</span>
+            Impulse la innovación financiera con
+            <span> soluciones de software fintech seguras y escalables.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">
+            Transforme servicios financieros mediante tecnología confiable, ágil y orientada al usuario.
+          </p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Acelerar Innovación Financiera</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -84,8 +86,8 @@ export default function FintechPage() {
 
         <div className="hero-image">
           <img
-            src="/fintech.jfif"
-            alt="Agriculture"
+            src="/fintech.jpg"
+            alt="Industria Fintech"
           />
         </div>
       </section>
@@ -94,68 +96,67 @@ export default function FintechPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo para la industria fintech
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones digitales para empresas fintech que buscan escalar operaciones,
+            garantizar seguridad y ofrecer experiencias financieras simples y confiables.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Plataformas de Pagos Digitales</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Sistemas de pagos online, billeteras digitales, transferencias inmediatas
+                e integraciones con redes financieras.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Core Bancario y APIs Financieras</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Desarrollo e integración de cores bancarios modernos y APIs seguras para ecosistemas financieros.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Onboarding Digital y KYC</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Automatización de alta de usuarios, validación de identidad, biometría y cumplimiento normativo.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Analítica Financiera y Riesgo</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Uso de datos e inteligencia artificial para scoring crediticio, detección de fraude
+                y análisis de comportamiento financiero.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Blockchain y Finanzas Descentralizadas</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Desarrollo de soluciones blockchain, contratos inteligentes y plataformas DeFi.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Ciberseguridad Financiera</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Protección de transacciones, datos sensibles y sistemas financieros críticos.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una fintech de pagos redujo el fraude en un 35% mediante
+              la implementación de sistemas de detección basados en IA.
             </p>
           </div>
         </div>
@@ -163,18 +164,18 @@ export default function FintechPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en sistemas financieros críticos</li>
+              <li>Cumplimiento normativo y seguridad por diseño</li>
+              <li>Arquitecturas escalables y resilientes</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Reporte de Tendencias Fintech</div>
+            <div className="card">Guía de Seguridad Financiera</div>
+            <div className="card">Casos de Éxito Fintech</div>
           </div>
         </aside>
       </main>
@@ -182,12 +183,12 @@ export default function FintechPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Quiénes se benefician del software para la industria fintech?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La innovación fintech impulsa a todos los actores que participan
+          en la evolución de los servicios financieros digitales:
         </p>
 
         <div className="faq-list">
@@ -216,9 +217,9 @@ export default function FintechPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Impulsamos la innovación financiera con soluciones digitales creadas desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

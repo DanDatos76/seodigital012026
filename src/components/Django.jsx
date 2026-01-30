@@ -1,6 +1,6 @@
 // src/pages/Django.jsx
 import React from "react";
-import "../styles/Django.css";
+import "../styles/django.css";
 import djangoLogo from "../assets/django-logo.png"; // coloca aquí el logo o imagen del hero
 import teamImage from "../assets/django-team.jfif";  // imagen de equipo o desarrollo (opcional)
 

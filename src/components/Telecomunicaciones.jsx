@@ -1,50 +1,50 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: TelecomPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 
-// Datos del FAQ
+// Datos del FAQ Traducidos y adaptados a Telecomunicaciones
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Operadores de Telefonía Móvil y Fija",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos sistemas críticos para la gestión de suscriptores, facturación masiva (billing) y plataformas de aprovisionamiento de servicios en tiempo real.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Proveedores de Servicios de Internet (ISP)",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Creamos herramientas para la gestión de ancho de banda, portales de autogestión para clientes y sistemas de diagnóstico remoto de red.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Empresas de Infraestructura de Red",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Implementamos software para el monitoreo de activos físicos, gestión de torres de comunicación y optimización de redes de fibra óptica.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Proveedores de Servicios en la Nube y Data Centers",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Ayudamos a escalar arquitecturas de conectividad de alta velocidad, SDN (Software-Defined Networking) y virtualización de funciones de red (NFV).",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Compañías de IoT y Ciudades Inteligentes",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Desarrollamos ecosistemas de conectividad para dispositivos masivos, tuberías de datos para sensores y plataformas de control centralizado.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Plataformas de Streaming y Contenido Digital",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Optimizamos la entrega de contenido (CDN), gestión de derechos digitales (DRM) y arquitecturas de baja latencia para transmisiones en vivo.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "Organismos Reguladores y de Gobierno",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Proveemos plataformas para el monitoreo del espectro radioeléctrico, cumplimiento de normativas de conectividad y gestión de servicios universales.",
   },
 ];
 
 // Componente principal
-export default function TelecomunicacionesPage() {
+export default function TelecomPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +55,23 @@ export default function TelecomunicacionesPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Telecomunicaciones</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Telecomunicaciones software solutions.</span>
+            Impulse la conectividad global con
+            <span> soluciones de software para telecomunicaciones a medida.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">Optimice el rendimiento de su red y transforme la experiencia digital de sus usuarios.</p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Acelere su Hoja de Ruta</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -84,8 +84,8 @@ export default function TelecomunicacionesPage() {
 
         <div className="hero-image">
           <img
-            src="/Telecomunicaciones.jfif"
-            alt="Agriculture"
+            src="../assets/telec.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
+            alt="Infraestructura de Telecomunicaciones"
           />
         </div>
       </section>
@@ -94,68 +94,72 @@ export default function TelecomunicacionesPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo para telecomunicaciones que ofrecemos
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones personalizadas para la industria de las telecomunicaciones con el fin de modernizar 
+            sistemas OSS/BSS, implementar redes 5G, automatizar el soporte al cliente y garantizar la seguridad 
+            en infraestructuras de misión crítica.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Modernización de Sistemas OSS/BSS</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Actualización de plataformas de soporte operativo y de negocio para agilizar 
+                la facturación, el inventario de red y el ciclo de vida del cliente.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Gestión de Red y Monitoreo (NMS)</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Software avanzado para la visualización de topologías de red, detección proactiva 
+                de fallos y optimización de tráfico en tiempo real.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Apps de Autogestión y Experiencia del Cliente</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Desarrollo de canales digitales para el control de consumo, pagos en línea, 
+                activación de servicios y asistencia técnica mediante IA.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Soluciones 5G y Edge Computing</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Implementación de aplicaciones de baja latencia que aprovechan el potencial 
+                del 5G para procesos industriales, salud y movilidad.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Analítica de Datos y Calidad de Servicio (QoS)</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Uso de Big Data para predecir la saturación de celdas, analizar el comportamiento 
+                del usuario y mejorar los estándares de calidad de voz y datos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Ciberseguridad en Infraestructura de Red</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Protección contra ataques DDoS, cifrado de enlaces de transporte y 
+                aseguramiento de núcleos de red virtuales (VNF).
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo un operador multinacional redujo sus costos de mantenimiento en un 25% al implementar 
+              nuestro sistema de monitoreo predictivo basado en IA para sus estaciones base.
             </p>
           </div>
         </div>
@@ -163,18 +167,18 @@ export default function TelecomunicacionesPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en arquitecturas de alta disponibilidad</li>
+              <li>Dominio de protocolos de red y virtualización</li>
+              <li>Capacidad de escalado global inmediato</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Reporte del Futuro 5G</div>
+            <div className="card">Guía de Seguridad en Redes</div>
+            <div className="card">Casos de Éxito Telecom</div>
           </div>
         </aside>
       </main>
@@ -182,12 +186,12 @@ export default function TelecomunicacionesPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Qué organizaciones se benefician del desarrollo de software para telecomunicaciones?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La transformación digital de las comunicaciones beneficia a múltiples actores encargados 
+          de mantener al mundo conectado de manera eficiente y segura:
         </p>
 
         <div className="faq-list">
@@ -216,9 +220,9 @@ export default function TelecomunicacionesPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Llevamos las comunicaciones al siguiente nivel. Cientos de soluciones escalables creadas desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

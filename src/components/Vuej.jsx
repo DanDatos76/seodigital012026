@@ -1,6 +1,6 @@
  // src/pages/VueJS.jsx
 import React from "react";
-import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos y etiquetas
+import "../styles/django.css"; // Se mantiene el mismo CSS para respetar estilos y etiquetas
 import vueLogo from "../assets/vue.png"; // logo de Vue.js
 import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 

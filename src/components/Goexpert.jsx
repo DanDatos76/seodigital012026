@@ -1,6 +1,6 @@
  // src/pages/Golang.jsx
 import React from "react";
-import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos
+import "../styles/django.css"; // Se mantiene el mismo CSS para respetar estilos
 import golangLogo from "../assets/go.png"; // logo de Golang
 import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 

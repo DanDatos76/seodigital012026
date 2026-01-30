@@ -1,0 +1,119 @@
+.contact-wrapper {
+  font-family: "Inter", system-ui, sans-serif;
+  padding: 80px 100px;
+  color: #111827;
+}
+
+/* HERO */
+.contact-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+.contact-hero h1 {
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+.contact-hero span {
+  color: #ff4d2d;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* OPTIONS */
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.option-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.option-card.highlight h3 {
+  color: #ff4d2d;
+}
+
+.option-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.option-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.option-card button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 70px;
+}
+
+.info-block h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.info-block p {
+  font-weight: 600;
+}
+
+.socials span {
+  margin-right: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* OFFICES */
+.offices h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.office-card h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.office-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}

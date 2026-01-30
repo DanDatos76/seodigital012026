@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Hero.css";
+import "../styles/hero.css";
 import heroImg from "../assets/hero-img.jpg";
 
 
@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero-left">
         <h1>
-           Acelera tu Roadmap con nuestro Talento Tecnológico Nearshore Verificado.
+           Acelera tu Roadmap con nuestro Talento Tecnológico  Verificado.
  <br />
           <span className="highlight-orange">
              Talento Tecnológico <br />  de Primer Nivel.

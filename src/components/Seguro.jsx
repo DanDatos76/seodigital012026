@@ -1,50 +1,50 @@
-// Archivo JSX: AgriculturePage.jsx
+// Archivo JSX: InsurancePage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 
-// Datos del FAQ
+// Datos del FAQ Traducidos y adaptados a Seguros
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Aseguradoras de Propiedad y Accidentes (P&C)",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos sistemas integrales para la gestión de reclamos, administración de pólizas de hogar y auto, y herramientas de evaluación de daños mediante imágenes.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Compañías de Seguros de Vida y Salud",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Implementamos plataformas de suscripción automatizada, portales de bienestar para asegurados y sistemas de gestión de beneficios médicos complejos.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Startups Insurtech",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Creamos soluciones disruptivas basadas en microseguros, modelos de pago por uso (usage-based insurance) y arquitecturas móviles de rápida implementación.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Compañías de Reaseguros",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Ayudamos a modernizar el análisis de riesgos catastróficos y la gestión de contratos mediante el uso de Big Data y modelos actuariales avanzados.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Corredores y Agencias de Seguros",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Desarrollamos herramientas de CRM especializadas, comparadores de pólizas multi-compañía y portales de ventas para agentes independientes.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Proveedores de Seguros Cautivos",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Optimizamos la administración de riesgos internos corporativos con sistemas de reporte personalizados y control de pérdidas centralizado.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "Gestores de Reclamos y Terceros (TPA)",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Proveemos software de flujo de trabajo para agilizar la liquidación de siniestros, auditoría de facturas médicas y reportes de cumplimiento legal.",
   },
 ];
 
 // Componente principal
-export default function SeguroPage() {
+export default function InsurancePage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +55,23 @@ export default function SeguroPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Seguros</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Seguro software solutions.</span>
+            Digitalice el ecosistema de seguros con
+            <span> soluciones de Insurtech a medida.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">Optimice el procesamiento de reclamos y mejore la retención de sus asegurados.</p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Acelere su Transformación Digital</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -84,8 +84,8 @@ export default function SeguroPage() {
 
         <div className="hero-image">
           <img
-            src="/seguro.jfif"
-            alt="Agriculture"
+            src="/seguro.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
+            alt="Soluciones de Software para Seguros"
           />
         </div>
       </section>
@@ -94,68 +94,72 @@ export default function SeguroPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo de seguros que ofrecemos
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones personalizadas para la industria de seguros con el fin de automatizar 
+            el ciclo de vida de la póliza, mejorar la precisión de la suscripción mediante IA, agilizar 
+            la liquidación de siniestros y garantizar la protección de datos sensibles.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Sistemas de Gestión de Pólizas (PAS)</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Plataformas robustas para la emisión, renovación y administración de pólizas con 
+                integración de motores de reglas de negocio.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Automatización de Siniestros y Reclamos</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Digitalización de flujos de trabajo para siniestros, desde la notificación inicial 
+                hasta el pago final, reduciendo costos operativos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Suscripción y Scoring con IA</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Uso de algoritmos predictivos para evaluar riesgos con mayor precisión y ofrecer 
+                primas personalizadas basadas en el comportamiento.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Portales de Autoservicio y Apps</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Desarrollo de interfaces móviles donde los clientes pueden consultar pólizas, 
+                descargar certificados y reportar accidentes al instante.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>IoT y Telemática para Seguros</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Integración con dispositivos conectados en vehículos y hogares para monitoreo 
+                de riesgos en tiempo real y seguros basados en el uso.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Soluciones de Cumplimiento y Seguridad</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Implementación de normativas GDPR y HIPAA, cifrado de datos médicos y financieros 
+                y sistemas de detección de fraude sofisticados.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una aseguradora multinacional automatizó el 70% de sus reclamos de bajo monto, 
+              reduciendo el tiempo de respuesta de 15 días a solo 2 horas mediante IA y procesamiento de lenguaje natural.
             </p>
           </div>
         </div>
@@ -163,18 +167,18 @@ export default function SeguroPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Cumplimiento con estándares internacionales de datos</li>
+              <li>Equipo especializado en arquitectura Insurtech</li>
+              <li>Estrategias de migración de datos legacy</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Futuro de los Seguros</div>
+            <div className="card">Ciberseguridad en Seguros</div>
+            <div className="card">Estrategias de IA</div>
           </div>
         </aside>
       </main>
@@ -182,12 +186,12 @@ export default function SeguroPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Qué organizaciones se benefician del desarrollo de software de seguros a medida?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          Nuestros servicios de consultoría y desarrollo tecnológico impactan positivamente 
+          a una gran variedad de actores en el mercado asegurador:
         </p>
 
         <div className="faq-list">
@@ -216,9 +220,9 @@ export default function SeguroPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Evolucionamos el sector asegurador hacia el futuro digital. Cientos de proyectos exitosos desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

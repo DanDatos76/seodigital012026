@@ -1,9 +1,10 @@
  import React, { useState, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import MegaMenu from "./MegaMenu";
-import MegaMenu2 from "./MegaMenu2";
-import MegaMenu3 from "./MegaMenu3";
-import "../styles/Header.css";
+import MegaMenu from "./megaMenu";
+import MegaMenu2 from "./megaMenu2";
+import MegaMenu3 from "./megaMenu3";
+import MegaMenuAbout from "./megamenu5";
+import "../styles/header.css";
 import logo from "../assets/logo2.png";
 
 const Header = () => {
@@ -45,9 +46,9 @@ const Header = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [isMobileMenuOpen]);
 
-  // Traducción de los nombres de los menús
-  const menusWithMegaMenu = ["Servicios", "Tecnología", "Industrias"];
-  const directLinks = ["Nuestro Trabajo", "Blog"];
+  // Menús que tienen mega menú
+  const menusWithMegaMenu = ["Servicios", "Tecnología", "Industrias", "Nosotros"];
+  const directLinks = ["Trabajo", "Blog"];
 
   const handleMouseEnter = (menu) => {
     if (!isMobileMenuOpen && !pinnedMenu) setActiveMenu(menu);
@@ -99,18 +100,26 @@ const Header = () => {
     <header className={`header ${isMobileMenuOpen ? "menu-open" : ""}`}>
       <div className="header-container">
 
-        {/* Logo con link a inicio */}
-        <Link to="/" onClick={() => { setActiveMenu(null); setPinnedMenu(null); setIsMobileMenuOpen(false); }}>
+        {/* Logo */}
+        <Link
+          to="/"
+          onClick={() => {
+            setActiveMenu(null);
+            setPinnedMenu(null);
+            setIsMobileMenuOpen(false);
+          }}
+        >
           <img src={logo} alt="Logo de la Empresa" className="logo" />
         </Link>
 
-        {/* BOTÓN DE HAMBURGUESA */}
+        {/* Botón hamburguesa */}
         <button className="menu-toggle" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? '✕' : '☰'}
         </button>
 
         <nav className="nav">
           <ul className="nav-list">
+
             {menusWithMegaMenu.map((menu) => (
               <li
                 key={menu}
@@ -125,11 +134,12 @@ const Header = () => {
 
                 {(activeMenu === menu || pinnedMenu === menu) && (
                   <>
-                    {/* Ajuste de lógica para que coincida con los nombres traducidos */}
                     {menu === "Industrias" ? (
                       <MegaMenu3 />
                     ) : menu === "Tecnología" ? (
                       <MegaMenu2 />
+                    ) : menu === "Nosotros" ? (
+                      <MegaMenuAbout />
                     ) : (
                       <MegaMenu />
                     )}
@@ -138,25 +148,24 @@ const Header = () => {
               </li>
             ))}
 
-            {/* Enlace Nosotros (About) */}
-            <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={() => { setActiveMenu(null); setPinnedMenu(null); setIsMobileMenuOpen(false); }}>Nosotros</Link>
-            </li>
-
-            {/* Enlaces directos traducidos */}
+            {/* Enlaces directos */}
             {directLinks.map((linkName) => (
               <li key={linkName} className="nav-item">
                 <Link
                   to={`/${linkName.toLowerCase().replace(' ', '-')}`}
                   className="nav-link"
-                  onClick={() => { setActiveMenu(null); setPinnedMenu(null); setIsMobileMenuOpen(false); }}
+                  onClick={() => {
+                    setActiveMenu(null);
+                    setPinnedMenu(null);
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   {linkName}
                 </Link>
               </li>
             ))}
 
-            {/* Botón visible solo en menú móvil */}
+            {/* Botón WhatsApp mobile */}
             {isMobileMenuOpen && (
               <li className="nav-item mobile-call-button-wrapper">
                 <button
@@ -170,6 +179,7 @@ const Header = () => {
                 </button>
               </li>
             )}
+
           </ul>
         </nav>
 
@@ -184,6 +194,7 @@ const Header = () => {
             Nuestro WhatsApp
           </button>
         </div>
+
       </div>
     </header>
   );

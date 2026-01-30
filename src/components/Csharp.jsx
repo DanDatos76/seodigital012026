@@ -1,6 +1,6 @@
  // src/pages/CSharp.jsx
 import React from "react";
-import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos
+import "../styles/django.css"; // Se mantiene el mismo CSS para respetar estilos
 import csharpLogo from "../assets/csharp-logo.png"; // logo de C#
 import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 

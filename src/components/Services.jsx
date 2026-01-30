@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import '../styles/Services.css';
+import '../styles/services.css';
 
 const services = [
   {

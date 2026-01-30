@@ -1,7 +1,7 @@
  // src/components/ProcessSection.jsx
 import React, { useRef } from "react";
 
-import "../styles/ProcessSection.css";
+import "../styles/processSection.css";
 
 const ProcessSection = () => {
   return (

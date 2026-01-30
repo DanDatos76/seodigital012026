@@ -1,50 +1,50 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: ConstructionPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
-const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
+const badgeItems = ['AECOM', 'Bechtel', 'Skanska', 'Vinci'];
 
-// Datos del FAQ
+// Datos del FAQ adaptados a Construcción
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Empresas Constructoras y Contratistas Generales",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos plataformas digitales para la gestión integral de obras, control de cronogramas, presupuestos, subcontratistas y operaciones en campo.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Estudios de Arquitectura e Ingeniería",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Creamos soluciones para integración BIM, colaboración de proyectos, control documental y gestión de versiones entre equipos técnicos.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Empresas de Infraestructura y Obras Civiles",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Implementamos software para planificación de grandes proyectos, seguimiento de activos, cumplimiento normativo y control de desempeño.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Desarrolladores Inmobiliarios",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Desarrollamos sistemas para el seguimiento de proyectos, control de inversiones, análisis de riesgos y reportes de avance para inversores.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Proveedores de Materiales y Equipamiento",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Creamos soluciones para control de inventario, optimización logística, automatización de compras e integración con proveedores.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Construcción Inteligente y Edificios Smart",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Desarrollamos plataformas IoT para obras inteligentes, monitoreo energético, automatización de edificios y control remoto de sistemas.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "Organismos Públicos y Reguladores",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Proveemos sistemas para permisos, inspecciones, cumplimiento de normativas, reportes de seguridad y supervisión de obras públicas.",
   },
 ];
 
 // Componente principal
-export default function ConstruccionPage() {
+export default function TelecomPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +55,25 @@ export default function ConstruccionPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Construcción</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Construcción software solutions.</span>
+            Construya proyectos más eficientes con
+            <span> soluciones de software para la industria de la construcción.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">
+            Optimice costos, tiempos y calidad mediante herramientas digitales diseñadas para obras modernas.
+          </p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Impulsar Transformación Digital</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -84,8 +86,8 @@ export default function ConstruccionPage() {
 
         <div className="hero-image">
           <img
-            src="/construccion.jfif"
-            alt="Agriculture"
+            src="/const.jpg"
+            alt="Industria de la Construcción"
           />
         </div>
       </section>
@@ -94,68 +96,65 @@ export default function ConstruccionPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo para la industria de la construcción
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones digitales para empresas constructoras que buscan mejorar la gestión de obras,
+            aumentar la productividad en campo y reducir riesgos operativos.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Gestión de Proyectos y Obras</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Plataformas para planificación, seguimiento de avances, control de costos y coordinación de equipos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Integración BIM y Control Documental</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Soluciones para gestión de planos, modelos BIM, documentación técnica y control de versiones.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Monitoreo de Obras en Tiempo Real</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Herramientas para supervisión remota, reportes de campo y control de productividad.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Automatización de Procesos Constructivos</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Digitalización de procesos administrativos, compras, certificaciones y gestión contractual.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Analítica de Datos y Control de Riesgos</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Uso de datos para anticipar desvíos, reducir sobrecostos y mejorar la toma de decisiones.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Seguridad y Cumplimiento Normativo</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Sistemas para gestión de seguridad laboral, inspecciones y cumplimiento de normativas vigentes.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una empresa constructora redujo un 20% los sobrecostos de obra
+              mediante la digitalización del seguimiento de proyectos.
             </p>
           </div>
         </div>
@@ -163,18 +162,18 @@ export default function ConstruccionPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en proyectos de gran escala</li>
+              <li>Conocimiento del sector construcción</li>
+              <li>Soluciones robustas y escalables</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Reporte de Tendencias en Construcción</div>
+            <div className="card">Guía de Digitalización de Obras</div>
+            <div className="card">Casos de Éxito en Construcción</div>
           </div>
         </aside>
       </main>
@@ -182,12 +181,12 @@ export default function ConstruccionPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Quiénes se benefician del software para la industria de la construcción?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La transformación digital en la construcción impacta en todos los actores
+          involucrados en el desarrollo de proyectos:
         </p>
 
         <div className="faq-list">
@@ -216,9 +215,9 @@ export default function ConstruccionPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Construimos soluciones digitales sólidas para la industria desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

@@ -1,5 +1,5 @@
  import React from "react";
-import '../styles/MegaMenu.css';
+import '../styles/megaMenu.css';
 import RollsRoyceLogo from '../assets/27001.png'; // Asegúrate de tener esta imagen o ajusta la ruta
 
 const MegaMenu = () => {

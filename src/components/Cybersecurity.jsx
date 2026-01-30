@@ -1,6 +1,6 @@
  // Archivo JSX: CybersecurityPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 

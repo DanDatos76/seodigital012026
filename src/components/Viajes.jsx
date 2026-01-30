@@ -1,50 +1,43 @@
-// Archivo JSX: AgriculturePage.jsx
+// Archivo JSX: TravelHospitalityPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
-const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
+const badgeItems = ['Booking', 'Airbnb', 'TripAdvisor', 'Expedia'];
 
-// Datos del FAQ
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Hoteles y Cadenas Hoteleras",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos sistemas para gestión hotelera, reservas, check-in digital y experiencia del huésped.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Agencias de Viajes y Tour Operadores",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Creamos plataformas para venta de paquetes, gestión de itinerarios y atención al cliente.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Plataformas de Reservas Online",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Implementamos soluciones escalables para reservas en tiempo real, pagos y gestión de disponibilidad.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Aerolíneas y Transporte Turístico",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Desarrollamos sistemas para gestión de pasajeros, servicios y experiencias de viaje.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Experiencias Turísticas y Eventos",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Creamos plataformas para venta de experiencias, eventos y actividades personalizadas.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Organismos de Turismo y Destinos",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
-  },
-  {
-    title: "Agriculture-focused Nonprofits and NGOs",
-    content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Implementamos sistemas para promoción digital, análisis de visitantes y gestión de destinos.",
   },
 ];
 
-// Componente principal
-export default function ViajesPage() {
+export default function TravelHospitalityPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +48,27 @@ export default function ViajesPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">
+        Inicio &gt; Industrias &gt; Viajes y Hospitalidad
+      </header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Viajes y Hospitalidad software solutions.</span>
+            Tecnología que transforma la
+            <span> experiencia de viaje y hospitalidad.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">
+            Soluciones digitales para conectar personas, destinos y experiencias.
+          </p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Impulsar mi Negocio Turístico</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro expertise en turismo digital
             </div>
 
             <ul className="badge-list">
@@ -84,8 +81,8 @@ export default function ViajesPage() {
 
         <div className="hero-image">
           <img
-            src="/viajes.jfif"
-            alt="Agriculture"
+            src="viajes.jpg"
+            alt="Industria de Viajes y Hospitalidad"
           />
         </div>
       </section>
@@ -94,68 +91,71 @@ export default function ViajesPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Desarrollo de software para viajes y hospitalidad
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Acompañamos a empresas turísticas en su transformación digital,
+            mejorando la experiencia del cliente y la eficiencia operativa.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Plataformas de Reservas</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Sistemas de reservas online, gestión de disponibilidad
+                y pagos integrados.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Gestión Hotelera</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Soluciones para PMS, check-in digital,
+                housekeeping y administración.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Experiencia del Cliente</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Herramientas digitales para personalización,
+                fidelización y atención omnicanal.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Canales de Venta y Distribución</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Integración con OTAs, motores de búsqueda
+                y canales directos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Analítica y Gestión de Ingresos</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Uso de datos para revenue management,
+                pricing dinámico y previsión de demanda.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Experiencias Digitales y Mobile</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Apps y plataformas móviles para viajeros,
+                guías digitales y servicios en destino.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una cadena hotelera aumentó un 30% sus reservas directas
+              mediante una plataforma digital integrada.
             </p>
           </div>
         </div>
@@ -163,18 +163,18 @@ export default function ViajesPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en plataformas turísticas</li>
+              <li>Enfoque en experiencia del usuario</li>
+              <li>Soluciones escalables y seguras</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Tendencias en Turismo Digital</div>
+            <div className="card">Guía de Revenue Management</div>
+            <div className="card">Casos de Éxito en Hospitalidad</div>
           </div>
         </aside>
       </main>
@@ -182,12 +182,11 @@ export default function ViajesPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Quiénes se benefician del software para viajes y hospitalidad?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La digitalización impulsa a todo el ecosistema turístico:
         </p>
 
         <div className="faq-list">
@@ -199,7 +198,9 @@ export default function ViajesPage() {
             >
               <div className="faq-question">
                 {item.title}
-                <span className="faq-icon">{openIndex === i ? "▲" : "▼"}</span>
+                <span className="faq-icon">
+                  {openIndex === i ? "▲" : "▼"}
+                </span>
               </div>
 
               {openIndex === i && (
@@ -216,9 +217,9 @@ export default function ViajesPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Creamos experiencias digitales que inspiran a viajar.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

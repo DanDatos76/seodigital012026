@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/MegaMenu.css'; // Reutilizamos el CSS base para megamenús
+import '../styles/megaMenu.css'; // Reutilizamos el CSS base para megamenús
 
 const MegaMenuAbout = () => {
   return (

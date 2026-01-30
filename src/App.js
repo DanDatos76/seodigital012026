@@ -2,61 +2,80 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Componentes
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Map from './components/Map';
-import FeaturedSlider from './components/FeaturedSlider';
-import ProcessSection from './components/ProcessSection';
+import Header from './components/header';
+import Footer from './components/footer';
+import Hero from './components/hero';
+import Services from './components/services';
+import Map from './components/map';
+import FeaturedSlider from './components/featuredSlider';
+import ProcessSection from './components/processSection';
 import About from './components/about'; // 👈 ojo con la mayúscula
-import GoExpertsPage from './components/Goexpert'; // 👈 ojo con el nombre
-import Django from './components/Django';
-import CSharp from './components/Csharp';
-import Angular from './components/Angular';
-import Python from './components/Python';
-import Agriculture from './components/IndusriaModel';
+import Django from './components/django';
+import CSharp from './components/csharp';
+import Angular from './components/angular';
+import Python from './components/python';
+import Agriculture from './components/indusriaModel';
  
-import FinanzasPage from './components/Finanzas';
-import SeguroPage from './components/Seguro';
-import InmueblePage from './components/Inmueble';
-import TelecomunicacionesPage from './components/Telecomunicaciones';
-import AutomotrizPage from './components/Automotor';
-import ConstruccionPage from './components/Construccion';
-import FintechPage from './components/Fintech';
-import MarketingPage from './components/Marketing';
-import MinoristaPage from './components/Pormenor';
-import TransportePage from './components/Transporte';
-import AviacionPage from './components/Aviacion';
-import DiversionPage from './components/Diversion';
-import SanidadPage from './components/Sanitaria';
-import PetroleroPage from './components/Petrolero';
-import SuministroPage from './components/Suministro';
-import ViajesPage from './components/Viajes';
-import BlogPage from './components/Blogpage';
-import Works from './components/OurWork';
-import BackendPage from './components/Backend';
-import IadePage from './components/Iadev';
-import IadevPage from './components/Iadev';
-import CmsPage from './components/Cms';
-import CriptoPage from './components/Cripto';
-import FrontendPage from './components/Frontend';
-import MlearningPage from './components/Mlearning';
-import QatestingPage from './components/Qatesting';
-import UxuiPage from './components/Uxui';
-import BackupPage from './components/Backup';
-import BigdataPage from './components/Bigdata';
-import CloudPage from './components/Cloud';
-import CybersecurityPage from './components/Cybersecurity';
-import DevopsPage from './components/Devops';
-import ErpPage from './components/ErpDevelopment';
+ import SeguroPage from './components/seguro';
+import InmueblePage from './components/inmueble';
+import TelecomunicacionesPage from './components/telecomunicaciones';
+import ConstruccionPage from './components/construccion';
+import FintechPage from './components/fintech';
+import MarketingPage from './components/marketing';
+ 
+import AviacionPage from './components/aviacion';
+ 
+import BlogPage from './components/blogpage';
+import Works from './components/ourWork';
+import BackendPage from './components/backend';
+ 
+import IadevPage from './components/iadev';
+import CmsPage from './components/cms';
+import CriptoPage from './components/cripto';
+import FrontendPage from './components/frontend';
+ import QatestingPage from './components/qatesting';
+import UxuiPage from './components/uxui';
+import BackupPage from './components/backup';
+import BigdataPage from './components/bigdata';
+import CloudPage from './components/cloud';
+import CybersecurityPage from './components/cybersecurity';
+import DevopsPage from './components/devops';
+import ErpPage from './components/erpDevelopment';
 import TransformacionDigitalPage from './components/tdigital';
-import NodeJS from './components/Node';
-import IADevelopment from './components/Iasection';
-import Golang from './components/Goexpert';
-import CPP from './components/Cms';
-import VueJS from './components/Vuej';
+import NodeJS from './components/node';
+ import Golang from './components/goexpert';
+import CPP from './components/cms';
+import VueJS from './components/vuej';
 import BankingPage from './components/bancaria';
+import FinancePage from './components/finanzas';
+import RealEstatePage from './components/braices';
+import Autom from './components/automotriz';
+import Retail from './components/retail';
+import Transporte from './components/transporte';
+import Medios from './components/medios';
+import HealthcarePage from './components/sanitaria';
+import OilGasPage from './components/petrolero';
+import SupplyChainPage from './components/suministro';
+import TravelHospitalityPage from './components/viajes';
+import Kotlin from './components/kotlin';
+import ReactPage from './components/reactjs';
+import PHPPage from './components/php';
+import TypeScriptPage from './components/typescript';
+import DotNetPage from './components/net';
+import PowerBIPage from './components/powerbi';
+import GoogleCloudPage from './components/gcloud';
+import AWSPage from './components/aws';
+import JavaPage from './components/java';
+import MachineLearningPage from './components/mlearnig';
+import ArtificialIntelligencePage from './components/ia';
+import AzurePage from './components/azure';
+import SalesforcePage from './components/salesforce';
+import ClientShowcase from './components/trabajo';
+import IndustrySection from './components/nuestroslideres';
+import VettingProcess from './components/tecnologicos';
+import PressReleases from './components/prensa';
+import ContactHelp from './components/contacto';
+import FAQ from './components/faq';
 
 function App() {
   return (
@@ -68,7 +87,7 @@ function App() {
           path="/" 
           element={
             <>
-              <Hero />
+              <Hero/>
               <Services />
               <Map />
               <FeaturedSlider />
@@ -83,28 +102,27 @@ function App() {
         <Route path="/angular" element={<Angular />} />
         <Route path="/python" element={<Python />} />
         <Route path="/node" element={<NodeJS />} />
-        <Route path="/iasection" element={<IADevelopment />} />
+        <Route path="/ia" element={<ArtificialIntelligencePage />} />
          <Route path="/cmasmas" element={<CPP />} />
          <Route path="/vuejs" element={<VueJS />} />
          <Route path="/agricultura" element={<Agriculture />} />
-         
-         
-         <Route path="/finanzas" element={<FinanzasPage />} />
+         <Route path="/braices" element={<RealEstatePage />} />
+         <Route path="/automotriz" element={<Autom />} />   
+         <Route path="/finanzas" element={<FinancePage />} />
          <Route path="/seguro" element={<SeguroPage />} />
          <Route path="/inmueble" element={<InmueblePage />} />
          <Route path="/telecomunicaciones" element={<TelecomunicacionesPage />} />
-         <Route path="/automotor" element={<AutomotrizPage />} />
-         <Route path="/construccion" element={<ConstruccionPage />} />
+          <Route path="/construccion" element={<ConstruccionPage />} />
          <Route path="/fintech" element={<FintechPage />} />
          <Route path="/marketing" element={<MarketingPage />} />
-         <Route path="/minorista" element={<MinoristaPage />} />
-         <Route path="/transporte" element={<TransportePage />} />
+         <Route path="/minorista" element={<Retail />} />
+         <Route path="/transporte" element={<Transporte />} />
          <Route path="/aviacion" element={<AviacionPage />} />
-         <Route path="/diversion" element={<DiversionPage />} />
-         <Route path="/sanidad" element={<SanidadPage />} />
-         <Route path="/petroleo" element={<PetroleroPage />} />
-         <Route path="/suministro" element={<SuministroPage />} />
-         <Route path="/viajes" element={<ViajesPage />} />
+         <Route path="/medios" element={<Medios />} />
+         <Route path="/sanidad" element={<HealthcarePage />} />
+         <Route path="/petroleo" element={<OilGasPage />} />
+         <Route path="/suministro" element={<SupplyChainPage />} />
+         <Route path="/viajes" element={<TravelHospitalityPage />} />
          <Route path="/blog" element={<BlogPage />} />
          <Route path="/our-work" element={<Works />} />
          <Route path="/backend" element={<BackendPage />} />
@@ -112,8 +130,7 @@ function App() {
          <Route path="/cms" element={<CmsPage />} />
          <Route path="/cripto" element={<CriptoPage />} />
          <Route path="/frontend" element={<FrontendPage />} />
-         <Route path="/mlearning" element={<MlearningPage />} />
-         <Route path="/qatesting" element={<QatestingPage />} />
+          <Route path="/qatesting" element={<QatestingPage />} />
          <Route path="/uxui" element={<UxuiPage />} />
          <Route path="/backup" element={<BackupPage />} />
          <Route path="/bigdata" element={<BigdataPage />} />
@@ -124,6 +141,24 @@ function App() {
          <Route path="/tdigital" element={<TransformacionDigitalPage />} />
          <Route path="/python" element={<Python />} />
          <Route path="/banca" element={< BankingPage />} />
+         <Route path="/kotlin" element={< Kotlin />} />
+         <Route path="reactjs" element={< ReactPage />} />
+         <Route path="/php" element={< PHPPage />} />
+         <Route path="/typescript" element={< TypeScriptPage />} />
+         <Route path="/net" element={< DotNetPage />} />
+         <Route path="powerbi" element={< PowerBIPage />} />
+         <Route path="/gcloud" element={< GoogleCloudPage />} />
+         <Route path="/aws" element={< AWSPage />} /> 
+         <Route path="/java" element={< JavaPage />} />
+         <Route path="/mlearning" element={<MachineLearningPage />} /> 
+         <Route path="/azure" element={<AzurePage />} /> 
+         <Route path="/salesforce" element={<SalesforcePage />} />
+         <Route path="/trabajo" element={<ClientShowcase />} />
+         <Route path="/nuestroslideres" element={<IndustrySection />} /> 
+         <Route path="/tecnologicos" element={<VettingProcess />} />
+         <Route path="/prensa" element={<PressReleases />} />
+         <Route path="/contacto" element={<ContactHelp />} />
+         <Route path="/faq" element={<FAQ />} />
       </Routes>
 
       <Footer />

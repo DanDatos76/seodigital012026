@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import '../styles/Map.css';
+import '../styles/map.css';
 import worldMap from '../assets/mapa.png'; // Replace with your actual image path
 
 const LocationsMap = () => {

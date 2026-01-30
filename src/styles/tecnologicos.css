@@ -1,0 +1,161 @@
+.vetting-wrapper {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1d1d1f;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 100px;
+  gap: 60px;
+  align-items: center;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff4d2d;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #ff4d2d;
+}
+
+.hero p {
+  color: #6b7280;
+  font-size: 16px;
+  max-width: 520px;
+}
+
+.cta {
+  margin-top: 25px;
+  background: #ff4d2d;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* LOGOS */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  background: #f9fafb;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* PROCESS */
+.process {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.process-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.funnel-step {
+  background: #e5e7eb;
+  color: #6b7280;
+  padding: 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.step-1 { width: 260px; }
+.step-2 { width: 220px; }
+.step-3 { width: 180px; }
+.step-4 { width: 140px; }
+.step-5 { width: 100px; }
+
+.funnel-final {
+  background: #ff4d2d;
+  color: white;
+  padding: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.process-result h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* BENEFITS */
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 100px;
+  align-items: center;
+}
+
+.benefits-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.benefits-text h2 {
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.benefits-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-text li {
+  margin-bottom: 18px;
+}
+
+.benefits-text strong {
+  display: block;
+  font-size: 15px;
+}
+
+.benefits-text span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.cta.secondary {
+  margin-top: 30px;
+}

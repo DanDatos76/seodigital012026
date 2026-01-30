@@ -1,5 +1,5 @@
  import React from "react";
-import '../styles/MegaMenu.css'; 
+import '../styles/megaMenu.css'; 
 
 const MegaMenu2 = () => {
   return (
@@ -29,15 +29,26 @@ const MegaMenu2 = () => {
             <li><a href="/python">Python</a></li>
             <li><a href="/node">Node.js</a></li>
             <li><a href="/django">Django</a></li>
+            <li><a href="/kotlin">Kotlin</a></li>
+            <li><a href="/typescript">TypeScript</a></li>
+            <li><a href="/gcloud"> Google Cloud</a></li>
+            <li><a href="/mlearning"> Machine Learning</a></li>
+
+
           </ul>
         </div>
 
         <div className="mega-column">
           <h4><span className="dot" /> INNOVACIÓN</h4> 
           <ul>
-            <li><a href="iasection">Inteligencia Artificial</a></li>
+            <li><a href="/ia">Inteligencia Artificial</a></li>
             <li><a href="/csharp">C# (C-Sharp)</a></li>
             <li><a href="/go-experts">Golang</a></li>
+            <li><a href="/reactjs"> React Js</a> </li>
+            <li><a href="/net">.NET</a></li>
+            <li><a href="/aws"> AWS</a></li>
+            <li><a href="/salesforce"> Salesforce</a></li>
+
           </ul>
         </div>
 
@@ -47,6 +58,10 @@ const MegaMenu2 = () => {
             <li><a href="/angular">Angular</a></li>
             <li><a href="/cmasmas">C++</a></li>
             <li><a href="/vuejs">Vue.js</a></li>
+            <li><a href="/php">Php</a></li>
+            <li><a href="/powerbi"> Power BI</a></li>
+            <li><a href="/java"> Java</a></li>
+            <li><a href="/azure"> Microsoft Azure</a></li>
           </ul>
         </div>
 

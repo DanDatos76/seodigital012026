@@ -1,0 +1,103 @@
+.about-mega-menu {
+  width: 100%;
+  background: #fff;
+  padding: 40px 60px;
+}
+
+.mega-menu-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* COLUMNA IZQUIERDA */
+.about-left h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.about-left h3 span {
+  color: #ff6b4a;
+}
+
+.about-left p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.about-highlight {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 16px;
+}
+
+.about-highlight img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about-highlight p {
+  font-size: 14px;
+  color: #333;
+}
+
+.about-highlight a {
+  color: #ff6b4a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* COLUMNAS DERECHAS */
+.mega-col h4 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ff6b4a;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mega-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-col ul li {
+  margin-bottom: 10px;
+}
+
+.mega-col ul li a {
+  font-size: 15px;
+  color: #222;
+  text-decoration: none;
+}
+
+.mega-col ul li a:hover {
+  color: #ff6b4a;
+}
+
+/* LINK HISTORIA */
+.story-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 15px;
+  color: #ff6b4a;
+  text-decoration: none;
+  font-weight: 500;
+}

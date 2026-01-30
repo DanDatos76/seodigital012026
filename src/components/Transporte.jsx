@@ -1,50 +1,50 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: LogisticsPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
-const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
+const badgeItems = ['DHL', 'FedEx', 'Maersk', 'UPS'];
 
-// Datos del FAQ
+// Datos del FAQ adaptados a Transporte y Logística
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Empresas de Transporte Terrestre, Marítimo y Aéreo",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos plataformas para gestión de flotas, planificación de rutas, control de cargas y seguimiento de envíos en tiempo real.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Operadores Logísticos y 3PL",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Creamos soluciones para administración de almacenes (WMS), coordinación de operaciones y optimización de procesos logísticos.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Empresas de Distribución y Última Milla",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Implementamos sistemas para gestión de entregas, optimización de recorridos y monitoreo de desempeño en campo.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Puertos, Terminales y Centros Logísticos",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Desarrollamos software para control de accesos, trazabilidad de contenedores y coordinación de operaciones portuarias.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Empresas de Comercio Internacional",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Creamos plataformas para documentación, seguimiento aduanero y gestión de operaciones de importación y exportación.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Supply Chain y Gestión de Inventarios",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+      "Implementamos soluciones para visibilidad end-to-end de la cadena de suministro y control de inventarios distribuidos.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
+    title: "Organismos de Transporte y Regulación",
     content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Desarrollamos sistemas para cumplimiento normativo, control de cargas, seguridad y monitoreo del transporte.",
   },
 ];
 
 // Componente principal
-export default function TransportePage() {
+export default function Transporte() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +55,25 @@ export default function TransportePage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Transporte y Logística</header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Transporte software solutions.</span>
+            Optimice sus operaciones con
+            <span> soluciones digitales para transporte y logística.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">
+            Mejore la eficiencia, visibilidad y control de su cadena logística de punta a punta.
+          </p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Impulsar Eficiencia Logística</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro talento tecnológico del top 1%
             </div>
 
             <ul className="badge-list">
@@ -84,8 +86,8 @@ export default function TransportePage() {
 
         <div className="hero-image">
           <img
-            src="/transporte.jfif"
-            alt="Agriculture"
+            src="./camion.jpg"
+            alt="Transporte y Logística"
           />
         </div>
       </section>
@@ -94,68 +96,71 @@ export default function TransportePage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Servicios de desarrollo para transporte y logística
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Desarrollamos soluciones digitales para empresas de transporte y logística
+            que buscan optimizar costos, tiempos de entrega y trazabilidad operativa.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Gestión de Flotas y Telemetría</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Plataformas para monitoreo de vehículos, control de consumo,
+                mantenimiento predictivo y seguridad vial.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Planificación de Rutas y Despachos</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Optimización de recorridos, asignación de cargas
+                y reducción de tiempos de entrega.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Gestión de Almacenes (WMS)</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Sistemas para control de stock, picking, packing
+                y operación eficiente de centros de distribución.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Seguimiento y Trazabilidad</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Tracking en tiempo real de envíos, alertas automáticas
+                y visibilidad completa de la operación logística.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Integración de la Cadena de Suministro</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Conectamos proveedores, operadores y clientes
+                en una plataforma logística unificada.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Analítica y Optimización Logística</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Uso de datos para mejorar niveles de servicio,
+                reducir costos operativos y anticipar demanda.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo un operador logístico redujo un 22% los costos operativos
+              mediante optimización de rutas y visibilidad en tiempo real.
             </p>
           </div>
         </div>
@@ -163,18 +168,18 @@ export default function TransportePage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en operaciones logísticas complejas</li>
+              <li>Soluciones escalables y robustas</li>
+              <li>Integración total de la cadena logística</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Reporte de Tendencias Logísticas</div>
+            <div className="card">Guía de Optimización de Rutas</div>
+            <div className="card">Casos de Éxito en Logística</div>
           </div>
         </aside>
       </main>
@@ -182,12 +187,12 @@ export default function TransportePage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Quiénes se benefician del software para transporte y logística?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La digitalización logística impacta en todos los actores
+          involucrados en el movimiento y distribución de bienes:
         </p>
 
         <div className="faq-list">
@@ -216,9 +221,9 @@ export default function TransportePage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Movemos la logística del futuro con soluciones digitales desde 2009.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

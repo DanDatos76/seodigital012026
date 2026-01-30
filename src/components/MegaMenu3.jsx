@@ -1,5 +1,5 @@
  import React from "react";
-import '../styles/MegaMenu.css'; 
+import '../styles/megaMenu.css'; 
 
 const MegaMenu3 = () => {
   return (
@@ -35,7 +35,7 @@ const MegaMenu3 = () => {
         <div className="mega-column">
           <h4><span className="dot" /> INFRAESTRUCTURA</h4> 
           <ul>
-            <li><a href="/automotor">Automotriz</a></li>
+            <li><a href="/automotriz">Automotriz</a></li>
             <li><a href="/construccion">Construcción</a></li>
             <li><a href="/fintech">Fintech</a></li>
             <li><a href="/marketing">Tecnología de Marketing</a></li>
@@ -48,7 +48,7 @@ const MegaMenu3 = () => {
           <h4><span className="dot" /> SERVICIOS</h4> 
           <ul>
             <li><a href="/aviacion">Aviación</a></li>
-            <li><a href="/diversion">Entretenimiento y Medios</a></li>
+            <li><a href="/medios">Entretenimiento y Medios</a></li>
             <li><a href="/sanidad">Atención Sanitaria</a></li>
             <li><a href="/petroleo">Petróleo y Gas</a></li>
             <li><a href="/suministro">Cadena de Suministro</a></li>

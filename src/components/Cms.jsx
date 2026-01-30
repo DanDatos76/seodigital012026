@@ -1,6 +1,6 @@
  // src/pages/CPP.jsx
 import React from "react";
-import "../styles/Django.css"; // Se mantiene el mismo CSS para respetar estilos
+import "../styles/django.css"; // Se mantiene el mismo CSS para respetar estilos
 import cppLogo from "../assets/c++.png"; // logo de C++
 import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 

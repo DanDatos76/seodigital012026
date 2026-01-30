@@ -1,50 +1,43 @@
-// Archivo JSX: AgriculturePage.jsx
+ // Archivo JSX: SupplyChainPage.jsx
 import React, { useState } from 'react';
-import '../styles/Industria.css';
+import '../styles/industria.css';
 
-const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
+const badgeItems = ['SAP', 'Oracle', 'IBM', 'AWS'];
 
-// Datos del FAQ
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
+    title: "Fabricantes y Productores",
     content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+      "Desarrollamos sistemas para planificación de producción, control de inventarios y optimización de procesos industriales.",
   },
   {
-    title: "Agricultural Cooperatives",
+    title: "Operadores Logísticos",
     content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+      "Creamos plataformas para gestión de transporte, ruteo inteligente y trazabilidad de envíos en tiempo real.",
   },
   {
-    title: "Agribusiness Companies",
+    title: "Distribuidores y Mayoristas",
     content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+      "Implementamos soluciones para control de stock, pedidos, almacenes y redes de distribución.",
   },
   {
-    title: "Agricultural Research Institutions",
+    title: "Retail y Canales de Venta",
     content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+      "Desarrollamos sistemas para abastecimiento eficiente, omnicanalidad y reposición automática.",
   },
   {
-    title: "Government Agricultural Departments",
+    title: "Comercio Internacional",
     content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+      "Creamos plataformas para gestión documental, aduanas y seguimiento de operaciones internacionales.",
   },
   {
-    title: "Agricultural Extension Services",
+    title: "Organismos y Control Logístico",
     content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
-  },
-  {
-    title: "Agriculture-focused Nonprofits and NGOs",
-    content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+      "Implementamos sistemas para monitoreo, reportes y cumplimiento normativo en la cadena logística.",
   },
 ];
 
-// Componente principal
-export default function SuministroPage() {
+export default function SupplyChainPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (i) => {
@@ -55,23 +48,27 @@ export default function SuministroPage() {
     <div className="ag-page">
 
       {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
+      <header className="breadcrumb">
+        Inicio &gt; Industrias &gt; Cadena de Suministros
+      </header>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Cadena de Suministro software solutions.</span>
+            Tecnología que optimiza la
+            <span> cadena de suministro de punta a punta.</span>
           </h1>
 
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
+          <p className="hero-sub">
+            Soluciones digitales para mejorar visibilidad, eficiencia y resiliencia operativa.
+          </p>
 
-          <button className="cta">Accelerate Your Roadmap</button>
+          <button className="cta">Optimizar mi Supply Chain</button>
 
           <div className="badges">
             <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
+              +500 empresas confían en nuestro expertise en operaciones logísticas
             </div>
 
             <ul className="badge-list">
@@ -84,8 +81,8 @@ export default function SuministroPage() {
 
         <div className="hero-image">
           <img
-            src="/suministro.jfif"
-            alt="Agriculture"
+            src="/suministr.jpg"
+            alt="Industria de Cadena de Suministros"
           />
         </div>
       </section>
@@ -94,68 +91,71 @@ export default function SuministroPage() {
       <main className="content-wrap">
         <div className="main-col">
           <h2 className="section-title">
-            Agriculture development services we provide
+            Desarrollo de software para la cadena de suministros
           </h2>
 
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Ayudamos a organizaciones a digitalizar y optimizar su cadena de suministro,
+            desde la planificación hasta la entrega final.
           </p>
 
           <div className="services-grid">
 
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
+              <h3>Planificación y Demanda</h3>
               <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
+                Sistemas para previsión de demanda, planificación de producción
+                y optimización de recursos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
+              <h3>Gestión de Inventarios</h3>
               <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
+                Plataformas para control de stock, reposición automática
+                y reducción de quiebres.
               </p>
             </article>
 
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
+              <h3>Gestión de Transporte (TMS)</h3>
               <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
+                Soluciones para ruteo, seguimiento de flotas
+                y optimización de costos logísticos.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
+              <h3>Gestión de Almacenes (WMS)</h3>
               <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
+                Sistemas para control de depósitos, picking,
+                packing y trazabilidad.
               </p>
             </article>
 
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
+              <h3>Visibilidad y Trazabilidad</h3>
               <p>
-                Localized forecast models and automated risk notifications.
+                Monitoreo en tiempo real de pedidos, envíos
+                y eventos de la cadena.
               </p>
             </article>
 
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
+              <h3>Analítica y Optimización Operativa</h3>
               <p>
-                ERP modules for accounting, procurement and compliance management.
+                Uso de datos para mejorar eficiencia,
+                reducir costos y anticipar riesgos.
               </p>
             </article>
 
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una empresa de distribución redujo un 25% los tiempos de entrega
+              mediante visibilidad integral de su supply chain.
             </p>
           </div>
         </div>
@@ -163,18 +163,18 @@ export default function SuministroPage() {
         {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Experiencia en operaciones complejas</li>
+              <li>Integración con sistemas existentes</li>
+              <li>Enfoque en eficiencia y resiliencia</li>
             </ul>
           </div>
 
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Tendencias en Supply Chain</div>
+            <div className="card">Guía de Optimización Logística</div>
+            <div className="card">Casos de Éxito Logísticos</div>
           </div>
         </aside>
       </main>
@@ -182,12 +182,11 @@ export default function SuministroPage() {
       {/* FAQ */}
       <section className="faq-section">
         <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
+          ¿Quiénes se benefician del software para la cadena de suministros?
         </h2>
 
         <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
+          La transformación digital impacta en todos los eslabones de la cadena:
         </p>
 
         <div className="faq-list">
@@ -199,7 +198,9 @@ export default function SuministroPage() {
             >
               <div className="faq-question">
                 {item.title}
-                <span className="faq-icon">{openIndex === i ? "▲" : "▼"}</span>
+                <span className="faq-icon">
+                  {openIndex === i ? "▲" : "▼"}
+                </span>
               </div>
 
               {openIndex === i && (
@@ -216,9 +217,9 @@ export default function SuministroPage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
+            Conectamos procesos, datos y personas para una cadena de suministro más inteligente.
           </p>
-          <button className="cta small">Schedule a Call</button>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

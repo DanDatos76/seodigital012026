@@ -1,224 +1,145 @@
-// Archivo JSX: AgriculturePage.jsx
-import React, { useState } from 'react';
-import '../styles/Industria.css';
+ import React, { useState } from 'react';
+import '../styles/industria.css';
 
 const badgeItems = ['Google', 'Meta', 'Pinterest', 'Adobe'];
 
-// Datos del FAQ
 const faqItems = [
   {
-    title: "Farms and Agricultural Producers",
-    content:
-      "Producers use custom solutions for farm management, precision agriculture, and livestock tracking.",
+    title: "Empresas de Fintech y Pagos",
+    content: "Utilizan software personalizado para pasarelas de pago, monederos digitales (wallets) y procesamiento de remesas internacionales.",
   },
   {
-    title: "Agricultural Cooperatives",
-    content:
-      "Cooperatives use centralized platforms to streamline member management, distribution, and reporting.",
+    title: "Gestoras de Activos y Fondos de Inversión",
+    content: "Emplean plataformas de análisis predictivo para la optimización de portafolios y el seguimiento de activos en tiempo real.",
   },
   {
-    title: "Agribusiness Companies",
-    content:
-      "Agribusinesses rely on automation tools to manage logistics, supply chain, distribution, and quality control.",
+    title: "Compañías de Seguros (Insurtech)",
+    content: "Automatizan la gestión de reclamos, suscripción de pólizas y evaluación de riesgos mediante algoritmos avanzados e IA.",
   },
   {
-    title: "Agricultural Research Institutions",
-    content:
-      "Research groups use data analytics, remote sensing, and scientific modeling platforms.",
+    title: "Plataformas de Trading y Corretaje",
+    content: "Requieren sistemas de baja latencia para la ejecución de órdenes masivas y visualización de datos de mercado en vivo.",
   },
   {
-    title: "Government Agricultural Departments",
-    content:
-      "Departments require digital platforms for monitoring, compliance, subsidies, and farmer support programs.",
+    title: "Firmas de Auditoría y Contabilidad",
+    content: "Digitalizan procesos de reportes fiscales, conciliación bancaria automática y análisis de grandes volúmenes de datos financieros.",
   },
   {
-    title: "Agricultural Extension Services",
-    content:
-      "They use field data, farmer advisory apps, education tools, and remote training platforms.",
+    title: "Empresas de Factoring y Financiamiento",
+    content: "Implementan plataformas de descuento de facturas y control de flujo de caja para mejorar la liquidez empresarial.",
   },
   {
-    title: "Agriculture-focused Nonprofits and NGOs",
-    content:
-      "NGOs use tools to manage program impact, reporting, rural development, and resource allocation.",
+    title: "Plataformas de Criptomonedas y Activos Digitales",
+    content: "Necesitan soluciones de custodia segura, exchanges personalizados e integración con redes blockchain.",
   },
 ];
 
-// Componente principal
-export default function FinanzasPage() {
+export default function FinancePage() {
   const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (i) => {
-    setOpenIndex(openIndex === i ? null : i);
-  };
+  const toggleFAQ = (i) => { setOpenIndex(openIndex === i ? null : i); };
 
   return (
     <div className="ag-page">
+      <header className="breadcrumb">Inicio &gt; Industrias &gt; Finanzas</header>
 
-      {/* BREADCRUMB */}
-      <header className="breadcrumb">Inicio &gt; Industries &gt; Agriculture</header>
-
-      {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Streamline operations with
-            <span> custom Finanzas software solutions.</span>
+            Potencie su ecosistema financiero con
+            <span> herramientas digitales inteligentes y escalables.</span>
           </h1>
-
-          <p className="hero-sub">Gain specialized expertise and increase efficiency.</p>
-
-          <button className="cta">Accelerate Your Roadmap</button>
-
+          <p className="hero-sub">Optimice decisiones complejas mediante análisis de datos y automatización financiera.</p>
+          <button className="cta">Acelere su Hoja de Ruta</button>
           <div className="badges">
-            <div className="badge-count">
-              500+ companies rely on our top 1% tech talent
-            </div>
-
+            <div className="badge-count">500+ empresas confían en nuestro talento tecnológico del top 1%</div>
             <ul className="badge-list">
-              {badgeItems.map((b) => (
-                <li key={b} className="badge-item">{b}</li>
-              ))}
+              {badgeItems.map((b) => ( <li key={b} className="badge-item">{b}</li> ))}
             </ul>
           </div>
         </div>
-
         <div className="hero-image">
-          <img
-            src="/finanza.jfif"
-            alt="Agriculture"
-          />
+          <img src="/finanzas.jfif" alt="Servicios Financieros" />
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
       <main className="content-wrap">
         <div className="main-col">
-          <h2 className="section-title">
-            Finanzas development services we provide
-          </h2>
-
+          <h2 className="section-title">Servicios de desarrollo financiero que ofrecemos</h2>
           <p className="lead">
-            We develop tailored solutions for the agriculture industry to optimize farming
-            operations, implement precision farming techniques, streamline data collection
-            and analysis, and leverage modern sustainable practices.
+            Creamos soluciones de software para el sector financiero que permiten a las empresas ser más eficientes, 
+            tomar mejores decisiones basadas en datos y cumplir con los estándares globales de transparencia y riesgo.
           </p>
 
           <div className="services-grid">
-
             <article className="service">
-              <h3>Custom Farm Management Software Solutions</h3>
-              <p>
-                Web and mobile platforms for farm management — crop planning, labor
-                management, yield tracking and invoicing.
-              </p>
+              <h3>Plataformas de Inversión y Gestión de Activos</h3>
+              <p>Dashboards personalizados para seguimiento de carteras, proyecciones financieras y reportes automatizados.</p>
             </article>
-
             <article className="service">
-              <h3>Precision Agriculture & IoT Solutions</h3>
-              <p>
-                Sensor integration, drone data processing and dashboards for actionable
-                agronomic insights.
-              </p>
+              <h3>Soluciones de Análisis de Riesgos</h3>
+              <p>Modelos matemáticos y algorítmicos para evaluar perfiles de riesgo y garantizar la salud financiera.</p>
             </article>
-
             <article className="service">
-              <h3>Drone & Satellite Imagery Analysis</h3>
-              <p>
-                Imagery pipelines for crop health monitoring, NDVI indices and alerts.
-              </p>
+              <h3>Automatización de Procesos Contables</h3>
+              <p>Software para la conciliación masiva, gestión de impuestos y auditorías digitales sin errores humanos.</p>
             </article>
-
             <article className="service">
-              <h3>Agricultural Supply Chain & Logistics Solutions</h3>
-              <p>
-                Inventory, cold-chain tracking, and route optimization for perishable goods.
-              </p>
+              <h3>Sistemas de Trading de Alta Velocidad</h3>
+              <p>Motores de ejecución de órdenes con latencia mínima y conectividad global a los principales mercados.</p>
             </article>
-
             <article className="service">
-              <h3>Weather Forecasting & Risk Management Tools</h3>
-              <p>
-                Localized forecast models and automated risk notifications.
-              </p>
+              <h3>Ecosistemas Fintech y Wallets</h3>
+              <p>Desarrollo integral de billeteras virtuales, integraciones con tarjetas de débito/crédito y pagos QR.</p>
             </article>
-
             <article className="service">
-              <h3>Agricultural ERP & Financial Management Solutions</h3>
-              <p>
-                ERP modules for accounting, procurement and compliance management.
-              </p>
+              <h3>Inteligencia de Negocio y Big Data</h3>
+              <p>Transformación de datos financieros crudos en insights estratégicos mediante aprendizaje automático.</p>
             </article>
-
           </div>
 
           <div className="case-study">
-            <h4>Case study</h4>
+            <h4>Caso de estudio</h4>
             <p>
-              How a major farm reduced losses using our precision monitoring and automated
-              irrigation — 18% lower water use and 12% higher yield.
+              Cómo una firma de gestión patrimonial aumentó su base de clientes en un 40% al implementar nuestra 
+              plataforma de asesoría híbrida basada en algoritmos de Inteligencia Artificial.
             </p>
           </div>
         </div>
 
-        {/* SIDEBAR */}
         <aside className="sidebar">
           <div className="sidebar-box">
-            <h4>Why Choose Us</h4>
+            <h4>¿Por qué elegirnos?</h4>
             <ul>
-              <li>100+ custom projects since 2009</li>
-              <li>Specialized agritech team</li>
-              <li>Full-cycle delivery</li>
+              <li>Arquitecturas de alta disponibilidad</li>
+              <li>Dominio de regulaciones financieras locales</li>
+              <li>Talento especializado en Fintech</li>
             </ul>
           </div>
-
           <div className="sidebar-cards">
-            <div className="card">Newsletter signup</div>
-            <div className="card">Industry reports</div>
-            <div className="card">Customer stories</div>
+            <div className="card">Suscripción al boletín</div>
+            <div className="card">Informes del sector</div>
+            <div className="card">Historias de clientes</div>
           </div>
         </aside>
       </main>
 
-      {/* FAQ */}
       <section className="faq-section">
-        <h2 className="faq-title">
-          Which institutions benefit from custom agriculture software development?
-        </h2>
-
-        <p className="faq-intro">
-          Custom agriculture software development services benefit numerous institutions
-          across the industry. Examples include:
-        </p>
-
+        <h2 className="faq-title">¿Qué organizaciones se benefician del desarrollo de software financiero?</h2>
+        <p className="faq-intro">Nuestras soluciones impactan en una amplia gama de actores del mercado financiero global:</p>
         <div className="faq-list">
           {faqItems.map((item, i) => (
-            <div
-              key={i}
-              className={`faq-item ${openIndex === i ? "open" : ""}`}
-              onClick={() => toggleFAQ(i)}
-            >
-              <div className="faq-question">
-                {item.title}
-                <span className="faq-icon">{openIndex === i ? "▲" : "▼"}</span>
-              </div>
-
-              {openIndex === i && (
-                <div className="faq-answer">
-                  <p>{item.content}</p>
-                </div>
-              )}
+            <div key={i} className={`faq-item ${openIndex === i ? "open" : ""}`} onClick={() => toggleFAQ(i)}>
+              <div className="faq-question"> {item.title} <span className="faq-icon">{openIndex === i ? "▲" : "▼"}</span> </div>
+              {openIndex === i && ( <div className="faq-answer"> <p>{item.content}</p> </div> )}
             </div>
           ))}
         </div>
       </section>
 
-      {/* FOOTER CTA */}
       <footer className="footer-cta">
         <div className="footer-inner">
-          <p>
-            From concept to completion. 100s of custom software solutions built since 2009.
-          </p>
-          <button className="cta small">Schedule a Call</button>
+          <p>Del concepto a la realidad. Cientos de soluciones financieras innovadoras creadas desde 2009.</p>
+          <button className="cta small">Agendar una llamada</button>
         </div>
       </footer>
     </div>

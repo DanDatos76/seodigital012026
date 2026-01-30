@@ -1,6 +1,6 @@
  // src/pages/NodeJS.jsx
 import React from "react";
-import "../styles/Django.css"; // Se mantiene el mismo CSS por las etiquetas
+import "../styles/django.css"; // Se mantiene el mismo CSS por las etiquetas
 import nodeLogo from "../assets/node.svg"; // logo de Node.js
 import teamImage from "../assets/team-python.jpg"; // imagen de equipo
 

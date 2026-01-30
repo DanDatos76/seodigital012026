@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+ import React, { useEffect } from 'react';
 import AOS from 'aos';
-import '../styles/About.css';
+import '../styles/about.css';
 
 
 // Asegurate de crear este archivo con los estilos del HTML
@@ -15,80 +15,102 @@ const About = () => {
       {/* ABOUT US */}
       <section className="about-wrapper">
         <div className="about-hero">
-           <h2> Seodigital</h2>
+           <h2>Seodigital</h2>
           <p>
-            A software development partner for bold brands and future-driven companies.
+            Un socio en desarrollo de software para marcas audaces y empresas impulsadas por el futuro.
           </p>
         </div>
 
         <div className="about-stats">
           <div className="stat-block">
             <h3>200+</h3>
-            <p>Projects Delivered</p>
+            <p>Proyectos entregados</p>
           </div>
           <div className="stat-block">
             <h3>15+</h3>
-            <p>Countries Served</p>
+            <p>Países atendidos</p>
           </div>
           <div className="stat-block">
             <h3>98%</h3>
-            <p>Client Satisfaction</p>
+            <p>Satisfacción del cliente</p>
           </div>
           <div className="stat-block">
-            <h3>10 Years</h3>
-            <p>Creating Impact</p>
+            <h3>10 años</h3>
+            <p>Creando impacto</p>
           </div>
         </div>
 
         <div className="about-grid">
           <div className="about-item">
-            <h4>🔍 Innovation-First Mindset</h4>
-            <p>We continuously explore new technologies to deliver products that are not only modern — but future-ready.</p>
+            <h4>🔍 Mentalidad orientada a la innovación</h4>
+            <p>
+              Exploramos continuamente nuevas tecnologías para ofrecer productos que no solo sean modernos,
+              sino también preparados para el futuro.
+            </p>
           </div>
           <div className="about-item">
-            <h4>💼 Enterprise-Grade Delivery</h4>
-            <p>From idea to execution, we apply solid architecture, robust security, and scalable infrastructure.</p>
+            <h4>💼 Entrega de nivel empresarial</h4>
+            <p>
+              Desde la idea hasta la ejecución, aplicamos arquitecturas sólidas,
+              seguridad robusta e infraestructura escalable.
+            </p>
           </div>
           <div className="about-item">
-            <h4>⚙️ Agile Execution</h4>
-            <p>Our teams work with agile practices, ensuring rapid delivery, transparency, and flexibility.</p>
+            <h4>⚙️ Ejecución ágil</h4>
+            <p>
+              Nuestros equipos trabajan con prácticas ágiles, garantizando entregas rápidas,
+              transparencia y flexibilidad.
+            </p>
           </div>
           <div className="about-item">
-            <h4>🌎 Global Talent Network</h4>
-            <p>We source elite engineers and designers from across the world to bring diverse perspectives to your product.</p>
+            <h4>🌎 Red global de talento</h4>
+            <p>
+              Incorporamos ingenieros y diseñadores de élite de todo el mundo
+              para aportar perspectivas diversas a tu producto.
+            </p>
           </div>
         </div>
 
         <div className="about-culture">
-          <h3>Our Culture. Our Code.</h3>
+          <h3>Nuestra cultura. Nuestro código.</h3>
           <p>
-            At SEOdigital, we don't just write code — we build trust, foster creativity, and work with purpose.
-            <br />We believe in people, passion, and performance.
+            En SEOdigital no solo escribimos código — construimos confianza,
+            fomentamos la creatividad y trabajamos con propósito.
+            <br />Creemos en las personas, la pasión y el rendimiento.
           </p>
         </div>
 
         <div className="about-cta">
-          <h4>Ready to build something remarkable?</h4>
-          <button>Let’s Talk →</button>
+          <h4>¿Listo para construir algo extraordinario?</h4>
+          <button>Hablemos →</button>
         </div>
       </section>
 
       {/* WHY CHOOSE US */}
       <section className="why-choose" data-aos="fade-up" data-aos-duration="1000">
         <div className="why-container">
-          <h3>Why Choose SEOdigital?</h3>
+          <h3>¿Por qué elegir SEOdigital?</h3>
           <div className="why-points">
             <div className="why-item">
-              <h4>⚡ Speed & Performance</h4>
-              <p>We optimize for scale and speed using modern frameworks like React, Node.js, and Next.js.</p>
+              <h4>⚡ Velocidad y rendimiento</h4>
+              <p>
+                Optimizamos para escalar y rendir al máximo utilizando frameworks modernos
+                como React, Node.js y Next.js.
+              </p>
             </div>
             <div className="why-item">
-              <h4>🔐 Security First</h4>
-              <p>Built with encryption, compliance, and data privacy in mind from day one.</p>
+              <h4>🔐 Seguridad como prioridad</h4>
+              <p>
+                Construimos con cifrado, cumplimiento normativo y privacidad de datos
+                desde el primer día.
+              </p>
             </div>
             <div className="why-item">
-              <h4>📈 Proven Growth</h4>
-              <p>We’ve helped startups become unicorns and corporations scale smarter.</p>
+              <h4>📈 Crecimiento comprobado</h4>
+              <p>
+                Hemos ayudado a startups a convertirse en unicornios
+                y a grandes empresas a escalar de forma inteligente.
+              </p>
             </div>
           </div>
         </div>
@@ -97,26 +119,38 @@ const About = () => {
       {/* FAQ SECTION */}
       <section className="faq-section">
         <div className="faq-container">
-          <h3>Frequently Asked Questions</h3>
+          <h3>Preguntas frecuentes</h3>
 
           <div className="faq-item">
-            <h4>What industries do you serve?</h4>
-            <p>We work with fintech, healthtech, ecommerce, SaaS, logistics, and more.</p>
+            <h4>¿En qué industrias trabajan?</h4>
+            <p>
+              Trabajamos con fintech, healthtech, ecommerce, SaaS,
+              logística y muchas más.
+            </p>
           </div>
 
           <div className="faq-item">
-            <h4>Can you integrate with our existing tech stack?</h4>
-            <p>Yes. We specialize in seamless integration with existing tools, APIs, and legacy systems.</p>
+            <h4>¿Pueden integrarse con nuestro stack tecnológico actual?</h4>
+            <p>
+              Sí. Nos especializamos en integraciones fluidas con herramientas existentes,
+              APIs y sistemas legacy.
+            </p>
           </div>
 
           <div className="faq-item">
-            <h4>Do you offer ongoing support?</h4>
-            <p>Absolutely. We offer maintenance, support, and optimization after launch.</p>
+            <h4>¿Ofrecen soporte continuo?</h4>
+            <p>
+              Absolutamente. Ofrecemos mantenimiento, soporte y optimización
+              luego del lanzamiento.
+            </p>
           </div>
 
           <div className="faq-item">
-            <h4>Where is your team located?</h4>
-            <p>We are a remote-first company with talent across LATAM, North America, and Europe.</p>
+            <h4>¿Dónde está ubicado su equipo?</h4>
+            <p>
+              Somos una empresa remote-first con talento distribuido en LATAM,
+              Norteamérica y Europa.
+            </p>
           </div>
         </div>
       </section>
