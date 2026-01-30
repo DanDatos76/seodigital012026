@@ -1,6 +1,6 @@
  import React from "react";
 import "../styles/megaMenu.css";
-import CeoDavos from "../assets/gustavo.png";
+import Gustavo from "../assets/gustavo.png";
 
 const MegaMenuAbout = () => {
   return (
@@ -20,7 +20,7 @@ const MegaMenuAbout = () => {
 
           <div className="about-highlight">
             <img
-              src={CeoDavos}
+              src={Gustavo}
               alt="Nuestro CEO participando del Foro Económico Mundial en Davos 2025"
             />
 
