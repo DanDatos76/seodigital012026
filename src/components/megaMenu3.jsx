@@ -1,4 +1,5 @@
  import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
 import CertificacionLogo from "../assets/27001.png";
 
@@ -28,7 +29,10 @@ const MegaMenu3 = () => {
             />
             <p>
               Escalamos las plataformas de investigación clínica de IQVIA con
-              React. <a href="#">Lea el caso de estudio.</a>
+              React.{" "}
+              <Link to="/caso-de-estudio" className="inline-link">
+                Lea el caso de estudio.
+              </Link>
             </p>
           </div>
         </div>
@@ -39,12 +43,12 @@ const MegaMenu3 = () => {
           </h4>
 
           <ul>
-            <li><a href="/agricultura">Agricultura</a></li>
-            <li><a href="/banca">Banca</a></li>
-            <li><a href="/finanzas">Finanzas</a></li>
-            <li><a href="/seguro">Seguros</a></li>
-            <li><a href="/inmueble">Bienes Raíces</a></li>
-            <li><a href="/telecomunicaciones">Telecomunicaciones</a></li>
+            <li><Link to="/agricultura">Agricultura</Link></li>
+            <li><Link to="/banca">Banca</Link></li>
+            <li><Link to="/finanzas">Finanzas</Link></li>
+            <li><Link to="/seguro">Seguros</Link></li>
+            <li><Link to="/inmueble">Bienes Raíces</Link></li>
+            <li><Link to="/telecomunicaciones">Telecomunicaciones</Link></li>
           </ul>
         </div>
 
@@ -54,12 +58,12 @@ const MegaMenu3 = () => {
           </h4>
 
           <ul>
-            <li><a href="/automotriz">Automotriz</a></li>
-            <li><a href="/construccion">Construcción</a></li>
-            <li><a href="/fintech">Fintech</a></li>
-            <li><a href="/marketing">Tecnología de Marketing</a></li>
-            <li><a href="/minorista">Venta al por menor (Retail)</a></li>
-            <li><a href="/transporte">Transporte y Logística</a></li>
+            <li><Link to="/automotriz">Automotriz</Link></li>
+            <li><Link to="/construccion">Construcción</Link></li>
+            <li><Link to="/fintech">Fintech</Link></li>
+            <li><Link to="/marketing">Tecnología de Marketing</Link></li>
+            <li><Link to="/minorista">Venta al por menor (Retail)</Link></li>
+            <li><Link to="/transporte">Transporte y Logística</Link></li>
           </ul>
         </div>
 
@@ -69,12 +73,12 @@ const MegaMenu3 = () => {
           </h4>
 
           <ul>
-            <li><a href="/aviacion">Aviación</a></li>
-            <li><a href="/medios">Entretenimiento y Medios</a></li>
-            <li><a href="/sanidad">Atención Sanitaria</a></li>
-            <li><a href="/petroleo">Petróleo y Gas</a></li>
-            <li><a href="/suministro">Cadena de Suministro</a></li>
-            <li><a href="/viajes">Viajes y Hospitalidad</a></li>
+            <li><Link to="/aviacion">Aviación</Link></li>
+            <li><Link to="/medios">Entretenimiento y Medios</Link></li>
+            <li><Link to="/sanidad">Atención Sanitaria</Link></li>
+            <li><Link to="/petroleo">Petróleo y Gas</Link></li>
+            <li><Link to="/suministro">Cadena de Suministro</Link></li>
+            <li><Link to="/viajes">Viajes y Hospitalidad</Link></li>
           </ul>
         </div>
 

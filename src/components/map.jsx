@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+ 
 
 import '../styles/map.css';
 import worldMap from '../assets/mapa.png'; // Replace with your actual image path

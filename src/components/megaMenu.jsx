@@ -33,10 +33,17 @@ const MegaMenu = () => {
           </ul>
 
           <div className="client-quote">
-            <img className="logo" src={RollsRoyceLogo} alt="Certificación ISO 27001" />
+            <img
+              className="logo"
+              src={RollsRoyceLogo}
+              alt="Certificación ISO 27001"
+            />
             <p>
-              Desarrollamos una aplicación para el monitoreo de plantas nucleares en tiempo real.
-              <Link to="/caso-estudio"> Leer caso de estudio.</Link>
+              Desarrollamos una aplicación para el monitoreo de plantas nucleares
+              en tiempo real.{" "}
+              <Link to="/caso-estudio" className="inline-link">
+                Leer caso de estudio.
+              </Link>
             </p>
           </div>
         </div>

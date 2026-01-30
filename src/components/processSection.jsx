@@ -1,5 +1,5 @@
   // src/components/ProcessSection.jsx
-import React, { useRef } from "react";
+ 
 
 import "../styles/processSection.css";
 
