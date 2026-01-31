@@ -8,10 +8,10 @@ const PressReleases = () => {
       {/* HEADER */}
       <section className="press-hero">
         <div className="hero-left">
-          <span className="section-label">COMUNICADOS DE PRENSA DE BAIRESDEV</span>
+          <span className="section-label">COMUNICADOS DE PRENSA DE SEODIGITAL</span>
           <h1>
             Grandes noticias. Movimientos audaces. <br />
-            <span>Eso es BairesDev.</span>
+            <span>Eso es SEOdigial.</span>
           </h1>
           <p>
             Desde proyectos innovadores hasta análisis del sector,
@@ -22,9 +22,9 @@ const PressReleases = () => {
         <div className="hero-right">
           <div className="featured-box">
             <h4>
-              Descubrí el recorrido, el impacto y la innovación de BairesDev.
+              Descubrí el recorrido, el impacto y la innovación de SEOdigital.
             </h4>
-            <button>Descargar perfil corporativo →</button>
+             
           </div>
         </div>
       </section>
@@ -39,12 +39,12 @@ const PressReleases = () => {
             redefinidos por la IA en 2026
           </h2>
           <p>
-            El informe Dev Insider de BairesDev reveló que 8 de cada 10
+            El informe Dev Insider de SEOdigial reveló que 8 de cada 10
             desarrolladores esperan nuevas oportunidades en 2026 gracias a la
             inteligencia artificial, pero 7 de cada 10 también temen una
             disrupción tecnológica y de habilidades.
           </p>
-          <span className="source">Por BairesDev</span>
+          <span className="source">Por SEOdigital</span>
 
           <div className="feature-image">
             <img
@@ -67,7 +67,7 @@ const PressReleases = () => {
               <div>
                 <span>Forbes</span>
                 <p>
-                  BairesDev es reconocida como una de las principales empresas
+                  SEOdigital es reconocida como una de las principales empresas
                   de software en 2025
                 </p>
               </div>
@@ -81,7 +81,7 @@ const PressReleases = () => {
               <div>
                 <span>Clutch</span>
                 <p>
-                  BairesDev obtiene reconocimiento como líder de la industria
+                  SEOdigital obtiene reconocimiento como líder de la industria
                 </p>
               </div>
             </li>
@@ -108,7 +108,7 @@ const PressReleases = () => {
               <div>
                 <span>Business Insider</span>
                 <p>
-                  Se explica la estrategia de crecimiento global de BairesDev
+                  Se explica la estrategia de crecimiento global de SEOdigital
                 </p>
               </div>
             </li>
@@ -131,7 +131,7 @@ const PressReleases = () => {
                 alt="Imagen ilustrativa de comunicado de prensa"
               />
               <h4>
-                BairesDev genera impacto con su nueva estrategia de expansión
+                SEOdigital genera impacto con su nueva estrategia de expansión
                 global
               </h4>
               <span>5 de junio de 2025</span>

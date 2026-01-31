@@ -69,8 +69,13 @@ export default function Autom() {
             Optimice la producción, conectividad y rendimiento de vehículos en un mercado en constante evolución.
           </p>
 
-          <button className="cta">Impulse su Transformación Digital</button>
-
+ <a 
+  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta">Acelere su Hoja de Ruta</button>
+</a>    
           <div className="badges">
             <div className="badge-count">
               +500 empresas confían en nuestro talento tecnológico del top 1%
@@ -224,8 +229,13 @@ export default function Autom() {
           <p>
             Impulsamos la movilidad del futuro con soluciones tecnológicas creadas desde 2009.
           </p>
-          <button className="cta small">Schedule a call</button>
-        </div>
+ <a 
+  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta small">Agendar una llamada</button>
+</a>        </div>
       </footer>
     </div>
   );

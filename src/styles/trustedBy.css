@@ -17,11 +17,11 @@
 }
 
 .highlight {
-  border-bottom: 3px solid #f25c5c;
+  border-bottom: 3px solid  #6223cc;
 }
 
 .dot {
-  color: #f25c5c;
+  color:  #6223cc;
 }
 
 .trusted-logos {
@@ -52,7 +52,7 @@
 }
 
 .link-red {
-  color: #e94335;
+  color:  #6223cc;
   font-size: 0.85rem;
   margin-top: 4px;
 }

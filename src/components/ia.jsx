@@ -22,7 +22,14 @@ const ArtificialIntelligencePage = () => {
             optimizan y potencian la toma de decisiones mediante tecnología avanzada
             y modelos inteligentes.
           </p>
-          <button className="cta-btn">Acceder a Inteligencia Artificial</button>
+            <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Acceder a I.A. </button>
+  </a>
+          
         </div>
 
         <div className="hero-img">
@@ -35,10 +42,10 @@ const ArtificialIntelligencePage = () => {
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/microsoft.png" alt="Microsoft" />
-            <img src="/logos/amazon.png" alt="Amazon" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <img src=" /google.png" alt="Google" />
+            <img src=" /microsoft.png" alt="Microsoft" />
+            <img src="/azure.png" alt="Amazon" />
+            <img src="/ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -121,9 +128,16 @@ const ArtificialIntelligencePage = () => {
           <img src={teamImage} alt="Equipo desarrollando Inteligencia Artificial" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para innovar con Inteligencia Artificial?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+  <h3>¿Listo para acelerar tu proyecto Python?</h3>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
+</div>
+
       </section>
 
     </div>

@@ -1,31 +1,36 @@
-// src/pages/Django.jsx
+ // src/pages/CPP.jsx
 import React from "react";
-import "../styles/Django.css";
-import djangoLogo from "../assets/django-logo.png"; // coloca aquí el logo o imagen del hero
-import teamImage from "../assets/django-team.jfif";  // imagen de equipo o desarrollo (opcional)
+import "../styles/django.css"; // Se mantiene el mismo CSS para respetar estilos
+import cppLogo from "../assets/c++.png"; // logo de C++
+import teamImage from "../assets/team-python.jpg"; // imagen de equipo/desarrollo
 
-const Django = () => {
+const CPP = () => {
   return (
     <div className="django-page">
       
       {/* ====== HERO ====== */}
       <section className="django-hero">
         <div className="hero-text">
-          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE DJANGO</p>
+          <p className="breadcrumb">SERVICIOS DE DESARROLLO DE C++</p>
           <h1>
-            Escala tu desarrollo de <span className="highlight">Django</span> 
+            Escala tu desarrollo de <span className="highlight">C++</span> 
             <br />con talento nearshore.
           </h1>
           <p className="subtitle">
-            Nuestros servicios de desarrollo de Django impulsan ciclos de entrega más rápidos. 
+            Nuestros servicios de desarrollo de C++ impulsan ciclos de entrega más rápidos. 
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de Django</button>
-        </div>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>        </div>
 
         <div className="hero-img">
-          <img src={djangoLogo} alt="Django" />
+          <img src={cppLogo} alt="C++" />
         </div>
       </section>
 
@@ -33,42 +38,41 @@ const Django = () => {
       <section className="trusted-logos">
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
-          <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/pinterest.png" alt="Pinterest" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <div className="logos">
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
 
       {/* ====== SERVICIOS ====== */}
       <section className="django-services">
-        <h2>Servicios de desarrollo de Django que brindamos</h2>
+        <h2>Servicios de desarrollo de C++ que brindamos</h2>
         <div className="services-grid">
           <div className="service-item">
-            <h3>Desarrollo de aplicaciones con Django</h3>
+            <h3>Sistemas de alto rendimiento</h3>
             <p>
-              Creamos aplicaciones web escalables, seguras y de alto rendimiento usando Django.
+              Desarrollamos aplicaciones críticas donde la velocidad de procesamiento y la gestión de memoria son fundamentales.
             </p>
           </div>
           <div className="service-item">
-            <h3>Desarrollo de servicios de back-end y APIs</h3>
+            <h3>Sistemas embebidos y Firmware</h3>
             <p>
-              Construimos APIs RESTful rápidas y confiables que impulsan soluciones digitales 
-              modernas.
+              Construimos software de bajo nivel robusto y confiable para una amplia gama de dispositivos y hardware.
             </p>
           </div>
           <div className="service-item">
-            <h3>Diseño de arquitecturas con Django</h3>
+            <h3>Optimización de algoritmos</h3>
             <p>
-              Diseñamos arquitecturas limpias que optimizan el rendimiento y la mantenibilidad.
+              Diseñamos y optimizamos algoritmos complejos para maximizar el rendimiento y la eficiencia de tus sistemas.
             </p>
           </div>
           <div className="service-item">
-            <h3>Django Template Design</h3>
+            <h3>C++ Engine Development</h3>
             <p>
-              Creamos interfaces profesionales con plantillas Django modernas y responsivas.
+              Creamos motores de software modernos, responsivos y altamente eficientes para gráficos, juegos o simulaciones.
             </p>
           </div>
         </div>
@@ -76,7 +80,7 @@ const Django = () => {
 
       {/* ====== WHY CHOOSE ====== */}
       <section className="why-django">
-        <h2>Why Choose BairesDev for Django Development</h2>
+        <h2>Why Choose BairesDev for C++ Development</h2>
         <div className="why-grid">
           <div className="why-item">
             <h4>Nearshore, Timezone-aligned Talent</h4>
@@ -87,7 +91,7 @@ const Django = () => {
           <div className="why-item">
             <h4>Diverse Range of Talent</h4>
             <p>
-              Accede a expertos Django, diseñadores UX/UI y DevOps bajo un mismo equipo.
+              Accede a expertos C++, arquitectos de sistemas y especialistas en QA bajo un mismo equipo.
             </p>
           </div>
           <div className="why-item">
@@ -102,16 +106,21 @@ const Django = () => {
       {/* ====== IMAGEN FINAL / CTA ====== */}
       <section className="django-end">
         <div className="end-img">
-          <img src={teamImage} alt="Team working with Django" />
+          <img src={teamImage} alt="Team working with C++" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto Django?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+          <h3>¿Listo para acelerar tu proyecto C++?</h3>
+ <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>        </div>
       </section>
 
     </div>
   );
 };
 
-export default Django;
+export default CPP;

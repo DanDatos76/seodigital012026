@@ -65,8 +65,13 @@ export default function AviationPage() {
             eficientes y conectadas.
           </p>
 
-          <button className="cta">Optimizar Operaciones Aéreas</button>
-
+  <a 
+  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta">Acelere su Hoja de Ruta</button>
+</a>
           <div className="badges">
             <div className="badge-count">
               +500 organizaciones confían en nuestro talento tecnológico especializado
@@ -221,8 +226,13 @@ export default function AviationPage() {
           <p>
             Impulsamos el futuro de la aviación con tecnología confiable y segura.
           </p>
-          <button className="cta small">Agendar una llamada</button>
-        </div>
+  <a 
+  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta small">Agendar una llamada</button>
+</a>         </div>
       </footer>
     </div>
   );

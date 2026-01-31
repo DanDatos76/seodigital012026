@@ -37,7 +37,7 @@
 .mega-column h3 {
   font-size: 24px; /* Ajustado el tamaño de la fuente */
   font-weight: 600;
-  color: #222;
+  color:  #6223cc;
   margin-bottom: 25px; /* Ajustado el margen inferior */
 }
 
@@ -103,7 +103,7 @@
 }
 
 .client-quote img {
-  height: 20px; /* Ajusta si tienes una imagen de logo aquí */
+  height: 40px; /* Ajusta si tienes una imagen de logo aquí */
   margin-bottom: 8px;
 }
 
@@ -124,7 +124,7 @@
 }
 
 img.logo {
-  height: 120px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
+  height: 150px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
   object-fit: contain;
 }
 #mega-menu-tecnologias > div > div.mega-column.left-column > div > img,#mega-menu-industries > div > div.mega-column.left-column > div > img{
@@ -291,7 +291,7 @@ img.logo {
 }
 
 .about-left h3 span {
-  color: #ff6b4a;
+  color:  #6223cc;
 }
 
 .about-left p {
@@ -321,7 +321,7 @@ img.logo {
 }
 
 .about-highlight a {
-  color: #ff6b4a;
+  color:  #6223cc;
   text-decoration: none;
   font-weight: 500;
 }
@@ -340,7 +340,7 @@ img.logo {
 .dot {
   width: 8px;
   height: 8px;
-  background: #ff6b4a;
+  background:  #6223cc;
   border-radius: 50%;
   display: inline-block;
 }
@@ -362,7 +362,7 @@ img.logo {
 }
 
 .mega-col ul li a:hover {
-  color: #ff6b4a;
+  color:  #6223cc;
 }
 
 /* LINK HISTORIA */
@@ -370,7 +370,7 @@ img.logo {
   display: inline-block;
   margin-top: 16px;
   font-size: 15px;
-  color: #ff6b4a;
+  color:  #6223cc;
   text-decoration: none;
   font-weight: 500;
 }
@@ -383,4 +383,36 @@ img.logo {
 
 .inline-link:hover {
   color: #320d74;
+}
+
+.mega-menu {
+  position: fixed;
+  /* 1. Ajusta 'top' al alto exacto de tu header (ejemplo: 70px) */
+  top: 70px; 
+  
+  /* 2. ELIMINA el margin-top o ponlo en 0 para que no haya hueco */
+  margin-top: 0; 
+  
+  left: 0;
+  width: 100vw;
+  background: #ffffff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(98, 35, 204, 0.3);
+  box-sizing: border-box;
+
+  /* 3. TRUCO DE SEGURIDAD: El "Puente Invisible" */
+  /* Esto hace que si hay un error de 1 o 2 pixeles, el mouse no se pierda */
+}
+
+.mega-menu::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Crea un área sensible invisible hacia arriba */
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
 }

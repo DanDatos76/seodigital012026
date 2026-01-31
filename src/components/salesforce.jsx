@@ -21,7 +21,13 @@ const SalesforcePage = () => {
             centralizar la gestión de clientes, automatizar procesos
             comerciales y escalar tus operaciones de forma inteligente.
           </p>
-          <button className="cta-btn">Acceder a servicios Salesforce</button>
+            <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>
         </div>
 
         <div className="hero-img">
@@ -33,11 +39,11 @@ const SalesforcePage = () => {
       <section className="trusted-logos">
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
-          <div className="logos">
-            <img src="/logos/salesforce.png" alt="Salesforce" />
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <div className="logos">
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -121,7 +127,13 @@ const SalesforcePage = () => {
         </div>
         <div className="end-text">
           <h3>¿Listo para transformar tu gestión con Salesforce?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
+          <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
         </div>
       </section>
 

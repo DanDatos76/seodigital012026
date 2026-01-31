@@ -27,13 +27,7 @@ const MegaMenu3 = () => {
               src={CertificacionLogo}
               alt="Certificación ISO"
             />
-            <p>
-              Escalamos las plataformas de investigación clínica de IQVIA con
-              React.{" "}
-              <Link to="/caso-de-estudio" className="inline-link">
-                Lea el caso de estudio.
-              </Link>
-            </p>
+             
           </div>
         </div>
 

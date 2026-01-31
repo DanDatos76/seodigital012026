@@ -11,7 +11,7 @@ const ProcessSection = () => {
           Nuestro proceso. <br />
           Simple, <br />
           fluido, <br />
-          <span className="dot">optimizado.</span>
+           
         </h1>
         <img src= "cafe.jpg" alt="Man with coffee" /> 
       </div>

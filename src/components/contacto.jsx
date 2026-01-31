@@ -30,16 +30,30 @@ const ContactHelp = () => {
             ¿Buscás expandir tu equipo de desarrollo de software?
             Contanos cuáles son tus necesidades.
           </p>
-          <button>Agendar llamada</button>
+           <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta"> Agendar llamada</button>
+</a>
+
         </div>
 
         <div className="option-card highlight">
-          <h3>Carreras en BairesDev</h3>
+          <h3>Carreras en SEOdigital</h3>
           <p>
             Formá parte del futuro tecnológico en una comunidad
             dinámica con más de 4.000 expertos.
           </p>
-          <button>Ver vacantes</button>
+           <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta"> Selección de talentos</button>
+</a>
+
         </div>
 
         <div className="option-card">
@@ -48,7 +62,14 @@ const ContactHelp = () => {
             Para consultas relacionadas con prensa,
             participaciones o comunicación corporativa.
           </p>
-          <button>Contacto de prensa</button>
+           <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta"> Contacto de Prensa</button>
+</a>
+
         </div>
 
         <div className="option-card">
@@ -57,7 +78,13 @@ const ContactHelp = () => {
             ¿Tenés otra consulta o necesitás soporte?
             Estamos para ayudarte.
           </p>
-          <button>Formulario de contacto</button>
+ <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta"> Contacto</button>
+</a>
         </div>
       </section>
 
@@ -81,27 +108,27 @@ const ContactHelp = () => {
 
       {/* OFFICES */}
       <section className="offices">
-        <h2>BairesDev en el mundo · Nuestras oficinas</h2>
+        <h2>SEOdigital en el mundo · Nuestras oficinas</h2>
 
         <div className="offices-grid">
           <div className="office-card">
-            <h4>San Francisco</h4>
-            <p>50 California Street<br />California, USA</p>
+            <h4> Central. Buenos Aires</h4>
+            <p> Cosquin 4062<br /> CABA, Argentina</p>
           </div>
 
           <div className="office-card">
-            <h4>North Carolina</h4>
-            <p>77 Green Valley Road<br />USA</p>
+            <h4>Tampa</h4>
+            <p>Florida<br />USA</p>
           </div>
 
           <div className="office-card">
-            <h4>Nueva York</h4>
-            <p>135 Madison Avenue<br />New York, USA</p>
+            <h4>Santa Mónica</h4>
+            <p> California<br /> USA</p>
           </div>
 
           <div className="office-card">
-            <h4>Washington D.C.</h4>
-            <p>1401 H Street NW<br />Washington, USA</p>
+            <h4>Madrid</h4>
+            <p>Madrid<br />España</p>
           </div>
 
           <div className="office-card">
@@ -112,34 +139,12 @@ const ContactHelp = () => {
           <div className="office-card">
             <h4>Buenos Aires</h4>
             <p>
-              Avenida Corrientes 222<br />
+               Cosquin 4062<br />
               Ciudad Autónoma de Buenos Aires, Argentina
             </p>
           </div>
 
-          <div className="office-card">
-            <h4>Barcelona</h4>
-            <p>
-              Plaça de Francesc Macià, 7<br />
-              Barcelona, España
-            </p>
-          </div>
-
-          <div className="office-card">
-            <h4>Ciudad de México</h4>
-            <p>
-              Paseo de la Reforma 342<br />
-              México
-            </p>
-          </div>
-
-          <div className="office-card">
-            <h4>São Paulo</h4>
-            <p>
-              Av. Paulista, 421<br />
-              São Paulo, Brasil
-            </p>
-          </div>
+           
         </div>
       </section>
 

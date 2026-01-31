@@ -49,8 +49,13 @@ export default function FinancePage() {
             <span> herramientas digitales inteligentes y escalables.</span>
           </h1>
           <p className="hero-sub">Optimice decisiones complejas mediante análisis de datos y automatización financiera.</p>
-          <button className="cta">Acelere su Hoja de Ruta</button>
-          <div className="badges">
+ <a 
+  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta">Acelere su Hoja de Ruta</button>
+</a>          <div className="badges">
             <div className="badge-count">500+ empresas confían en nuestro talento tecnológico del top 1%</div>
             <ul className="badge-list">
               {badgeItems.map((b) => ( <li key={b} className="badge-item">{b}</li> ))}
@@ -58,7 +63,7 @@ export default function FinancePage() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/finanzas.jfif" alt="Servicios Financieros" />
+          <img src="/finanza.jpg" alt="Servicios Financieros" />
         </div>
       </section>
 
@@ -139,8 +144,13 @@ export default function FinancePage() {
       <footer className="footer-cta">
         <div className="footer-inner">
           <p>Del concepto a la realidad. Cientos de soluciones financieras innovadoras creadas desde 2009.</p>
-          <button className="cta small">Agendar una llamada</button>
-        </div>
+ <a 
+  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta small">Agendar una llamada</button>
+</a>        </div>
       </footer>
     </div>
   );

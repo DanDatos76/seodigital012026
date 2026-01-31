@@ -20,7 +20,7 @@ const VettingProcess = () => {
             servicio que brindamos y el software que desarrollamos sean de la
             más alta calidad.
           </p>
-          <button className="cta">Incorporá al Top 1% a tu equipo</button>
+ 
         </div>
 
         <div className="hero-image">
@@ -119,8 +119,19 @@ const VettingProcess = () => {
             </li>
           </ul>
 
-          <button className="cta secondary">Agendar una llamada</button>
-        </div>
+  <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+ <a 
+  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta"> Agendar una llamada</button>
+</a>
+</a>        </div>
       </section>
 
     </div>

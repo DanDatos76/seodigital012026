@@ -21,8 +21,13 @@ const VueJS = () => {
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder al desarrollo de Vue.js</button>
-        </div>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>        </div>
 
         <div className="hero-img">
           <img src={vueLogo} alt="Vue.js" />
@@ -33,11 +38,11 @@ const VueJS = () => {
       <section className="trusted-logos">
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
-          <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/pinterest.png" alt="Pinterest" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+           <div className="logos">
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -105,8 +110,13 @@ const VueJS = () => {
         </div>
         <div className="end-text">
           <h3>¿Listo para acelerar tu proyecto Vue.js?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+   <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>        </div>
       </section>
 
     </div>

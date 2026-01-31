@@ -34,10 +34,10 @@ const MachineLearningPage = () => {
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/amazon.png" alt="Amazon" />
-            <img src="/logos/microsoft.png" alt="Microsoft" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <img src=" /google.png" alt="Google" />
+            <img src=" /amazon.png" alt="Amazon" />
+            <img src="/microsoft.png" alt="Microsoft" />
+            <img src="/ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -119,10 +119,17 @@ const MachineLearningPage = () => {
         <div className="end-img">
           <img src={teamImage} alt="Equipo desarrollando Machine Learning" />
         </div>
-        <div className="end-text">
-          <h3>¿Listo para llevar tus datos al siguiente nivel?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+         <div className="end-text">
+  <h3>¿Listo para acelerar tu proyecto Machine Learning?</h3>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
+</div>
+
       </section>
 
     </div>

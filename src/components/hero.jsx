@@ -10,10 +10,10 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero-left">
         <h1>
-           Acelera tu Roadmap con nuestro Talento Tecnológico  Verificado.
+           Acelera tu Roadmap con nuestro Talento Tecnológico  
  <br />
           <span className="highlight-orange">
-             Talento Tecnológico <br />  de Primer Nivel.
+            Verificado   <br />  de Primer Nivel.
           </span>
         </h1>
         <p>

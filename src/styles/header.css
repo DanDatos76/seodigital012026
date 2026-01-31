@@ -1,36 +1,45 @@
-/* --- Base Header Styling --- */
+ /* --- Base Header Styling --- */
 .header {
   width: 100%;
+  height: 70px; /* Alto fijo para el header */
   background-color: #fff;
   border-bottom: 1px solid #eee;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: fixed; /* Asegura que el header siempre esté visible en la parte superior */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Alto z-index para que esté por encima de todo */
-  transition: all 0.3s ease; /* Transición suave para cualquier cambio en el header */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 
 .header-container {
-  max-width: 1200px; /* Ancho máximo del contenido del header */
-  margin: 0 auto; /* Centra el header-container */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Espacia el logo, la navegación y las acciones */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Padding interno */
+  padding: 0 20px;
 }
 
+/* --- CORRECCIÓN LOGO --- */
 .logo {
-  height: 40px; /* Ajusta el tamaño de tu logo */
-  object-fit: contain; /* Asegura que el logo se ajuste sin distorsionarse */
+  height: 45px; /* Altura real para el contenedor */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-/* --- NUEVA REGLA: Ocultar el botón de hamburguesa por defecto en escritorio --- */
+.logo img {
+  height: 250%; /* La imagen llena el alto del Link */
+  width: auto;
+  object-fit: contain;
+}
+
 .menu-toggle {
-  display: none; /* Esto lo oculta en todas las pantallas por defecto */
+  display: none; /* Oculto en PC */
 }
-/* --- FIN NUEVA REGLA --- */
-
 
 /* --- Navigation Styling --- */
 .nav-list {
@@ -38,303 +47,156 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 30px; /* Espacio entre los elementos del menú principal */
-  align-items: center; /* Alinea verticalmente los elementos de navegación */
+  gap: 30px;
+  align-items: center;
 }
 
 .nav-item {
-  position: relative; /* Clave para posicionar la flecha y para activar el hover/click */
-  padding: 10px 0; /* Padding vertical para el área del clic/hover */
+  position: relative;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Alinea el texto y la flecha */
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-size: 15px; /* Ajustado el tamaño de la fuente */
-  display: flex; /* Para permitir que la flecha esté al lado */
-  align-items: center;
+  font-size: 15px;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #6223cc; /* Color rojo al pasar el ratón, como en el botón */
-}
-
-/* Estilo para el elemento de menú activo/abierto */
-.nav-item.active .nav-link {
-  color: #6223cc; /* Rojo para el elemento activo */
-  position: relative; /* Necesario para el indicador de subrayado */
-}
-
-/* Indicador de subrayado rojo debajo del elemento activo */
-.nav-item.active .nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -13px; /* Posiciona el subrayado debajo del texto del nav-link */
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #6223cc; /* Color rojo del subrayado */
-}
-
-
-/* Flecha para los elementos de menú que abren el megamenú */
-.nav-item:not(:last-child) .nav-link::after { /* Aplica flecha a todos excepto el último (Blog) */
-  content: '▾'; /* Carácter de flecha hacia abajo */
-  font-size: 0.7em;
-  margin-left: 5px;
-  transform: rotate(0deg);
-  transition: transform 0.3s ease;
-}
-
-/* Rotar flecha cuando el menú está activo */
-.nav-item.active .nav-link::after {
-  transform: rotate(180deg); /* Rota la flecha hacia arriba */
-}
-
-/* --- Header Actions (Blog y Botón) --- */
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Espacio entre el enlace del blog y el botón */
-}
-
-.blog-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 15px;
-  transition: color 0.3s ease;
-}
-
-.blog-link:hover {
   color: #6223cc;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .call-button {
-  background-color: #6223cc; /* Rojo */
+  background-color: #6223cc;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px; /* Bordes ligeramente redondeados */
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
+  text-decoration: none;
   transition: background-color 0.3s ease;
-  white-space: nowrap; /* Evita que el texto del botón se rompa */
+  white-space: nowrap;
 }
 
 .call-button:hover {
-  background-color: #320d74; /* Rojo más oscuro al pasar el ratón */
+  background-color: #320d74;
 }
 
+.mobile-only { display: none; }
 
-/* --- MegaMenu Specific Adjustments (para que se alinee con el header) --- */
-/* Este estilo DEBE ir en tu MegaMenu.css y MegaMenu2.css, no aquí,
-   pero lo incluyo para referencia y ajuste de top */
-
-/* megamenu.css (o el css de tu MegaMenu) */
-.mega-menu {
-  /* ... tus estilos actuales ... */
-  top: 61px; /* AJUSTA ESTO: Altura de tu header (10px top + 40px logo + 10px bottom + 1px border = 61px) */
-  /* ... tus estilos actuales ... */
-}
-
-/* Si tu header-container no tiene el mismo padding horizontal que el mega-menu-inner-content,
-   es posible que debas ajustar el left del mega-menu o el padding del inner-content
-   para que el contenido del megamenú se alinee con el del header. */
-/* Por ejemplo, si el header tiene padding 0 20px, y el megamenú tiene padding 60px: */
-/* .mega-menu {
-    left: 20px;
-    width: calc(100vw - 40px);
-} */
-/* Pero lo que te di anteriormente de width: 100vw y max-width: 1200px para inner-content
-   en el megamenú es mejor para la alineación si el diseño es centrado */
-
-
-/* --- Media Queries for Responsive Design (Mobile First adjustments for max-width: 768px) --- */
-
-/* Es crucial que estos estilos SÓLO se apliquen debajo de este ancho */
+/* --- MEDIA QUERY MOBILE --- */
 @media (max-width: 768px) {
-  .header-container {
-    /* Ajusta el padding para la versión móvil para dar más espacio */
-    padding: 15px 20px;
-    /* Asegura que el logo y el toggle button estén en la misma línea */
-    display: flex;
-    justify-content: space-between; /* Espacia el logo y el toggle */
-    align-items: center; /* Centra verticalmente ambos elementos */
-    /* Elimina el ancho máximo para que ocupe todo el ancho disponible en móvil */
-    max-width: 100%;
+  .header {
+    height: 60px;
   }
 
-  .logo {
-    /* Haz el logo más grande para móvil */
-    height: 60px; /* Ajusta este valor según la imagen de referencia */
-    object-fit: contain; /* Asegura que la imagen no se distorsione */
-    /* No se necesita centrado explícito horizontal, flexbox lo maneja */
-  }
-
-  /* Ocultar el menú de navegación y las acciones por defecto en móvil */
-  .nav,
   .header-actions {
-    display: none;
+    display: none; /* Ocultar botón de llamada fuera del menú */
   }
 
-  /* Mostrar y estilizar el botón de hamburguesa para móvil */
   .menu-toggle {
-    display: block; /* ESTA REGLA SOBREESCRIBE EL display: none; DE ESCRITORIO */
+    display: block; /* MOSTRAR HAMBURGUESA */
     background: none;
     border: none;
-    font-size: 40px; /* Haz el icono más grande y proporcional al logo */
+    font-size: 32px;
+    color: #6223cc;
     cursor: pointer;
-    color: #6223cc; /* Color oscuro para el icono, como en la referencia */
-    padding: 0; /* Sin padding interno para el icono */
-    z-index: 1001; /* Asegura que esté por encima de otros elementos */
+    z-index: 1100;
   }
 
-  /* Estilos para cuando el menú móvil está abierto */
+  .nav {
+    display: none; /* Oculto por defecto */
+    width: 100%;
+  }
+
+  /* Cuando el menú está abierto */
   .header.menu-open .nav {
-    display: flex; /* Muestra el menú de navegación */
-    flex-direction: column; /* Los elementos del menú se apilan verticalmente */
+    display: block;
     position: absolute;
-    top: 90px; /* Ajusta esto: altura del header móvil (padding superior + height del logo + padding inferior). Puedes usar calc() si es necesario. */
+    top: 60px; /* Debajo del header móvil */
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 4px 8px #8d72bb;
-    padding: 0; /* Elimina padding general para controlar cada item */
-    border-top: 1px solid #eee; /* Separador visual del header */
-    height: calc(100vh - 90px); /* Ocupa el resto de la altura de la ventana */
-    overflow-y: auto; /* Permite scroll si el contenido es muy largo */
-  }
-
-  .header.menu-open .nav-list {
-    flex-direction: column; /* Apila los ítems de la lista */
-    gap: 0; /* Elimina el gap entre ítems principales */
-    align-items: flex-start; /* Alinea los ítems a la izquierda */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .header.menu-open .nav-item {
-    width: 100%;
-    text-align: left;
-    padding: 15px 20px; /* Padding para cada item del menú móvil */
-    border-bottom: 1px solid #eee; /* Separador entre ítems */
-    /* Resetear estilos específicos de desktop si los hay y molestan */
-    position: static; /* El mega-menú ya no flotará relativo a este item */
-  }
-
-  .header.menu-open .nav-item:last-child {
-    border-bottom: none;
-  }
-
-  .header.menu-open .nav-link {
-    width: 100%;
-    /* Asegura que el nav-link tome el ancho completo para que el clic funcione bien */
-    justify-content: space-between; /* Espacia el texto y la flecha */
-    font-size: 18px; /* Haz los enlaces del menú más grandes */
-    color: #6223cc; /* Asegura el color por defecto */
-    font-weight: 600; /* Mantiene el bold */
-  }
-
-  /* Ocultar la flecha de la pseudo-clase en el menú móvil para enlaces directos */
-  .header.menu-open .nav-item .nav-link::after {
-    display: none;
-  }
-
-  /* Mostrar la flecha solo para los items con megamenú */
-  .header.menu-open .nav-item:is(.active) .nav-link::after,
-  .header.menu-open .nav-item:has(.mega-menu) .nav-link::after {
-    content: '▾'; /* Flecha */
-    display: inline-block; /* Asegura que se muestre */
-    font-size: 0.7em;
-    margin-left: 5px;
-    transform: rotate(0deg); /* Asegura la posición inicial */
-    transition: transform 0.3s ease;
-  }
-
-  /* Rotar flecha cuando el menú está activo en móvil */
-  .header.menu-open .nav-item.active .nav-link::after {
-    transform: rotate(180deg); /* Rota la flecha hacia arriba */
-  }
-
-  /* Ajustes para el mega-menú dentro del menú móvil (se mostrará inline) */
-  /* NOTA: Estos estilos son un punto de partida. Necesitarás CSS similares
-     en los archivos MegaMenu.css, MegaMenu2.css, MegaMenu3.css para que los
-     CONTENIDOS de los mega-menús también sean responsivos. */
-  .mega-menu {
-    position: static; /* Es crucial que el mega-menú fluya en el documento en móvil */
-    width: 100%;
-    top: auto; /* Resetea la posición top de desktop */
-    left: auto; /* Resetea la posición left de desktop */
-    box-shadow: none; /* Elimina la sombra flotante */
-    border: none; /* Elimina bordes flotantes */
-    border-top: 1px solid #eee; /* Añade un separador si es necesario */
-    padding: 10px 0; /* Ajusta el padding para el contenido interno */
-    background-color: #f9f9f9; /* Un color de fondo ligeramente diferente para distinguirlo */
-  }
-
-  /* El botón de llamada original de desktop se oculta */
-  .header-actions .call-button {
-    display: none;
-  }
-
-  /* El botón de llamada nuevo para móvil (dentro del nav) se muestra y estiliza */
-  .nav-item.mobile-call-button-wrapper {
-    width: 100%; /* El contenedor del botón ocupa todo el ancho */
-    text-align: center; /* Centra el botón horizontalmente */
-    padding: 20px 20px; /* Padding alrededor del botón */
-    border-bottom: none; /* No hay borde inferior en el último item */
-    margin-top: auto; /* Empuja el botón al final si hay espacio */
-  }
-
-  .call-button.mobile-only-button {
-    display: block; /* Asegura que el botón se muestre */
-    width: 100%; /* Ocupa el 100% del ancho de su contenedor (nav-item) */
-    max-width: 300px; /* Limita el ancho máximo para que no sea demasiado grande */
-    margin: 0 auto; /* Centra el botón si es más pequeño que el 100% */
-    padding: 12px 25px; /* Un poco más de padding para un botón más grande */
-    font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
-    border-radius: 8px; /* Bordes ligeramente más redondeados */
-  }
-
-  /* Esconder la barra de scroll para navegadores que aún la muestran por defecto
-     cuando hay overflow-y: auto en el nav */
-  .header.menu-open .nav::-webkit-scrollbar {
-    display: none;
-  }
-  .header.menu-open .nav {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-
-}
-
-/* Pantallas medianas (ej. tablets, entre 769px y 1024px) */
-/* Puedes añadir ajustes aquí si lo necesitas para tablets,
-   pero el objetivo es que el diseño de escritorio se mantenga intacto
-   hasta max-width: 768px. */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header-container {
-    padding: 10px 20px; /* Puede que quieras ajustar el padding aquí */
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .nav-list {
-    gap: 20px; /* Reduce el espacio entre ítems para caber más */
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #f5f5f5;
   }
 
   .nav-link {
-    font-size: 14px; /* Un poco más pequeño */
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .call-button {
-    padding: 8px 15px; /* Botón un poco más compacto */
-    font-size: 14px;
+  .mobile-only {
+    display: block;
+    padding: 20px;
+    width: 100%;
   }
+
+  .mobile-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  /* Ajuste para que los megamenús no floten en móvil */
+  .megamenu, .mega-menu {
+     position: fixed;
+  top: 70px; /* CAMBIO: Ajustado exactamente al alto del header */
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  
+  /* TRUCO PARA EL SEGUNDO PROBLEMA: */
+  /* Añadimos un borde invisible arriba para cerrar cualquier hueco de 1px */
+  border-top: 1px solid transparent; 
+  margin-top: 0; /* Asegúrate de que no haya margen arriba */
+  }
+
+  .megamenu::before {
+  content: "";
+  position: absolute;
+  top: -15px; /* Crea un área sensible 15px hacia arriba */
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
+}
 }

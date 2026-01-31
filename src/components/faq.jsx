@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "../styles/faq.css";
 
 const faqData = [
@@ -6,12 +6,12 @@ const faqData = [
     category: "General",
     items: [
       {
-        question: "¿Qué hace BairesDev?",
+        question: "¿Qué hace SEOdigital?",
         answer:
-          "BairesDev es una empresa global de desarrollo de software que ofrece servicios de outsourcing, equipos dedicados y soluciones tecnológicas personalizadas. Ayudamos a empresas de todos los tamaños a escalar sus capacidades tecnológicas con talento de primer nivel."
+          "SEOdigital es una empresa global de desarrollo de software que ofrece servicios de outsourcing, equipos dedicados y soluciones tecnológicas personalizadas. Ayudamos a empresas de todos los tamaños a escalar sus capacidades tecnológicas con talento de primer nivel."
       },
       {
-        question: "¿Cómo ayuda BairesDev a las empresas a escalar sus equipos de ingeniería?",
+        question: "¿Cómo ayuda SEOdigital a las empresas a escalar sus equipos de ingeniería?",
         answer:
           "Proveemos ingenieros altamente calificados que se integran rápidamente a los equipos existentes, alineados a la zona horaria del cliente y con dominio del idioma inglés, garantizando una colaboración eficiente y continua."
       },
@@ -21,7 +21,7 @@ const faqData = [
           "La externalización permite reducir costos, acelerar tiempos de entrega y acceder a talento especializado sin los desafíos asociados a la contratación local."
       },
       {
-        question: "¿Qué servicios de desarrollo de software ofrece BairesDev?",
+        question: "¿Qué servicios de desarrollo de software ofrece SEOdigital?",
         answer:
           "Ofrecemos desarrollo de software a medida, aplicaciones web y móviles, QA & testing, DevOps, soluciones en la nube, inteligencia artificial y más."
       }
@@ -31,7 +31,7 @@ const faqData = [
     category: "Industrias",
     items: [
       {
-        question: "¿Con qué industrias trabaja BairesDev?",
+        question: "¿Con qué industrias trabaja SEOdigital?",
         answer:
           "Trabajamos con industrias como fintech, healthcare, retail, logística, educación, telecomunicaciones, gaming y software empresarial, entre otras."
       }
@@ -43,7 +43,7 @@ const faqData = [
       {
         question: "¿Cuál es la diferencia entre staff augmentation, equipos dedicados y outsourcing?",
         answer:
-          "El staff augmentation suma talento a tu equipo existente. Los equipos dedicados funcionan como una extensión independiente de tu empresa. El outsourcing delega completamente el desarrollo del proyecto a BairesDev."
+          "El staff augmentation suma talento a tu equipo existente. Los equipos dedicados funcionan como una extensión independiente de tu empresa. El outsourcing delega completamente el desarrollo del proyecto a SEOdigital."
       }
     ]
   },
@@ -51,17 +51,17 @@ const faqData = [
     category: "Tecnologías / Soluciones",
     items: [
       {
-        question: "¿Qué tecnologías utiliza BairesDev?",
+        question: "¿Qué tecnologías utiliza SEOdigital?",
         answer:
           "Trabajamos con tecnologías como JavaScript, React, Angular, Node.js, Java, .NET, Python, AWS, Azure, Google Cloud, IA, Big Data y más."
       },
       {
-        question: "¿Puede BairesDev integrarse con flujos de trabajo existentes?",
+        question: "¿Puede SEOdigital integrarse con flujos de trabajo existentes?",
         answer:
           "Sí. Nuestros equipos se adaptan a tus herramientas, metodologías ágiles y procesos internos sin fricciones."
       },
       {
-        question: "¿Cómo asegura BairesDev la calidad de sus ingenieros?",
+        question: "¿Cómo asegura SEOdigital la calidad de sus ingenieros?",
         answer:
           "Aplicamos un riguroso proceso de selección donde solo el 1% de los candidatos supera todas las evaluaciones técnicas, de comunicación y experiencia."
       },

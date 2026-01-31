@@ -64,7 +64,7 @@ body {
 }
 
 .highlight {
-  color: #f97316;
+  color:  #6223cc;
 }
 
 .description {
@@ -80,7 +80,7 @@ body {
 
 /* Botón */
 .cta-button {
-  background-color: #f97316;
+  background-color:  #6223cc;
   color: white;
   font-weight: 600;
   font-size: 1rem;
@@ -93,7 +93,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #ea580c;
+  background-color:  #6223cc;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3);
 }
@@ -226,7 +226,7 @@ body {
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #f97316;
+  color:  #6223cc;
   margin-bottom: 0.5rem;
 }
 

@@ -17,7 +17,7 @@
 }
 
 .section-title .highlight {
-  color: #f04a23;
+  color:  #6223cc;
   font-weight: bold;
 }
 
@@ -54,6 +54,6 @@
 }
 
 .servicio-card:hover {
-  border-color: #f04a23;
+  border-color:  #6223cc;
   box-shadow: 0 4px 12px rgba(240, 74, 35, 0.1);
 }

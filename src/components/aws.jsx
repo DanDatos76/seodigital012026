@@ -20,7 +20,13 @@ const AWSPage = () => {
             Ayudamos a las empresas a diseñar, implementar y escalar soluciones
             cloud seguras, flexibles y de alto rendimiento sobre Amazon Web Services.
           </p>
-          <button className="cta-btn">Acceder a servicios AWS</button>
+            <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>
         </div>
 
         <div className="hero-img">
@@ -32,11 +38,11 @@ const AWSPage = () => {
       <section className="trusted-logos">
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
-          <div className="logos">
-            <img src="/logos/amazon.png" alt="Amazon" />
-            <img src="/logos/netflix.png" alt="Netflix" />
-            <img src="/logos/airbnb.png" alt="Airbnb" />
-            <img src="/logos/spotify.png" alt="Spotify" />
+           <div className="logos">
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -120,7 +126,13 @@ const AWSPage = () => {
         </div>
         <div className="end-text">
           <h3>¿Listo para llevar tu infraestructura a AWS?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
+           <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
         </div>
       </section>
 

@@ -64,8 +64,13 @@ export default function TravelHospitalityPage() {
             Soluciones digitales para conectar personas, destinos y experiencias.
           </p>
 
-          <button className="cta">Impulsar mi Negocio Turístico</button>
-
+ <a 
+  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta">Acelere su Hoja de Ruta</button>
+</a>
           <div className="badges">
             <div className="badge-count">
               +500 empresas confían en nuestro expertise en turismo digital
@@ -219,8 +224,13 @@ export default function TravelHospitalityPage() {
           <p>
             Creamos experiencias digitales que inspiran a viajar.
           </p>
-          <button className="cta small">Agendar una llamada</button>
-        </div>
+  <a 
+  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta small">Agendar una llamada</button>
+</a>        </div>
       </footer>
     </div>
   );

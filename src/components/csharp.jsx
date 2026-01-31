@@ -21,7 +21,13 @@ const CSharp = () => {
             Por lo general, entregamos nuestras soluciones en 2 semanas, para que puedas 
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
-          <button className="cta-btn">Acceder a desarrollo de C#</button>
+            <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>
         </div>
 
         <div className="hero-img">
@@ -34,10 +40,10 @@ const CSharp = () => {
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/pinterest.png" alt="Pinterest" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -75,22 +81,22 @@ const CSharp = () => {
 
       {/* ====== WHY CHOOSE ====== */}
       <section className="why-django">
-        <h2>Why Choose BairesDev for C# Development</h2>
+        <h2>POR QUÉ ELEGIR A SEOdigital PARA TU DESARROLLO EN C#</h2>
         <div className="why-grid">
           <div className="why-item">
-            <h4>Nearshore, Timezone-aligned Talent</h4>
+            <h4> Talento nearshore, alineado con la zona horaria</h4>
             <p>
               Equipos que trabajan en tu misma zona horaria para garantizar comunicación fluida.
             </p>
           </div>
           <div className="why-item">
-            <h4>Diverse Range of Talent</h4>
+            <h4> Talento diverso y especializado</h4>
             <p>
               Accede a expertos C#, arquitectos .NET y especialistas en DevOps bajo un mismo equipo.
             </p>
           </div>
           <div className="why-item">
-            <h4>Flexible Engagement Models</h4>
+            <h4> Modalidades de trabajo flexibles</h4>
             <p>
               Modelos de contratación adaptables a tus necesidades: staff augmentation o proyectos completos.
             </p>
@@ -103,10 +109,17 @@ const CSharp = () => {
         <div className="end-img">
           <img src={teamImage} alt="Team working with C#" />
         </div>
-        <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto C#?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+         <div className="end-text">
+  <h3>¿Listo para acelerar tu proyecto Python?</h3>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
+</div>
+
       </section>
 
     </div>

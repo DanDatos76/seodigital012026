@@ -35,7 +35,7 @@
 }
 
 .hero-text .highlight {
-  color: #ff5a3c;
+  color:  #6223cc;
 }
 
 .hero-text .subtitle {
@@ -45,7 +45,7 @@
 }
 
 .cta-btn {
-  background: #ff5a3c;
+  background:  #6223cc;
   color: #fff;
   border: none;
   padding: 14px 28px;
@@ -56,7 +56,7 @@
 }
 
 .cta-btn:hover {
-  background: #e04b2f;
+  background:  #6223cc;
   transform: translateY(-2px);
 }
 
@@ -117,7 +117,7 @@
 
 .service-item {
   padding: 20px;
-  border-left: 4px solid #ff5a3c;
+  border-left: 4px solid  #6223cc;
   background: #f8f9fb;
   border-radius: 8px;
   transition: 0.3s;

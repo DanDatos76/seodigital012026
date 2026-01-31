@@ -1,0 +1,133 @@
+.careers {
+  padding: 80px 5%;
+  background: #f7f8fa;
+}
+
+/* HERO */
+
+.careers-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.careers-text {
+  max-width: 520px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.careers-text h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.careers-text h1 span {
+  color:  #6223cc;
+}
+
+.careers-text p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background:  #6223cc;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background:  #6223cc;
+}
+
+.careers-map img {
+  max-width: 980px;
+}
+
+/* WHY */
+
+.why {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.why-left {
+  max-width: 420px;
+}
+
+.why-left h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.why-left p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.why-image {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* GRID */
+
+.why-right {
+  flex: 1;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.why-item h4 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.why-item p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .careers-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why {
+    flex-direction: column;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+#root > section > div.careers-hero > div.careers-map > img {
+  width: 70%;
+
+}

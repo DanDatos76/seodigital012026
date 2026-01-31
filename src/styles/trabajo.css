@@ -12,7 +12,7 @@
 
 .client-badge {
   font-size: 12px;
-  color: #ff5a1f;
+  color:  #6223cc;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@
 }
 
 .client-header h2 span {
-  color: #ff5a1f;
+  color:  #6223cc;
 }
 
 .client-header p {
@@ -112,7 +112,7 @@
 
 .client-card small {
   font-size: 13px;
-  color: #ff5a1f;
+  color:  #6223cc;
   font-weight: 500;
   cursor: pointer;
 }

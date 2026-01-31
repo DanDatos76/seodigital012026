@@ -98,7 +98,7 @@ p {
 }
 
 .hero-form button {
-  background-color: #f94e30;
+  background-color:  #6223cc;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -109,7 +109,7 @@ p {
 }
 
 .hero-form button:hover {
-  background-color: #d93f27;
+  background-color:  #6223cc;
 }
 
 /* ====== LOGOS ====== */
@@ -169,7 +169,7 @@ p {
 
 .productos-texto ul li::before {
   content: "•";
-  color: #f94e30;
+  color:  #6223cc;
   position: absolute;
   left: 0;
 }
@@ -258,7 +258,7 @@ p {
 }
 
 .porque-item h3 {
-  color: #f94e30;
+  color:  #6223cc;
   margin-bottom: 10px;
 }
 

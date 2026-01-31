@@ -15,7 +15,7 @@
 .badge {
   font-size: 12px;
   font-weight: 700;
-  color: #ff4d2d;
+  color:  #6223cc;
   letter-spacing: 1px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .hero h1 span {
-  color: #ff4d2d;
+  color:  #6223cc;
 }
 
 .hero p {
@@ -37,7 +37,7 @@
 
 .cta {
   margin-top: 25px;
-  background: #ff4d2d;
+  background:  #6223cc;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -102,7 +102,7 @@
 .step-5 { width: 100px; }
 
 .funnel-final {
-  background: #ff4d2d;
+  background:  #6223cc;
   color: white;
   padding: 12px;
   font-weight: 700;

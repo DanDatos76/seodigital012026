@@ -21,7 +21,13 @@ const ReactPage = () => {
             rápidas y escalables. Entregamos soluciones de alta calidad en ciclos ágiles,
             optimizando la experiencia del usuario y el rendimiento de tu producto.
           </p>
-          <button className="cta-btn">Acceder a desarrollo React</button>
+             <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>
         </div>
 
         <div className="hero-img">
@@ -34,10 +40,10 @@ const ReactPage = () => {
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/pinterest.png" alt="Pinterest" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -119,10 +125,17 @@ const ReactPage = () => {
         <div className="end-img">
           <img src={teamImage} alt="Equipo desarrollando con React" />
         </div>
-        <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto con React?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+         <div className="end-text">
+  <h3>¿Listo para acelerar tu proyecto React?</h3>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
+</div>
+
       </section>
 
     </div>

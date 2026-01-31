@@ -18,12 +18,12 @@
 }
 
 .about-left h3 span {
-  color: #ff6b4a;
+  color:  #6223cc;
 }
 
 .about-left p {
   font-size: 15px;
-  color: #555;
+  color:  #6223cc;
   line-height: 1.6;
   margin-bottom: 24px;
 }
@@ -44,11 +44,11 @@
 
 .about-highlight p {
   font-size: 14px;
-  color: #333;
+  color:  #6223cc;
 }
 
 .about-highlight a {
-  color: #ff6b4a;
+  color:  #6223cc;
   text-decoration: none;
   font-weight: 500;
 }
@@ -57,7 +57,7 @@
 .mega-col h4 {
   font-size: 13px;
   letter-spacing: 1px;
-  color: #888;
+  color:  #6223cc;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
 .dot {
   width: 8px;
   height: 8px;
-  background: #ff6b4a;
+  background:  #6223cc;
   border-radius: 50%;
   display: inline-block;
 }
@@ -89,7 +89,7 @@
 }
 
 .mega-col ul li a:hover {
-  color: #ff6b4a;
+  color:  #6223cc;
 }
 
 /* LINK HISTORIA */
@@ -97,7 +97,7 @@
   display: inline-block;
   margin-top: 16px;
   font-size: 15px;
-  color: #ff6b4a;
+  color:  #6223cc;
   text-decoration: none;
   font-weight: 500;
 }

@@ -30,12 +30,7 @@ const MegaMenu2 = () => {
 
           <div className="client-quote">
             <img src="/27001.png" alt="Certificación ISO 27001" />
-            <h4>URBAN OUTFITTERS</h4>
-            <p>
-              Optimizamos el rendimiento del sitio web, lo que resultó en un aumento del 38%
-              en las ganancias netas.
-              <Link to="/caso-urban-outfitters"> Lee el caso de estudio.</Link>
-            </p>
+             
           </div>
         </div>
 

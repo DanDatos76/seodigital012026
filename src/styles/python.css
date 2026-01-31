@@ -57,7 +57,7 @@ body {
 }
 
 .highlight {
-  color: #f97316;
+  color:  #6223cc;
 }
 
 .subtitle {
@@ -85,7 +85,7 @@ body {
 }
 
 .rating {
-  background-color: #dc2626;
+  background-color:  #6223cc;
   color: white;
   padding: 0.125rem 0.5rem;
   border-radius: 0.25rem;
@@ -126,13 +126,13 @@ body {
 
 .form-input:focus {
   outline: none;
-  border-color: #f97316;
+  border-color:  #6223cc;
   box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
 
 .submit-btn {
   width: 100%;
-  background-color: #f97316;
+  background-color:  #6223cc;
   color: white;
   font-weight: 500;
   padding: 0.75rem;
@@ -144,7 +144,7 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #ea580c;
+  background-color:  #6223cc;
 }
 
 /* Trust Bar */
@@ -225,7 +225,7 @@ body {
   content: 'Check';
   position: absolute;
   left: 0;
-  color: #f97316;
+  color:  #6223cc;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -285,7 +285,7 @@ body {
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #f97316;
+  color:  #6223cc;
 }
 
 .stat-label {
@@ -295,12 +295,12 @@ body {
 }
 
 .highlight-box {
-  border: 2px solid #f97316;
+  border: 2px solid  #6223cc;
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #c2410c;
+  color:  #6223cc;
   margin-bottom: 1.5rem;
 }
 

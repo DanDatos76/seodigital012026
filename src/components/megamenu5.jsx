@@ -25,8 +25,8 @@ const MegaMenuAbout = () => {
             />
 
             <p>
-              Nuestro CEO participando del Foro Económico Mundial en Davos 2025.
-              <a href="/about"> Leer más</a>
+              Nuestro CEO.
+               
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const MegaMenuAbout = () => {
         {/* COLUMNA 2 */}
         <div className="mega-col">
           <h4>
-            <span className="dot" /> INSIDE BAIRESDEV
+            <span className="dot" /> INSIDE  SEODIGITAL
           </h4>
 
           <ul>
@@ -45,9 +45,7 @@ const MegaMenuAbout = () => {
             <li><a href="/faq">Preguntas frecuentes</a></li>
           </ul>
 
-          <a href="/historia" className="story-link">
-            Nuestra historia →
-          </a>
+          
         </div>
 
         {/* COLUMNA 3 */}
@@ -69,10 +67,10 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
-            <li><a href="/trabajar">Trabajar en BairesDev</a></li>
-            <li><a href="/empleos">Oportunidades laborales</a></li>
+            <li><a href="/trabajar">Trabajar en SEOdigital</a></li>
+            <li><a href="/vacantes">Oportunidades laborales</a></li>
             <li><a href="/referidos">Referidos de talento</a></li>
-            <li><a href="/circles">Programa Our Circles</a></li>
+             
             <li><a href="/cultura">Cultura de la empresa</a></li>
           </ul>
         </div>

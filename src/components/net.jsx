@@ -21,7 +21,13 @@ const DotNetPage = () => {
             aplicaciones empresariales seguras, escalables y de alto
             rendimiento, alineadas a los estándares modernos de la industria.
           </p>
-          <button className="cta-btn">Acceder a desarrollo .NET</button>
+           <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn"> Contactar </button>
+  </a>
         </div>
 
         <div className="hero-img">
@@ -34,10 +40,10 @@ const DotNetPage = () => {
         <div className="logo-bar">
           <p>500+ empresas confían en nosotros:</p>
           <div className="logos">
-            <img src="/logos/google.png" alt="Google" />
-            <img src="/logos/pinterest.png" alt="Pinterest" />
-            <img src="/logos/adobe.png" alt="Adobe" />
-            <img src="/logos/ibm.png" alt="IBM" />
+            <img src=" /google.png" alt="Google" />
+            <img src=" /pinterest.png" alt="Pinterest" />
+            <img src=" /adobe.png" alt="Adobe" />
+            <img src=" /ibm.png" alt="IBM" />
           </div>
         </div>
       </section>
@@ -120,9 +126,16 @@ const DotNetPage = () => {
           <img src={teamImage} alt="Equipo desarrollando con .NET" />
         </div>
         <div className="end-text">
-          <h3>¿Listo para acelerar tu proyecto .NET?</h3>
-          <button className="cta-btn">Comenzar ahora</button>
-        </div>
+  <h3>¿Listo para acelerar tu proyecto Python?</h3>
+  <a 
+    href="https://wa.me/5491176550907" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="cta-btn">Comenzar ahora</button>
+  </a>
+</div>
+
       </section>
 
     </div>

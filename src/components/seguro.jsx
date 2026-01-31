@@ -67,8 +67,13 @@ export default function InsurancePage() {
 
           <p className="hero-sub">Optimice el procesamiento de reclamos y mejore la retención de sus asegurados.</p>
 
-          <button className="cta">Acelere su Transformación Digital</button>
-
+ <a 
+  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta">Acelere su Hoja de Ruta</button>
+</a>
           <div className="badges">
             <div className="badge-count">
               +500 empresas confían en nuestro talento tecnológico del top 1%
@@ -84,7 +89,7 @@ export default function InsurancePage() {
 
         <div className="hero-image">
           <img
-            src="/seguro.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
+            src="/seguro.jfif" // Asegúrate de tener esta imagen en tu carpeta de assets
             alt="Soluciones de Software para Seguros"
           />
         </div>
@@ -222,8 +227,13 @@ export default function InsurancePage() {
           <p>
             Evolucionamos el sector asegurador hacia el futuro digital. Cientos de proyectos exitosos desde 2009.
           </p>
-          <button className="cta small">Agendar una llamada</button>
-        </div>
+ <a 
+  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="cta small">Agendar una llamada</button>
+</a>        </div>
       </footer>
     </div>
   );

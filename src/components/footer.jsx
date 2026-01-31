@@ -1,86 +1,126 @@
-// Footer.jsx
+ // src/components/Footer.jsx
 import React from "react";
 import "../styles/footer.css";
+import { 
+  Linkedin, 
+  Facebook, 
+  Instagram, 
+  MessageCircle 
+} from "lucide-react";
+
+// Icono de TikTok en formato SVG (estilo Lucide)
+const TikTokIcon = ({ size = 20 }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-columns">
+          
           {/* Columna 1 */}
           <div className="footer-column">
             <h4>Descubre la magia de SEOdigital</h4>
             <ul>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Clientes</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="/nuestroslideres"> Líderes</a></li>
+              <li><a href="/tecnologicos">Equipo técnico</a></li>
+              <li><a href="/prensa">Prensa</a></li>
+              <li><a href="/faq">FAQ</a></li>
             </ul>
           </div>
 
           {/* Columna 2 */}
           <div className="footer-column">
-            <h4>Resources</h4>
+            <h4> Aval</h4>
             <ul>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Industry Insights</a></li>
+              <li><a href="/premios"> Premios</a></li>
+              <li><a href="/certificacione">Certificados</a></li>
             </ul>
           </div>
 
           {/* Columna 3 */}
           <div className="footer-column">
-            <h4>Careers</h4>
+            <h4>Carreras</h4>
             <ul>
-              <li><a href="#">Job Opportunities</a></li>
-              <li><a href="#">Talent Referrals</a></li>
+              <li><a href="/vacantes">Oportunidades Laborales</a></li>
+              <li><a href="/trabajar"> Trabajar en SEOdigital</a></li>
             </ul>
           </div>
 
-          {/* Columna de contacto */}
-          <div className="footer-contact grey-background">
-            <h4>Get in touch</h4>
-            <div className="contact-buttons">
-              <button className="contact-btn">Contact Us</button>
-              <button className="call-btn">Schedule a Call →</button>
+          {/* Columna 4: Redes Sociales */}
+          <div className="footer-column social-section">
+            <h4>Síguenos</h4>
+            <div className="social-grid-display">
+              <a 
+                href="https://www.linkedin.com/company/seodigital-oficial/" 
+                className="social-item" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} />
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/seodigital.ar" 
+                className="social-item" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+                <span>Instagram</span>
+              </a>
+              
+              <a 
+                href="https://www.tiktok.com/@seodigital_" 
+                className="social-item" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+              >
+                <TikTokIcon size={20} />
+                <span>Tik Tok</span>
+              </a>
+
+              <a 
+                href="https://www.facebook.com/seodigital.ar" 
+                className="social-item" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+                <span>Facebook</span>
+              </a>
             </div>
-
-            <div className="phone">📞 +1 (408) 478-2739</div>
-
-            <p className="insight-text">
-              Get insights from the experts on building and scaling technology teams.
-            </p>
-
-            <form className="newsletter">
-              <input type="email" placeholder="name@email.com" />
-              <button type="submit">Subscribe 📩</button>
-            </form>
-
-            <label className="checkbox">
-              <input type="checkbox" /> I accept the{" "}
-              <a href="#">Privacy Policy</a>.
-            </label>
+            <button className="whatsapp-cta" onClick={() => window.open('https://wa.me/5491176550907', '_blank')}>
+              <MessageCircle size={18} />
+              Contacto Directo
+            </button>
           </div>
+
         </div>
 
-        {/* Parte inferior del footer */}
+        {/* Parte inferior legal */}
         <div className="footer-bottom">
-          <p>
-            <a href="#">Privacy Policy</a> |{" "}
-            <a href="#">Terms of Service</a> |{" "}
-            <a href="#">Do Not Sell My Personal Information</a>
-          </p>
-
-          <p>© 2025 SEOdigital. All rights reserved.</p>
-
-          <div className="social-icons">
-            <a href="#">🔗</a>
-            <a href="#">📘</a>
-            <a href="#">✖️</a>
-            <a href="#">📷</a>
-            <a href="#">▶️</a>
+          <div className="footer-legal">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
           </div>
+          <p className="copyright">© 2025 SEOdigital. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

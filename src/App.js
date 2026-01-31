@@ -76,6 +76,12 @@ import VettingProcess from './components/tecnologicos';
 import PressReleases from './components/prensa';
 import ContactHelp from './components/contacto';
 import FAQ from './components/faq';
+import TrophyCabinet from './components/premios';
+import CertifiedExpertise from './components/certificados';
+import CareersSEOdigital from './components/trabajar';
+import OpenPositionsSEOdigital from './components/vacantes';
+import ReferralSEOdigital from './components/referidos';
+import Culture from './components/cultura';
 
 function App() {
   return (
@@ -159,6 +165,12 @@ function App() {
          <Route path="/prensa" element={<PressReleases />} />
          <Route path="/contacto" element={<ContactHelp />} />
          <Route path="/faq" element={<FAQ />} />
+         <Route path="/premios" element={<TrophyCabinet />} />
+         <Route path="/certificaciones"  element={<CertifiedExpertise />} /> 
+         <Route path="/trabajar" element={< CareersSEOdigital/>} /> 
+         <Route path="/vacantes" element={<  OpenPositionsSEOdigital/>} /> 
+         <Route path="/referidos" element={< ReferralSEOdigital/>} />
+         <Route path="/cultura" element={< Culture/>} />
       </Routes>
 
       <Footer />
