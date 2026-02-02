@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import MegaMenu from "./megaMenu";
@@ -8,83 +8,159 @@ import MegaMenu5 from "./megamenu5";
 
 import "../styles/header.css";
 
+const HOVER_OPEN_DELAY = 150;
+const HOVER_CLOSE_DELAY = 200;
+
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú móvil
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Función para abrir/cerrar el menú principal en móvil
+  const openTimer = useRef(null);
+  const closeTimer = useRef(null);
+
+  /* ===============================
+     CERRAR TODO AL SCROLL
+  =============================== */
+  useEffect(() => {
+    const handleScroll = () => {
+      setActiveMenu(null);
+      setIsMenuOpen(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Función para manejar clicks en los items del menú (especialmente para móvil)
+  /* ===============================
+     MOBILE CLICK
+  =============================== */
   const handleItemClick = (menuName) => {
     if (window.innerWidth <= 768) {
-      if (activeMenu === menuName) {
-        setActiveMenu(null);
-      } else {
-        setActiveMenu(menuName);
-      }
+      setActiveMenu(activeMenu === menuName ? null : menuName);
     }
+  };
+
+  /* ===============================
+     DESKTOP HOVER (con delay)
+  =============================== */
+  const handleMouseEnter = (menuName) => {
+    if (window.innerWidth <= 768) return;
+
+    clearTimeout(closeTimer.current);
+    openTimer.current = setTimeout(() => {
+      setActiveMenu(menuName);
+    }, HOVER_OPEN_DELAY);
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth <= 768) return;
+
+    clearTimeout(openTimer.current);
+    closeTimer.current = setTimeout(() => {
+      setActiveMenu(null);
+    }, HOVER_CLOSE_DELAY);
+  };
+
+  /* ===============================
+     MEGAMENU (no cerrar al entrar)
+  =============================== */
+  const handleMegaEnter = () => {
+    clearTimeout(closeTimer.current);
+  };
+
+  const handleMegaLeave = () => {
+    closeTimer.current = setTimeout(() => {
+      setActiveMenu(null);
+    }, HOVER_CLOSE_DELAY);
   };
 
   return (
     <header className={`header ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="header-container">
-        
-        {/* LOGO - Corregido para que la imagen se vea dentro */}
+
         <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
           <img src="logo2.png" alt="SEOdigital Logo" />
         </Link>
 
-        {/* BOTÓN HAMBURGUESA - Ahora funcional */}
         <button className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? "✕" : "☰"}
         </button>
 
-        {/* NAV */}
         <nav className="nav">
           <ul className="nav-list">
+
             {/* SOLUCIONES */}
             <li
-              className={`nav-item ${activeMenu === "soluciones" ? "active" : ""}`}
-              onMouseEnter={() => window.innerWidth > 768 && setActiveMenu("soluciones")}
-              onMouseLeave={() => window.innerWidth > 768 && setActiveMenu(null)}
+              className="nav-item"
+              onMouseEnter={() => handleMouseEnter("soluciones")}
+              onMouseLeave={handleMouseLeave}
               onClick={() => handleItemClick("soluciones")}
             >
               <span className="nav-link">Soluciones</span>
-              {activeMenu === "soluciones" && <MegaMenu />}
+              {activeMenu === "soluciones" && (
+                <div
+                  onMouseEnter={handleMegaEnter}
+                  onMouseLeave={handleMegaLeave}
+                >
+                  <MegaMenu />
+                </div>
+              )}
             </li>
 
             {/* TECNOLOGÍAS */}
             <li
-              className={`nav-item ${activeMenu === "tecnologias" ? "active" : ""}`}
-              onMouseEnter={() => window.innerWidth > 768 && setActiveMenu("tecnologias")}
-              onMouseLeave={() => window.innerWidth > 768 && setActiveMenu(null)}
+              className="nav-item"
+              onMouseEnter={() => handleMouseEnter("tecnologias")}
+              onMouseLeave={handleMouseLeave}
               onClick={() => handleItemClick("tecnologias")}
             >
               <span className="nav-link">Tecnologías</span>
-              {activeMenu === "tecnologias" && <MegaMenu2 />}
+              {activeMenu === "tecnologias" && (
+                <div
+                  onMouseEnter={handleMegaEnter}
+                  onMouseLeave={handleMegaLeave}
+                >
+                  <MegaMenu2 />
+                </div>
+              )}
             </li>
 
             {/* INDUSTRIAS */}
             <li
-              className={`nav-item ${activeMenu === "industrias" ? "active" : ""}`}
-              onMouseEnter={() => window.innerWidth > 768 && setActiveMenu("industrias")}
-              onMouseLeave={() => window.innerWidth > 768 && setActiveMenu(null)}
+              className="nav-item"
+              onMouseEnter={() => handleMouseEnter("industrias")}
+              onMouseLeave={handleMouseLeave}
               onClick={() => handleItemClick("industrias")}
             >
               <span className="nav-link">Industrias</span>
-              {activeMenu === "industrias" && <MegaMenu3 />}
+              {activeMenu === "industrias" && (
+                <div
+                  onMouseEnter={handleMegaEnter}
+                  onMouseLeave={handleMegaLeave}
+                >
+                  <MegaMenu3 />
+                </div>
+              )}
             </li>
 
             {/* EMPRESA */}
             <li
-              className={`nav-item ${activeMenu === "empresa" ? "active" : ""}`}
-              onMouseEnter={() => window.innerWidth > 768 && setActiveMenu("empresa")}
-              onMouseLeave={() => window.innerWidth > 768 && setActiveMenu(null)}
+              className="nav-item"
+              onMouseEnter={() => handleMouseEnter("empresa")}
+              onMouseLeave={handleMouseLeave}
               onClick={() => handleItemClick("empresa")}
             >
               <span className="nav-link">Empresa</span>
-              {activeMenu === "empresa" && <MegaMenu5 />}
+              {activeMenu === "empresa" && (
+                <div
+                  onMouseEnter={handleMegaEnter}
+                  onMouseLeave={handleMegaLeave}
+                >
+                  <MegaMenu5 />
+                </div>
+              )}
             </li>
 
             {/* CONTACTO */}
@@ -93,17 +169,21 @@ const Header = () => {
                 Contacto
               </Link>
             </li>
-            
-            {/* BOTÓN SOLO MÓVIL */}
+
+            {/* MOBILE CTA */}
             <li className="nav-item mobile-only">
-               <Link to="/agenda" className="call-button mobile-btn" onClick={() => setIsMenuOpen(false)}>
+              <Link
+                to="/agenda"
+                className="call-button mobile-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Agendar Llamada
               </Link>
             </li>
+
           </ul>
         </nav>
 
-        {/* CTA ESCRITORIO */}
         <div className="header-actions">
           <a href="tel:+5491176550907" className="call-button">
             Agendar Llamada

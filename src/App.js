@@ -7,7 +7,6 @@ import Footer from './components/footer';
 import Hero from './components/hero';
 import Services from './components/services';
 import Map from './components/map';
-import FeaturedSlider from './components/featuredSlider';
 import ProcessSection from './components/processSection';
 import About from './components/about'; // 👈 ojo con la mayúscula
 import Django from './components/django';
@@ -96,7 +95,7 @@ function App() {
               <Hero/>
               <Services />
               <Map />
-              <FeaturedSlider />
+               
               <ProcessSection />
             </>
           } 
