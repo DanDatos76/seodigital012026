@@ -81,6 +81,8 @@ import CareersSEOdigital from './components/trabajar';
 import OpenPositionsSEOdigital from './components/vacantes';
 import ReferralSEOdigital from './components/referidos';
 import Culture from './components/cultura';
+import CookiesPolicy from './components/cookies';
+import AvisoLegalSEOdigital from './components/avisolegal';
 
 function App() {
   return (
@@ -170,7 +172,9 @@ function App() {
          <Route path="/vacantes" element={<  OpenPositionsSEOdigital/>} /> 
          <Route path="/referidos" element={< ReferralSEOdigital/>} />
          <Route path="/cultura" element={< Culture/>} />
-      </Routes>
+         <Route path="/cookies" element={< CookiesPolicy/> } />
+         <Route path="/legal" element={<AvisoLegalSEOdigital />} />  </Routes>
+         
 
       <Footer />
     </Router>

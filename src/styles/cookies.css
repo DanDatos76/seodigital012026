@@ -1,0 +1,172 @@
+/* src/components/cookiesPolicy.css */
+
+.cookies-container {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* TITULO PRINCIPAL */
+.cookies-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* SUBTITULOS */
+.cookies-subtitle {
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+/* TITULOS DE SECCIÓN */
+.cookies-section-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+/* TEXTO */
+.cookies-text {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* TABLA */
+.cookies-table-wrapper {
+  margin: 30px 0;
+  overflow-x: auto;
+}
+
+.cookies-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 650px; /* evita que se rompa */
+}
+
+.cookies-table th,
+.cookies-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.cookies-table th {
+  background: #f3f3f3;
+  font-weight: bold;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVE ==================== */
+/* ================================================= */
+
+/* ✅ Tablets */
+@media (max-width: 1024px) {
+  .cookies-container {
+    padding: 35px;
+  }
+
+  .cookies-title {
+    font-size: 26px;
+  }
+
+  .cookies-subtitle {
+    font-size: 19px;
+  }
+
+  .cookies-text {
+    font-size: 13.5px;
+  }
+}
+
+/* ✅ Mobile grande */
+@media (max-width: 768px) {
+  .cookies-container {
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  .cookies-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .cookies-subtitle {
+    font-size: 17px;
+    margin-top: 28px;
+  }
+
+  .cookies-section-title {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .cookies-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Tabla scrolleable */
+  .cookies-table {
+    font-size: 12px;
+    min-width: 600px;
+  }
+}
+
+/* ✅ Mobile chico */
+@media (max-width: 480px) {
+  .cookies-container {
+    padding: 18px;
+  }
+
+  .cookies-title {
+    font-size: 19px;
+  }
+
+  .cookies-subtitle {
+    font-size: 15px;
+  }
+
+  .cookies-section-title {
+    font-size: 14px;
+  }
+
+  .cookies-text {
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+
+  /* Tabla más compacta */
+  .cookies-table th,
+  .cookies-table td {
+    padding: 7px;
+  }
+}
+
+/* ✅ Ultra pequeño (teléfonos viejos) */
+@media (max-width: 360px) {
+  .cookies-title {
+    font-size: 17px;
+  }
+
+  .cookies-text {
+    font-size: 12px;
+  }
+
+  .cookies-subtitle {
+    font-size: 14px;
+  }
+}

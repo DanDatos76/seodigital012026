@@ -34,9 +34,21 @@ export default function Footer() {
           <div className="footer-column">
             <h4>Descubre la magia de SEOdigital</h4>
             <ul>
-              <li><a href="/nuestroslideres"> Líderes</a></li>
-              <li><a href="/tecnologicos">Equipo técnico</a></li>
-              <li><a href="/prensa">Prensa</a></li>
+
+               <li><a href="/legal">Aviso Legal</a></li>
+               
+             
+                <li>
+    <a
+      href="/ datos.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Política de Protección de Datos
+    </a>
+  </li>
+   <li><a href="/cookies"> Política de Cookies</a></li>
+             
               <li><a href="/faq">FAQ</a></li>
             </ul>
           </div>
