@@ -38,11 +38,7 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
-<<<<<<< HEAD
-             
-=======
-      
->>>>>>> 0680232 (Quita secciones equipo)
+ 
             <li><a href="/prensa">Comunicados de prensa</a></li>
             <li><a href="/contacto">Contacto</a></li>
             <li><a href="/faq">Preguntas frecuentes</a></li>
