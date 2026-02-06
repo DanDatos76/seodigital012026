@@ -38,7 +38,6 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
- 
             <li><a href="/prensa">Comunicados de prensa</a></li>
             <li><a href="/contacto">Contacto</a></li>
             <li><a href="/faq">Preguntas frecuentes</a></li>
