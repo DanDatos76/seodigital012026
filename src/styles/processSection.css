@@ -145,10 +145,111 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  background: #fff; /* Añadido para que se vea como tarjeta limpia */
+  background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .process-container {
+    padding: 80px 40px;
+    gap: 40px;
+  }
+  
+  .process-image img {
+    max-width: 400px;
+  }
+  
+  .process-image h1 {
+    font-size: 38px;
+  }
+  
+  .process-content h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-container {
+    padding: 60px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .process-image {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .process-image h1 {
+    font-size: 32px;
+  }
+  
+  .process-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .process-content {
+    max-width: 100%;
+  }
+  
+  .process-content h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .steps {
+    gap: 25px;
+  }
+  
+  .step {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-container {
+    padding: 40px 15px;
+  }
+  
+  .process-image h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .process-content h2 {
+    font-size: 26px;
+  }
+  
+  .step {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  
+  .step-text h3 {
+    font-size: 15px;
+  }
+  
+  .step-text h4 {
+    font-size: 11px;
+  }
+  
+  .step-text p {
+    font-size: 13px;
+  }
+  
+  .cta-button {
+    width: 100%;
+    padding: 12px 20px;
+  }
 }
 
 .icon {

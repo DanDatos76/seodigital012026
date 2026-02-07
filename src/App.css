@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -34,5 +36,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive global container */
+@media (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    font-size: 13px;
   }
 }

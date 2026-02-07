@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
 import RollsRoyceLogo from "../assets/27001.png";
 
-const MegaMenu = () => {
+const MegaMenu = ({ closeMenu }) => {
   return (
     <div className="mega-menu" id="mega-menu-soluciones">
       <div className="mega-menu-inner-content">
@@ -20,15 +20,15 @@ const MegaMenu = () => {
             </li>
 
             <li>
-              <Link to="/staff">Staff</Link>
+              <Link to="/staff" onClick={closeMenu}>Staff</Link>
             </li>
 
             <li>
-              <Link to="/equipos-dedicados">Equipos Dedicados</Link>
+              <Link to="/equipos-dedicados" onClick={closeMenu}>Equipos Dedicados</Link>
             </li>
 
             <li>
-              <Link to="/outsourcing">Outsourcing de Software</Link>
+              <Link to="/outsourcing" onClick={closeMenu}>Outsourcing de Software</Link>
             </li>
           </ul>
 
@@ -48,14 +48,14 @@ const MegaMenu = () => {
           </h4>
 
           <ul>
-            <li><Link to="/iadev">Desarrollo de IA</Link></li>
-            <li><Link to="/backend">Desarrollo Backend</Link></li>
-            <li><Link to="/cms">Desarrollo de CMS</Link></li>
-            <li><Link to="/cripto">Criptomonedas y Blockchain</Link></li>
-            <li><Link to="/frontend">Desarrollo Frontend</Link></li>
-            <li><Link to="/mlearning">Machine Learning</Link></li>
-            <li><Link to="/qatesting">Pruebas de QA y Automatización</Link></li>
-            <li><Link to="/uxui">Diseño UX/UI</Link></li>
+            <li><Link to="/iadev" onClick={closeMenu}>Desarrollo de IA</Link></li>
+            <li><Link to="/backend" onClick={closeMenu}>Desarrollo Backend</Link></li>
+            <li><Link to="/cms" onClick={closeMenu}>Desarrollo de CMS</Link></li>
+            <li><Link to="/cripto" onClick={closeMenu}>Criptomonedas y Blockchain</Link></li>
+            <li><Link to="/frontend" onClick={closeMenu}>Desarrollo Frontend</Link></li>
+            <li><Link to="/mlearning" onClick={closeMenu}>Machine Learning</Link></li>
+            <li><Link to="/qatesting" onClick={closeMenu}>Pruebas de QA y Automatización</Link></li>
+            <li><Link to="/uxui" onClick={closeMenu}>Diseño UX/UI</Link></li>
           </ul>
         </div>
 
@@ -65,13 +65,13 @@ const MegaMenu = () => {
           </h4>
 
           <ul>
-            <li><Link to="/backup">Soluciones de Backup</Link></li>
-            <li><Link to="/bigdata">Big Data</Link></li>
-            <li><Link to="/cloud">Aplicaciones en la Nube</Link></li>
-            <li><Link to="/cyberseguridad">Ciberseguridad</Link></li>
-            <li><Link to="/devops">DevOps</Link></li>
-            <li><Link to="/tdigital">Transformación Digital</Link></li>
-            <li><Link to="/erp">Desarrollo de ERP</Link></li>
+            <li><Link to="/backup" onClick={closeMenu}>Soluciones de Backup</Link></li>
+            <li><Link to="/bigdata" onClick={closeMenu}>Big Data</Link></li>
+            <li><Link to="/cloud" onClick={closeMenu}>Aplicaciones en la Nube</Link></li>
+            <li><Link to="/cyberseguridad" onClick={closeMenu}>Ciberseguridad</Link></li>
+            <li><Link to="/devops" onClick={closeMenu}>DevOps</Link></li>
+            <li><Link to="/tdigital" onClick={closeMenu}>Transformación Digital</Link></li>
+            <li><Link to="/erp" onClick={closeMenu}>Desarrollo de ERP</Link></li>
           </ul>
         </div>
 

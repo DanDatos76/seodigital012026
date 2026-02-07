@@ -21,9 +21,9 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   background-color: #f6f7f9;
-  padding: 80px 8%;
+  padding: 100px 8% 80px;
   gap: 60px;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 
 .hero-content {
@@ -33,6 +33,7 @@ p {
 .hero-content h1 {
   font-size: 2.3rem;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero-content h1 span {
@@ -43,6 +44,7 @@ p {
   max-width: 600px;
   margin-bottom: 30px;
   font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .hero-rating {
@@ -284,6 +286,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 90px 6% 70px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
   }
 
   .hero-content, .hero-form {
@@ -301,5 +308,48 @@ p {
   .porque-items {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 5% 60px;
+    margin-top: 60px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .hero-rating {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 5% 50px;
+    margin-top: 55px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  
+  .hero-form {
+    padding: 25px;
+  }
+  
+  .hero-form h3 {
+    font-size: 1.1rem;
   }
 }

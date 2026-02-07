@@ -1,13 +1,17 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 // Componentes
 import Header from './components/header';
 import Footer from './components/footer';
+import PageTransition from './components/PageTransition';
+import LoadingOverlay from './components/LoadingOverlay';
 import Hero from './components/hero';
 import Services from './components/services';
 import Map from './components/map';
 import ProcessSection from './components/processSection';
+import TeamSection from './components/TeamSection';
 import About from './components/about'; // 👈 ojo con la mayúscula
 import Django from './components/django';
 import CSharp from './components/csharp';
@@ -84,98 +88,109 @@ import Culture from './components/cultura';
 import CookiesPolicy from './components/cookies';
 import AvisoLegalSEOdigital from './components/avisolegal';
 
+// Componente interno para manejar las rutas animadas
+function AnimatedRoutes() {
+  const location = useLocation();
+  
+  return (
+    <>
+      <LoadingOverlay />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route 
+            path="/" 
+            element={
+              <PageTransition>
+                <Hero/>
+                <Services />
+                <TeamSection />
+                <Map />
+                <ProcessSection />
+              </PageTransition>
+            } 
+          />
+          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+          <Route path="/go-experts" element={<PageTransition><Golang /></PageTransition>} />
+          <Route path="/django" element={<PageTransition><Django /></PageTransition>} />
+          <Route path="/csharp" element={<PageTransition><CSharp /></PageTransition>} />
+          <Route path="/angular" element={<PageTransition><Angular /></PageTransition>} />
+          <Route path="/python" element={<PageTransition><Python /></PageTransition>} />
+          <Route path="/node" element={<PageTransition><NodeJS /></PageTransition>} />
+          <Route path="/ia" element={<PageTransition><ArtificialIntelligencePage /></PageTransition>} />
+          <Route path="/cmasmas" element={<PageTransition><CPP /></PageTransition>} />
+          <Route path="/vuejs" element={<PageTransition><VueJS /></PageTransition>} />
+          <Route path="/agricultura" element={<PageTransition><Agriculture /></PageTransition>} />
+          <Route path="/braices" element={<PageTransition><RealEstatePage /></PageTransition>} />
+          <Route path="/automotriz" element={<PageTransition><Autom /></PageTransition>} />   
+          <Route path="/finanzas" element={<PageTransition><FinancePage /></PageTransition>} />
+          <Route path="/seguro" element={<PageTransition><SeguroPage /></PageTransition>} />
+          <Route path="/inmueble" element={<PageTransition><InmueblePage /></PageTransition>} />
+          <Route path="/telecomunicaciones" element={<PageTransition><TelecomunicacionesPage /></PageTransition>} />
+          <Route path="/construccion" element={<PageTransition><ConstruccionPage /></PageTransition>} />
+          <Route path="/fintech" element={<PageTransition><FintechPage /></PageTransition>} />
+          <Route path="/marketing" element={<PageTransition><MarketingPage /></PageTransition>} />
+          <Route path="/minorista" element={<PageTransition><Retail /></PageTransition>} />
+          <Route path="/transporte" element={<PageTransition><Transporte /></PageTransition>} />
+          <Route path="/aviacion" element={<PageTransition><AviacionPage /></PageTransition>} />
+          <Route path="/medios" element={<PageTransition><Medios /></PageTransition>} />
+          <Route path="/sanidad" element={<PageTransition><HealthcarePage /></PageTransition>} />
+          <Route path="/petroleo" element={<PageTransition><OilGasPage /></PageTransition>} />
+          <Route path="/suministro" element={<PageTransition><SupplyChainPage /></PageTransition>} />
+          <Route path="/viajes" element={<PageTransition><TravelHospitalityPage /></PageTransition>} />
+          <Route path="/blog" element={<PageTransition><BlogPage /></PageTransition>} />
+          <Route path="/our-work" element={<PageTransition><Works /></PageTransition>} />
+          <Route path="/backend" element={<PageTransition><BackendPage /></PageTransition>} />
+          <Route path="/iadev" element={<PageTransition><IadevPage /></PageTransition>} />
+          <Route path="/cms" element={<PageTransition><CmsPage /></PageTransition>} />
+          <Route path="/cripto" element={<PageTransition><CriptoPage /></PageTransition>} />
+          <Route path="/frontend" element={<PageTransition><FrontendPage /></PageTransition>} />
+          <Route path="/qatesting" element={<PageTransition><QatestingPage /></PageTransition>} />
+          <Route path="/uxui" element={<PageTransition><UxuiPage /></PageTransition>} />
+          <Route path="/backup" element={<PageTransition><BackupPage /></PageTransition>} />
+          <Route path="/bigdata" element={<PageTransition><BigdataPage /></PageTransition>} />
+          <Route path="/cloud" element={<PageTransition><CloudPage /></PageTransition>} />
+          <Route path="/cyberseguridad" element={<PageTransition><CybersecurityPage /></PageTransition>} />
+          <Route path="/devops" element={<PageTransition><DevopsPage /></PageTransition>} />
+          <Route path="/erp" element={<PageTransition><ErpPage /></PageTransition>} />
+          <Route path="/tdigital" element={<PageTransition><TransformacionDigitalPage /></PageTransition>} />
+          <Route path="/banca" element={<PageTransition><BankingPage /></PageTransition>} />
+          <Route path="/kotlin" element={<PageTransition><Kotlin /></PageTransition>} />
+          <Route path="reactjs" element={<PageTransition><ReactPage /></PageTransition>} />
+          <Route path="/php" element={<PageTransition><PHPPage /></PageTransition>} />
+          <Route path="/typescript" element={<PageTransition><TypeScriptPage /></PageTransition>} />
+          <Route path="/net" element={<PageTransition><DotNetPage /></PageTransition>} />
+          <Route path="powerbi" element={<PageTransition><PowerBIPage /></PageTransition>} />
+          <Route path="/gcloud" element={<PageTransition><GoogleCloudPage /></PageTransition>} />
+          <Route path="/aws" element={<PageTransition><AWSPage /></PageTransition>} /> 
+          <Route path="/java" element={<PageTransition><JavaPage /></PageTransition>} />
+          <Route path="/mlearning" element={<PageTransition><MachineLearningPage /></PageTransition>} /> 
+          <Route path="/azure" element={<PageTransition><AzurePage /></PageTransition>} /> 
+          <Route path="/salesforce" element={<PageTransition><SalesforcePage /></PageTransition>} />
+          <Route path="/trabajo" element={<PageTransition><ClientShowcase /></PageTransition>} />
+          <Route path="/nuestroslideres" element={<PageTransition><IndustrySection /></PageTransition>} /> 
+          <Route path="/tecnologicos" element={<PageTransition><VettingProcess /></PageTransition>} />
+          <Route path="/prensa" element={<PageTransition><PressReleases /></PageTransition>} />
+          <Route path="/contacto" element={<PageTransition><ContactHelp /></PageTransition>} />
+          <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
+          <Route path="/premios" element={<PageTransition><TrophyCabinet /></PageTransition>} />
+          <Route path="/certificaciones"  element={<PageTransition><CertifiedExpertise /></PageTransition>} /> 
+          <Route path="/trabajar" element={<PageTransition><CareersSEOdigital/></PageTransition>} /> 
+          <Route path="/vacantes" element={<PageTransition><OpenPositionsSEOdigital/></PageTransition>} /> 
+          <Route path="/referidos" element={<PageTransition><ReferralSEOdigital/></PageTransition>} />
+          <Route path="/cultura" element={<PageTransition><Culture/></PageTransition>} />
+          <Route path="/cookies" element={<PageTransition><CookiesPolicy/></PageTransition>} />
+          <Route path="/legal" element={<PageTransition><AvisoLegalSEOdigital /></PageTransition>} />
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
       <Header />
-
-      <Routes>
-        <Route 
-          path="/" 
-          element={
-            <>
-              <Hero/>
-              <Services />
-              <Map />
-               
-              <ProcessSection />
-            </>
-          } 
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="/go-experts" element={<Golang />} />
-        <Route path="/django" element={<Django />} />
-        <Route path="/csharp" element={<CSharp />} />
-        <Route path="/angular" element={<Angular />} />
-        <Route path="/python" element={<Python />} />
-        <Route path="/node" element={<NodeJS />} />
-        <Route path="/ia" element={<ArtificialIntelligencePage />} />
-         <Route path="/cmasmas" element={<CPP />} />
-         <Route path="/vuejs" element={<VueJS />} />
-         <Route path="/agricultura" element={<Agriculture />} />
-         <Route path="/braices" element={<RealEstatePage />} />
-         <Route path="/automotriz" element={<Autom />} />   
-         <Route path="/finanzas" element={<FinancePage />} />
-         <Route path="/seguro" element={<SeguroPage />} />
-         <Route path="/inmueble" element={<InmueblePage />} />
-         <Route path="/telecomunicaciones" element={<TelecomunicacionesPage />} />
-          <Route path="/construccion" element={<ConstruccionPage />} />
-         <Route path="/fintech" element={<FintechPage />} />
-         <Route path="/marketing" element={<MarketingPage />} />
-         <Route path="/minorista" element={<Retail />} />
-         <Route path="/transporte" element={<Transporte />} />
-         <Route path="/aviacion" element={<AviacionPage />} />
-         <Route path="/medios" element={<Medios />} />
-         <Route path="/sanidad" element={<HealthcarePage />} />
-         <Route path="/petroleo" element={<OilGasPage />} />
-         <Route path="/suministro" element={<SupplyChainPage />} />
-         <Route path="/viajes" element={<TravelHospitalityPage />} />
-         <Route path="/blog" element={<BlogPage />} />
-         <Route path="/our-work" element={<Works />} />
-         <Route path="/backend" element={<BackendPage />} />
-         <Route path="/iadev" element={<IadevPage />} />
-         <Route path="/cms" element={<CmsPage />} />
-         <Route path="/cripto" element={<CriptoPage />} />
-         <Route path="/frontend" element={<FrontendPage />} />
-          <Route path="/qatesting" element={<QatestingPage />} />
-         <Route path="/uxui" element={<UxuiPage />} />
-         <Route path="/backup" element={<BackupPage />} />
-         <Route path="/bigdata" element={<BigdataPage />} />
-         <Route path="/cloud" element={<CloudPage />} />
-         <Route path="/cyberseguridad" element={<CybersecurityPage />} />
-         <Route path="/devops" element={<DevopsPage />} />
-         <Route path="/erp" element={<ErpPage />} />
-         <Route path="/tdigital" element={<TransformacionDigitalPage />} />
-         <Route path="/python" element={<Python />} />
-         <Route path="/banca" element={< BankingPage />} />
-         <Route path="/kotlin" element={< Kotlin />} />
-         <Route path="reactjs" element={< ReactPage />} />
-         <Route path="/php" element={< PHPPage />} />
-         <Route path="/typescript" element={< TypeScriptPage />} />
-         <Route path="/net" element={< DotNetPage />} />
-         <Route path="powerbi" element={< PowerBIPage />} />
-         <Route path="/gcloud" element={< GoogleCloudPage />} />
-         <Route path="/aws" element={< AWSPage />} /> 
-         <Route path="/java" element={< JavaPage />} />
-         <Route path="/mlearning" element={<MachineLearningPage />} /> 
-         <Route path="/azure" element={<AzurePage />} /> 
-         <Route path="/salesforce" element={<SalesforcePage />} />
-         <Route path="/trabajo" element={<ClientShowcase />} />
-         <Route path="/nuestroslideres" element={<IndustrySection />} /> 
-         <Route path="/tecnologicos" element={<VettingProcess />} />
-         <Route path="/prensa" element={<PressReleases />} />
-         <Route path="/contacto" element={<ContactHelp />} />
-         <Route path="/faq" element={<FAQ />} />
-         <Route path="/premios" element={<TrophyCabinet />} />
-         <Route path="/certificaciones"  element={<CertifiedExpertise />} /> 
-         <Route path="/trabajar" element={< CareersSEOdigital/>} /> 
-         <Route path="/vacantes" element={<  OpenPositionsSEOdigital/>} /> 
-         <Route path="/referidos" element={< ReferralSEOdigital/>} />
-         <Route path="/cultura" element={< Culture/>} />
-         <Route path="/cookies" element={< CookiesPolicy/> } />
-         <Route path="/legal" element={<AvisoLegalSEOdigital />} />  </Routes>
-         
-
+      <AnimatedRoutes />
       <Footer />
     </Router>
   );

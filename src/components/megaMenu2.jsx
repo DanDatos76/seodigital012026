@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
 
-const MegaMenu2 = () => {
+const MegaMenu2 = ({ closeMenu }) => {
   return (
     <div className="mega-menu" id="mega-menu-tecnologias">
       <div className="mega-menu-inner-content">
@@ -17,12 +17,12 @@ const MegaMenu2 = () => {
 
           <ul>
             <li>
-              <Link to="/contratar-desarrolladores">
+              <Link to="/contratar-desarrolladores" onClick={closeMenu}>
                 Contratar Desarrolladores de Software
               </Link>
             </li>
             <li>
-              <Link to="/talento-top-1">
+              <Link to="/talento-top-1" onClick={closeMenu}>
                 Talento del Top 1%
               </Link>
             </li>
@@ -37,39 +37,39 @@ const MegaMenu2 = () => {
         <div className="mega-column">
           <h4><span className="dot" /> LENGUAJES</h4>
           <ul>
-            <li><Link to="/python">Python</Link></li>
-            <li><Link to="/node">Node.js</Link></li>
-            <li><Link to="/django">Django</Link></li>
-            <li><Link to="/kotlin">Kotlin</Link></li>
-            <li><Link to="/typescript">TypeScript</Link></li>
-            <li><Link to="/gcloud">Google Cloud</Link></li>
-            <li><Link to="/mlearning">Machine Learning</Link></li>
+            <li><Link to="/python" onClick={closeMenu}>Python</Link></li>
+            <li><Link to="/node" onClick={closeMenu}>Node.js</Link></li>
+            <li><Link to="/django" onClick={closeMenu}>Django</Link></li>
+            <li><Link to="/kotlin" onClick={closeMenu}>Kotlin</Link></li>
+            <li><Link to="/typescript" onClick={closeMenu}>TypeScript</Link></li>
+            <li><Link to="/gcloud" onClick={closeMenu}>Google Cloud</Link></li>
+            <li><Link to="/mlearning" onClick={closeMenu}>Machine Learning</Link></li>
           </ul>
         </div>
 
         <div className="mega-column">
           <h4><span className="dot" /> INNOVACIÓN</h4>
           <ul>
-            <li><Link to="/ia">Inteligencia Artificial</Link></li>
-            <li><Link to="/csharp">C# (C-Sharp)</Link></li>
-            <li><Link to="/go-experts">Golang</Link></li>
-            <li><Link to="/reactjs">React JS</Link></li>
-            <li><Link to="/net">.NET</Link></li>
-            <li><Link to="/aws">AWS</Link></li>
-            <li><Link to="/salesforce">Salesforce</Link></li>
+            <li><Link to="/ia" onClick={closeMenu}>Inteligencia Artificial</Link></li>
+            <li><Link to="/csharp" onClick={closeMenu}>C# (C-Sharp)</Link></li>
+            <li><Link to="/go-experts" onClick={closeMenu}>Golang</Link></li>
+            <li><Link to="/reactjs" onClick={closeMenu}>React JS</Link></li>
+            <li><Link to="/net" onClick={closeMenu}>.NET</Link></li>
+            <li><Link to="/aws" onClick={closeMenu}>AWS</Link></li>
+            <li><Link to="/salesforce" onClick={closeMenu}>Salesforce</Link></li>
           </ul>
         </div>
 
         <div className="mega-column">
           <h4><span className="dot" /> FRAMEWORKS</h4>
           <ul>
-            <li><Link to="/angular">Angular</Link></li>
-            <li><Link to="/cmasmas">C++</Link></li>
-            <li><Link to="/vuejs">Vue.js</Link></li>
-            <li><Link to="/php">PHP</Link></li>
-            <li><Link to="/powerbi">Power BI</Link></li>
-            <li><Link to="/java">Java</Link></li>
-            <li><Link to="/azure">Microsoft Azure</Link></li>
+            <li><Link to="/angular" onClick={closeMenu}>Angular</Link></li>
+            <li><Link to="/cmasmas" onClick={closeMenu}>C++</Link></li>
+            <li><Link to="/vuejs" onClick={closeMenu}>Vue.js</Link></li>
+            <li><Link to="/php" onClick={closeMenu}>PHP</Link></li>
+            <li><Link to="/powerbi" onClick={closeMenu}>Power BI</Link></li>
+            <li><Link to="/java" onClick={closeMenu}>Java</Link></li>
+            <li><Link to="/azure" onClick={closeMenu}>Microsoft Azure</Link></li>
           </ul>
         </div>
 

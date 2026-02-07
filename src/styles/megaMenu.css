@@ -187,32 +187,104 @@ img.logo {
 /* 🟢 3) MOBILE GRANDE < 768px */
 @media (max-width: 768px) {
   .mega-menu {
-    padding: 25px 20px;
+    padding: 15px 0 !important;
     top: unset;
     margin-top: 0;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+    min-height: auto;
   }
 
   .mega-menu-inner-content {
     display: block;
+    height: auto;
   }
 
   .mega-column {
     width: 100%;
-    flex-basis: 100%; /* 1 columna */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    flex-basis: 100%;
+    padding: 12px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   .mega-column:last-child {
     border-bottom: none;
   }
 
+  .left-column {
+    border-right: none;
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+
+  /* Estilos para acordeón interno en mobile */
+  .accordion-header {
+    cursor: pointer;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    user-select: none;
+    padding: 12px 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    transition: none;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+  }
+
+  .accordion-header:active {
+    background: transparent !important;
+  }
+
+  .accordion-icon {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #6223cc !important;
+    margin-left: auto;
+  }
+
+  .accordion-closed {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.3s ease;
+  }
+
+  .accordion-open {
+    max-height: 800px !important;
+    overflow: visible !important;
+    transition: max-height 0.3s ease;
+  }
+
+  .mega-column:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
   .mega-column h3 {
     font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .mega-column h4 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .mega-column ul {
+    padding-left: 0;
   }
 
   .mega-column ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .mega-column ul li a {
+    padding: 8px 0;
+    display: block;
   }
 
   .client-quote img {
@@ -221,6 +293,7 @@ img.logo {
 
   .client-quote {
     font-size: 12px;
+    margin-top: 20px;
   }
 }
 
@@ -228,7 +301,11 @@ img.logo {
 /* 🔴 4) MOBILE PEQUEÑO < 480px */
 @media (max-width: 480px) {
   .mega-menu {
-    padding: 20px 16px;
+    padding: 25px 20px;
+  }
+
+  .mega-column {
+    padding: 18px 10px;
   }
 
   .mega-column h3 {
@@ -236,11 +313,12 @@ img.logo {
   }
 
   .mega-column h4 {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .mega-column ul li a {
-    font-size: 12.5px;
+    font-size: 13px;
+    padding: 6px 0;
   }
 
   .client-quote p {
@@ -281,6 +359,113 @@ img.logo {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 50px;
+}
+
+/* Responsive About Mega Menu */
+@media (max-width: 1200px) {
+  .about-mega-menu {
+    padding: 30px 40px;
+  }
+  
+  .mega-menu-inner {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-mega-menu {
+    padding: 25px 30px;
+  }
+  
+  .mega-menu-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .about-left {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-mega-menu {
+    padding: 25px 20px;
+  }
+  
+  .mega-menu-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .about-left {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .about-left h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .about-left p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .mega-col {
+    border-top: 1px solid #eee;
+    padding: 20px 10px;
+  }
+  
+  .mega-col h4 {
+    margin-bottom: 15px;
+  }
+  
+  .mega-col ul li {
+    margin-bottom: 12px;
+  }
+  
+  .mega-col ul li a {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-mega-menu {
+    padding: 20px 15px;
+  }
+  
+  .mega-menu-inner {
+    gap: 25px;
+  }
+  
+  .about-left h3 {
+    font-size: 20px;
+  }
+  
+  .mega-col {
+    padding: 18px 8px;
+  }
+  
+  .mega-col h4 {
+    font-size: 12px;
+  }
+  
+  .mega-col ul li a {
+    font-size: 14px;
+  }
+  
+  .about-highlight {
+    flex-direction: column;
+  }
+  
+  .about-highlight img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
 }
 
 /* COLUMNA IZQUIERDA */

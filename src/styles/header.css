@@ -117,18 +117,42 @@
 }
 
 /* ===== MOBILE ===== */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 15px;
+  }
+  
+  .nav-list {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     height: 60px;
+  }
+  
+  .logo {
+    height: 35px;
+  }
+  
+  .logo img {
+    height: 200%;
   }
 
   .menu-toggle {
     display: block;
     background: none;
     border: none;
-    font-size: 32px;
+    font-size: 28px;
     color: #6223cc;
     cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
   }
 
   .header-actions {
@@ -141,29 +165,50 @@
 
   .header.menu-open .nav {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     background: #fff;
-    height: calc(100vh - 60px);
     overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 0;
+    z-index: 999;
   }
 
   .nav-list {
     flex-direction: column;
+    gap: 0;
+    padding: 0;
   }
 
   .nav-item {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
   }
 
   .nav-link {
-    padding: 15px 25px;
+    padding: 18px 20px;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mobile-arrow {
+    font-size: 22px;
+    font-weight: 400;
+    color: #6223cc;
+    margin-left: auto;
   }
 
   .mobile-only {
@@ -176,5 +221,41 @@
     width: 100%;
     text-align: center;
     padding: 15px;
+    display: block;
+  }
+
+  /* Megamenu dentro del mobile */
+  .nav-item .mega-menu,
+  .nav-item .about-mega-menu {
+    position: static !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    padding: 10px 20px 20px !important;
+    margin: 0 !important;
+    top: unset !important;
+    background: #f9f9f9 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 55px;
+  }
+  
+  .header.menu-open .nav {
+    top: 55px;
+    height: calc(100vh - 55px);
+  }
+  
+  .logo {
+    height: 30px;
+  }
+  
+  .logo img {
+    height: 180%;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
   }
 }

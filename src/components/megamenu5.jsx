@@ -1,8 +1,9 @@
  import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
 import Gustavo from "../assets/gustavo.png";
 
-const MegaMenuAbout = () => {
+const MegaMenuAbout = ({ closeMenu }) => {
   return (
     <div className="mega-menu about-mega-menu">
       <div className="mega-menu-inner">
@@ -38,9 +39,9 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
-            <li><a href="/prensa">Comunicados de prensa</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-            <li><a href="/faq">Preguntas frecuentes</a></li>
+            <li><Link to="/prensa" onClick={closeMenu}>Comunicados de prensa</Link></li>
+            <li><Link to="/contacto" onClick={closeMenu}>Contacto</Link></li>
+            <li><Link to="/faq" onClick={closeMenu}>Preguntas frecuentes</Link></li>
           </ul>
 
           
@@ -54,7 +55,7 @@ const MegaMenuAbout = () => {
 
           <ul>
              
-            <li><a href="/certificaciones">Certificaciones</a></li>
+            <li><Link to="/certificaciones" onClick={closeMenu}>Certificaciones</Link></li>
           </ul>
         </div>
 
@@ -65,11 +66,11 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
-            <li><a href="/trabajar">Trabajar en SEOdigital</a></li>
-            <li><a href="/vacantes">Oportunidades laborales</a></li>
-            <li><a href="/referidos">Referidos de talento</a></li>
+            <li><Link to="/trabajar" onClick={closeMenu}>Trabajar en SEOdigital</Link></li>
+            <li><Link to="/vacantes" onClick={closeMenu}>Oportunidades laborales</Link></li>
+            <li><Link to="/referidos" onClick={closeMenu}>Referidos de talento</Link></li>
              
-            <li><a href="/cultura">Cultura de la empresa</a></li>
+            <li><Link to="/cultura" onClick={closeMenu}>Cultura de la empresa</Link></li>
           </ul>
         </div>
 
