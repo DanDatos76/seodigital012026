@@ -20,7 +20,7 @@ const TeamSection = () => {
       image: "/team/DIRECTOR-COMERCIAL-FRANCO-OSMAN.jpg",
       description: "Franco Osman lidera la estrategia comercial de SEOdigital con una amplia trayectoria en desarrollo de negocios y gestión de cuentas clave en el sector tecnológico. Su experiencia abarca más de 12 años construyendo relaciones estratégicas con clientes internacionales, desde startups disruptivas hasta corporaciones globales. Franco ha sido instrumental en la expansión de la compañía a nuevos mercados, desarrollando alianzas comerciales que han multiplicado nuestro alcance. Su enfoque centrado en el cliente y su capacidad para identificar oportunidades de crecimiento han sido fundamentales para el éxito sostenido de SEOdigital."
     },{
-      name: "ANDRÉS",
+      name: "ANDRÉS ARCELA",
       role: "ESPECIALISTA",
       image: "/team/andres.jpg",
       description: "Andrés es un especialista multidisciplinario con amplia experiencia en gestión de proyectos tecnológicos y consultoría estratégica. Su versatilidad y conocimiento profundo en múltiples áreas le permiten conectar los puntos entre diferentes departamentos, asegurando que los proyectos se ejecuten de manera eficiente y alineada con los objetivos del negocio. Con más de 7 años en la industria, Andrés ha participado en la implementación de soluciones empresariales complejas, optimización de procesos y transformación digital. Su capacidad analítica y enfoque orientado a resultados lo convierten en un activo valioso para cualquier iniciativa estratégica de la compañía."
@@ -35,7 +35,7 @@ const TeamSection = () => {
     {
       name: "DANIEL PÁEZ",
       role: "SOPORTE TÉCNICO",
-      image: "/team/SOPORTE-DANIEL-PAEZ.jpg",
+      image: "/team/SOPORTE-DANIEL-PAEZ.png",
       description: "Daniel Páez lidera nuestro departamento de soporte técnico con un enfoque excepcional en la satisfacción del cliente y la resolución efectiva de incidencias. Con más de 9 años de experiencia en soporte tecnológico y gestión de servicios IT, Daniel ha implementado procesos que garantizan tiempos de respuesta óptimos y soluciones de alta calidad. Su profundo conocimiento técnico y habilidades de comunicación le permiten traducir conceptos complejos en soluciones comprensibles para nuestros clientes. Daniel y su equipo son la primera línea de defensa, asegurando que todas las operaciones funcionen sin problemas y que cada cliente reciba el apoyo que necesita en tiempo real."
     },
     
