@@ -87,6 +87,7 @@ import ReferralSEOdigital from './components/referidos';
 import Culture from './components/cultura';
 import CookiesPolicy from './components/cookies';
 import AvisoLegalSEOdigital from './components/avisolegal';
+import CasosDeEstudio from './components/CasosDeEstudio';
 
 // Componente interno para manejar las rutas animadas
 function AnimatedRoutes() {
@@ -180,6 +181,7 @@ function AnimatedRoutes() {
           <Route path="/cultura" element={<PageTransition><Culture/></PageTransition>} />
           <Route path="/cookies" element={<PageTransition><CookiesPolicy/></PageTransition>} />
           <Route path="/legal" element={<PageTransition><AvisoLegalSEOdigital /></PageTransition>} />
+          <Route path="/casos-de-estudio" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
         </Routes>
       </AnimatePresence>
     </>

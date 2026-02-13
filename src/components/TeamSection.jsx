@@ -38,6 +38,12 @@ const TeamSection = () => {
       image: "/team/SOPORTE-DANIEL-PAEZ.png",
       description: "Daniel Páez lidera nuestro departamento de soporte técnico con un enfoque excepcional en la satisfacción del cliente y la resolución efectiva de incidencias. Con más de 9 años de experiencia en soporte tecnológico y gestión de servicios IT, Daniel ha implementado procesos que garantizan tiempos de respuesta óptimos y soluciones de alta calidad. Su profundo conocimiento técnico y habilidades de comunicación le permiten traducir conceptos complejos en soluciones comprensibles para nuestros clientes. Daniel y su equipo son la primera línea de defensa, asegurando que todas las operaciones funcionen sin problemas y que cada cliente reciba el apoyo que necesita en tiempo real."
     },
+    {
+      name: "PILAR VALOR",
+      role: "COMMUNITY MANAGER",
+      image: "/team/PILAR-VALOR.jpeg",
+      description: "Pilar Valor es nuestra Community Manager experta en comunicación estratégica y posicionamiento digital. Especializada en construcción de marca, engagement y crecimiento orgánico, lidera la planificación y ejecución de estrategias de contenido orientadas a resultados medibles. Con una sólida trayectoria gestionando comunidades para marcas en distintos mercados, Pilar diseña planes editoriales alineados a objetivos comerciales, optimiza la presencia digital mediante análisis de métricas clave (alcance, conversión, retención y engagement) y desarrolla narrativas que fortalecen la identidad y reputación de cada proyecto. Trabaja bajo metodologías basadas en data, combinando creatividad con análisis estratégico para maximizar impacto y retorno. Su enfoque integral abarca desde la definición de tono y voz de marca hasta la gestión de crisis y automatización de flujos de comunicación. Su compromiso con la coherencia, la profesionalización de la comunicación y la generación de valor sostenido garantiza que cada marca no solo tenga presencia en redes, sino una comunidad sólida, activa y alineada con sus objetivos de negocio."
+    }
     
   ];
 

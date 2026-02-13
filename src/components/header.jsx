@@ -240,6 +240,13 @@ const Header = () => {
               )}
             </li>
 
+            {/* CASOS DE ESTUDIO */}
+            <li className="nav-item">
+              <Link className="nav-link" to="/casos-de-estudio" onClick={closeMobileMenu}>
+                Casos de estudio
+              </Link>
+            </li>
+
             {/* CONTACTO */}
             <li className="nav-item">
               <Link className="nav-link" to="/contacto" onClick={closeMobileMenu}>
