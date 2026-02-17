@@ -43,6 +43,18 @@ const TeamSection = () => {
       role: "COMMUNITY MANAGER",
       image: "/team/PILAR-VALOR.jpeg",
       description: "Pilar Valor es nuestra Community Manager experta en comunicación estratégica y posicionamiento digital. Especializada en construcción de marca, engagement y crecimiento orgánico, lidera la planificación y ejecución de estrategias de contenido orientadas a resultados medibles. Con una sólida trayectoria gestionando comunidades para marcas en distintos mercados, Pilar diseña planes editoriales alineados a objetivos comerciales, optimiza la presencia digital mediante análisis de métricas clave (alcance, conversión, retención y engagement) y desarrolla narrativas que fortalecen la identidad y reputación de cada proyecto. Trabaja bajo metodologías basadas en data, combinando creatividad con análisis estratégico para maximizar impacto y retorno. Su enfoque integral abarca desde la definición de tono y voz de marca hasta la gestión de crisis y automatización de flujos de comunicación. Su compromiso con la coherencia, la profesionalización de la comunicación y la generación de valor sostenido garantiza que cada marca no solo tenga presencia en redes, sino una comunidad sólida, activa y alineada con sus objetivos de negocio."
+    },
+    {
+      name: "DAVID SANTAMARÍA VILLAVERDE",
+      role: "CHIEF OPERATING OFFICER (COO) – ESPAÑA",
+      image: "/team/David-Santamaría-Villaverde.jpeg",
+      description: "David Santamaría Villaverde lidera la operación integral de SEOdigital en España, asegurando eficiencia, calidad de entrega y escalabilidad en cada proyecto de software. Cuenta con más de 12 años de experiencia en gestión de operaciones tecnológicas, coordinando equipos multidisciplinarios y desarrollos a medida en entornos de alta exigencia.Ha sido responsable de estructurar metodologías de trabajo, optimizar la planificación de recursos y fortalecer el control presupuestario para maximizar márgenes y reducir desviaciones operativas. Su enfoque orientado a procesos, indicadores de desempeño y mejora continua ha sido clave para garantizar resultados consistentes y sostenibles en el crecimiento de la compañía."
+    },
+    {
+      name: "CLARA SAN GIL",
+      role: "DIRECTORA COMERCIAL DE OPERACIONES",
+      image: "/team/Clara-San-Gil.jpeg",
+      description: "Clara San Gil lidera la Dirección Comercial de Operaciones de SEOdigital con una sólida trayectoria en optimización de procesos comerciales y expansión estratégica en el sector tecnológico. Su experiencia abarca más de 10 años integrando ventas, planificación financiera y eficiencia operativa, alineando equipos y objetivos bajo métricas de rendimiento claras. Clara ha sido clave en la implementación de modelos de revenue operations, sistemas de forecast y estructuras de seguimiento que fortalecen la previsibilidad y rentabilidad del negocio. Su visión analítica y su capacidad para estructurar operaciones comerciales escalables han sido determinantes para consolidar un crecimiento sostenido y financieramente sólido." 
     }
     
   ];
