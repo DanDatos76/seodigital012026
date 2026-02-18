@@ -36,7 +36,7 @@
 }
 
 /* ---- HERO ---- */
-.hero {
+.ag-page .hero {
   display: flex;
   gap: 60px;
   align-items: center;
@@ -48,7 +48,7 @@
 /* Sistema de partículas mejorado - Múltiples capas */
 
 /* Capa 1: Gradientes grandes flotantes */
-.hero::before {
+.ag-page .hero::before {
   content: '';
   position: absolute;
   top: -40px;
@@ -74,11 +74,7 @@
   }
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -60px;
-  left: -60px;
+.ag-page .hero::after {
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
@@ -153,9 +149,10 @@
   }
 }
 
-.hero-content { 
+.ag-page .hero-content { 
   flex: 1; 
   min-width: 0;
+  position: relative;
   animation: fadeInLeft 0.8s ease-out;
 }
 
@@ -170,7 +167,7 @@
   }
 }
 
-.hero-image { 
+.ag-page .hero-image { 
   flex: 1;
   max-width: 550px;
   flex-shrink: 0; 
@@ -261,6 +258,7 @@
   display: block;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 100%;
 }
 
 .hero-image img:hover {
@@ -855,23 +853,25 @@
 }
 
 @media (max-width: 900px) {
-  .hero { 
+  .ag-page .hero { 
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: flex-start;
+    overflow: hidden;
   }
-  
-  .hero::before {
-    width: 300px;
-    height: 300px;
-  }
-  
-  .hero-content {
+
+  .ag-page .hero-content {
     width: 100%;
     max-width: 100%;
   }
+
+  .ag-page .hero-content > a {
+    display: block;
+    width: 100%;
+  }
   
-  .hero-image { 
+  .ag-page .hero-image { 
     width: 100%;
     max-width: 100%;
   }
@@ -913,9 +913,27 @@
     margin-bottom: 20px;
   }
 
-  .hero {
+  .ag-page .hero {
+    flex-direction: column;
     gap: 32px;
     margin-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  .ag-page .hero-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .ag-page .hero-content > a {
+    display: block;
+    width: 100%;
+  }
+
+  .ag-page .hero-image {
+    width: 100%;
+    max-width: 100%;
+    order: 2;
   }
 
   .hero-title {
@@ -935,14 +953,19 @@
   }
 
   .hero-image img {
-    height: 280px;
+    width: 100%;
+    height: auto;
+    min-height: 240px;
+    max-height: 320px;
     border-radius: 16px;
   }
 
   .cta {
     width: 100%;
+    max-width: 100%;
     justify-content: center;
-    padding: 14px 24px;
+    padding: 16px 24px;
+    font-size: 1rem;
   }
 
   .badges {
@@ -1022,22 +1045,41 @@
 
 @media (max-width: 480px) {
   .ag-page {
-    margin: 80px auto 20px;
-    padding: 0 16px;
+    margin: 70px auto auto auto;
+    padding: 0 7.5px;
   }
 
   .breadcrumb {
     font-size: 0.75rem;
   }
 
-  .hero {
-    gap: 28px;
+  .ag-page .hero {
+    flex-direction: column;
+    gap: 2px;
     margin-bottom: 50px;
+    align-items: flex-start;
+  }
+
+  .ag-page .hero-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .ag-page .hero-content > a {
+    display: block;
+    width: 100%;
+  }
+
+  .ag-page .hero-image {
+    width: 100%;
+    max-width: 100%;
+    order: 2;
   }
 
   .hero-title {
     font-size: 1.75rem;
     margin-bottom: 12px;
+    margin-left: -10px !important;
   }
   
   .hero-title span {
@@ -1051,13 +1093,19 @@
   }
 
   .hero-image img {
-    height: 240px;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 280px;
     border-radius: 12px;
   }
 
   .cta {
-    padding: 12px 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 22px;
     font-size: 0.95rem;
+    justify-content: center;
   }
 
   .badge-count {
@@ -1068,6 +1116,189 @@
   .badge-item {
     font-size: 0.8rem;
     padding: 8px 12px;
+  }
+  
+  .content-wrap {
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .lead {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+  
+  .services-grid {
+    gap: 16px;
+  }
+  
+  .service {
+    padding: 24px 20px;
+  }
+  
+  .service h3 {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .service h3::before {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 0.85rem;
+  }
+  
+  .service p {
+    font-size: 0.85rem;
+  }
+  
+  .service::after {
+    font-size: 5rem;
+    top: -5px;
+    right: -5px;
+  }
+  
+  .case-study {
+    padding: 20px;
+    margin-top: 24px;
+  }
+  
+  .sidebar-box {
+    padding: 20px;
+  }
+  
+  .sidebar-cards .card {
+    padding: 16px;
+  }
+  
+  .faq-section {
+    margin-top: 50px;
+  }
+  
+  .faq-title {
+    font-size: 1.75rem;
+  }
+  
+  .faq-intro {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  .faq-item {
+    padding: 20px 16px;
+  }
+  
+  .faq-item:hover {
+    padding-left: 20px;
+  }
+  
+  .faq-question {
+    font-size: 0.95rem;
+    padding-right: 12px;
+  }
+  
+  .faq-icon {
+    font-size: 1.1rem;
+  }
+  
+  .faq-answer {
+    font-size: 0.85rem;
+    margin-top: 16px;
+    padding-right: 10px;
+  }
+  
+  .footer-cta {
+    padding: 24px 20px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .ag-page {
+    margin: 70px auto auto auto;
+    padding: 0 7.5px;
+  }
+
+  .breadcrumb {
+    font-size: 0.75rem;
+  }
+
+  .ag-page .hero {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+  }
+
+  .ag-page .hero-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .ag-page .hero-content > a {
+    display: block;
+    width: 100%;
+        margin-left: -55px !important;
+
+  }
+
+  .ag-page .hero-image {
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+    margin-left: -55px !important;
+  }
+  
+  .hero-title span {
+    font-size: 1.05rem;
+
+    margin-top: 10px;
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+        margin-left: -55px !important;
+
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 280px;
+    border-radius: 12px;
+  }
+
+  .cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 22px;
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  .badge-count {
+    font-size: 0.85rem;
+    padding: 12px 14px;
+            margin-left: -55px !important;
+
+  }
+
+  .badge-item {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    margin-left: -10px !important;
+
   }
   
   .content-wrap {
