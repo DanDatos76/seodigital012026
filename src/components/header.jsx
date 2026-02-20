@@ -24,7 +24,7 @@ const Header = () => {
   =============================== */
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1024) {
         setActiveMenu(null);
       }
     };
@@ -37,7 +37,7 @@ const Header = () => {
      PREVENIR SCROLL DEL BODY EN MOBILE
   =============================== */
   useEffect(() => {
-    if (isMenuOpen && window.innerWidth <= 768) {
+    if (isMenuOpen && window.innerWidth <= 1024) {
       document.body.style.overflow = 'hidden';
       document.body.style.height = '100vh';
     } else {
@@ -67,7 +67,7 @@ const Header = () => {
      MOBILE SUBMENU TOGGLE
   =============================== */
   const toggleMobileSubmenu = (menuName) => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
       setMobileSubmenu(mobileSubmenu === menuName ? null : menuName);
     }
   };
@@ -76,7 +76,7 @@ const Header = () => {
      DESKTOP HOVER
   =============================== */
   const handleMouseEnter = (menuName) => {
-    if (window.innerWidth <= 768) return;
+    if (window.innerWidth <= 1024) return;
 
     clearTimeout(closeTimer.current);
     openTimer.current = setTimeout(() => {
@@ -85,7 +85,7 @@ const Header = () => {
   };
 
   const handleMouseLeave = () => {
-    if (window.innerWidth <= 768) return;
+    if (window.innerWidth <= 1024) return;
 
     clearTimeout(openTimer.current);
     closeTimer.current = setTimeout(() => {
@@ -129,13 +129,13 @@ const Header = () => {
                 onClick={() => toggleMobileSubmenu("soluciones")}
               >
                 Soluciones
-                {window.innerWidth <= 768 && (
+                {window.innerWidth <= 1024 && (
                   <span className="mobile-arrow">{mobileSubmenu === "soluciones" ? "−" : "+"}</span>
                 )}
               </span>
               
               {/* DESKTOP */}
-              {activeMenu === "soluciones" && window.innerWidth > 768 && (
+              {activeMenu === "soluciones" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
                   onMouseLeave={handleMegaLeave}
@@ -145,7 +145,7 @@ const Header = () => {
               )}
               
               {/* MOBILE */}
-              {mobileSubmenu === "soluciones" && window.innerWidth <= 768 && (
+              {mobileSubmenu === "soluciones" && window.innerWidth <= 1024 && (
                 <MegaMenu closeMenu={closeMobileMenu} />
               )}
             </li>
@@ -161,12 +161,12 @@ const Header = () => {
                 onClick={() => toggleMobileSubmenu("tecnologias")}
               >
                 Tecnologías
-                {window.innerWidth <= 768 && (
+                {window.innerWidth <= 1024 && (
                   <span className="mobile-arrow">{mobileSubmenu === "tecnologias" ? "−" : "+"}</span>
                 )}
               </span>
               
-              {activeMenu === "tecnologias" && window.innerWidth > 768 && (
+              {activeMenu === "tecnologias" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
                   onMouseLeave={handleMegaLeave}
@@ -175,7 +175,7 @@ const Header = () => {
                 </div>
               )}
               
-              {mobileSubmenu === "tecnologias" && window.innerWidth <= 768 && (
+              {mobileSubmenu === "tecnologias" && window.innerWidth <= 1024 && (
                 <MegaMenu2 closeMenu={closeMobileMenu} />
               )}
             </li>
@@ -191,12 +191,12 @@ const Header = () => {
                 onClick={() => toggleMobileSubmenu("industrias")}
               >
                 Industrias
-                {window.innerWidth <= 768 && (
+                {window.innerWidth <= 1024 && (
                   <span className="mobile-arrow">{mobileSubmenu === "industrias" ? "−" : "+"}</span>
                 )}
               </span>
               
-              {activeMenu === "industrias" && window.innerWidth > 768 && (
+              {activeMenu === "industrias" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
                   onMouseLeave={handleMegaLeave}
@@ -205,7 +205,7 @@ const Header = () => {
                 </div>
               )}
               
-              {mobileSubmenu === "industrias" && window.innerWidth <= 768 && (
+              {mobileSubmenu === "industrias" && window.innerWidth <= 1024 && (
                 <MegaMenu3 closeMenu={closeMobileMenu} />
               )}
             </li>
@@ -221,12 +221,12 @@ const Header = () => {
                 onClick={() => toggleMobileSubmenu("empresa")}
               >
                 Empresa
-                {window.innerWidth <= 768 && (
+                {window.innerWidth <= 1024 && (
                   <span className="mobile-arrow">{mobileSubmenu === "empresa" ? "−" : "+"}</span>
                 )}
               </span>
               
-              {activeMenu === "empresa" && window.innerWidth > 768 && (
+              {activeMenu === "empresa" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
                   onMouseLeave={handleMegaLeave}
@@ -235,7 +235,7 @@ const Header = () => {
                 </div>
               )}
               
-              {mobileSubmenu === "empresa" && window.innerWidth <= 768 && (
+              {mobileSubmenu === "empresa" && window.innerWidth <= 1024 && (
                 <MegaMenu5 closeMenu={closeMobileMenu} />
               )}
             </li>

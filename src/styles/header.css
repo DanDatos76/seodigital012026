@@ -116,22 +116,8 @@
   height: 15px;
 }
 
-/* ===== MOBILE ===== */
+/* ===== TABLETS Y MOBILE (iPads incluidos) ===== */
 @media (max-width: 1024px) {
-  .header-container {
-    padding: 0 15px;
-  }
-  
-  .nav-list {
-    gap: 20px;
-  }
-  
-  .nav-link {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
   .header {
     height: 60px;
   }
