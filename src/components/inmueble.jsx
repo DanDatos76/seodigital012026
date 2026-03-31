@@ -84,7 +84,7 @@ export default function InmueblePage() {
 
         <div className="hero-image">
           <img
-            src="/inmueble.jfif"
+            src="/bienes.jpg"
             alt="Agriculture"
           />
         </div>

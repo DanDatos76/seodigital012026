@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/vacantes.css";
 
+const applyHref = "mailto:contratacion@seadigital.net";
+
 const jobs = [
   {
     title: "Director de Ventas (Industria Salud)",
@@ -87,9 +89,9 @@ export default function OpenPositionsSEOdigital() {
                 Ventas / Desarrollo de Negocios
               </span>
 
-              <button className="apply-btn">
+              <a className="apply-btn" href={applyHref}>
                 Postularme ahora
-              </button>
+              </a>
             </div>
 
           </div>

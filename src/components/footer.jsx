@@ -57,7 +57,6 @@ export default function Footer() {
           <div className="footer-column">
             <h4> Aval</h4>
             <ul>
-              <li><a href="/premios"> Premios</a></li>
               <li><a href="/certificacione">Certificados</a></li>
             </ul>
           </div>
@@ -129,8 +128,8 @@ export default function Footer() {
         {/* Parte inferior legal */}
         <div className="footer-bottom">
           <div className="footer-legal">
-            <a href="#">Política de Privacidad</a>
-            <a href="#">Términos de Servicio</a>
+            <a href="/politica-y-terminos">Política de Privacidad</a>
+            <a href="/politica-y-terminos">Términos de Servicio</a>
           </div>
           <p className="copyright">© 2025 SEOdigital. Todos los derechos reservados.</p>
         </div>

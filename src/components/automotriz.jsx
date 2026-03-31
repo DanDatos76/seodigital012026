@@ -91,7 +91,7 @@ export default function Autom() {
 
         <div className="hero-image">
           <img
-            src="./autos.jfif"
+            src="/automo.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
             alt="Industria Automotriz"
           />
         </div>

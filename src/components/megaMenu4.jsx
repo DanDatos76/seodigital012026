@@ -61,7 +61,6 @@ const MegaMenuAbout = () => {
           </h4>
 
           <ul>
-            <li><a href="#">Premios</a></li>
             <li><a href="#">Certificaciones</a></li>
           </ul>
         </div>

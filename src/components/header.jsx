@@ -257,9 +257,8 @@ const Header = () => {
             {/* MOBILE CTA */}
             <li className="nav-item mobile-only">
               <Link
-                to="/agenda"
+                to="/contacto"
                 className="call-button mobile-btn"
-                onClick={closeMobileMenu}
               >
                 Agendar Llamada
               </Link>
@@ -269,7 +268,7 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <a href="tel:+5491176550907" className="call-button">
+          <a href="/contacto" className="call-button">
             Agendar Llamada
           </a>
         </div>

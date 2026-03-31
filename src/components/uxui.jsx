@@ -86,7 +86,7 @@ export default function UxuiPage() {
 
         <div className="hero-image">
           <img
-            src="/uxui.jfif"
+            src="/uix.png"
             alt="Diseño UX/UI"
           />
         </div>

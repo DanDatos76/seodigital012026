@@ -86,7 +86,7 @@ export default function ErpPage() {
 
         <div className="hero-image">
           <img
-            src="/erp.png" // Asegúrate de tener la imagen adecuada
+            src="/erp.jpg" // Asegúrate de tener la imagen adecuada
             alt="Desarrollo de Software ERP"
           />
         </div>

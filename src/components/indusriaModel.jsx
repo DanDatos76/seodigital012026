@@ -91,7 +91,7 @@ export default function AgriculturePage() {
 
         <div className="hero-image">
           <img
-            src="/agro.jfif"
+            src="/agri.jpg"
             alt="Agricultura"
           />
         </div>

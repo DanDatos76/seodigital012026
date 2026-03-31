@@ -77,7 +77,7 @@ export default function IadevPage() {
 
         <div className="hero-image">
           <img
-            src="/ia.jfif"
+            src="/Desarrollo-de-IA.jpg"
             alt="Backend Engineering"
           />
         </div>

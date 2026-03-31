@@ -86,7 +86,7 @@ export default function QatestingPage() {
 
         <div className="hero-image">
           <img
-            src="/qa.jfif"
+            src="/QA-1.png"
             alt="Ingeniería de Calidad (QA)"
           />
         </div>

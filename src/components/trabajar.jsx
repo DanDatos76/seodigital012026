@@ -45,7 +45,7 @@ export default function CareersSEOdigital() {
           </p>
 
           <img
-            src="/trabajo-remoto.jpg"
+            src="/homeoffice.jpg"
             alt="Trabajo remoto"
             className="why-image"
           />

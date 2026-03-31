@@ -86,7 +86,7 @@ export default function CybersecurityPage() {
 
         <div className="hero-image">
           <img
-            src="/cyberseg.jfif"
+            src="/ciber.jpg"
             alt="Ingeniería de Ciberseguridad"
           />
         </div>

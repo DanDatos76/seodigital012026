@@ -84,7 +84,7 @@ export default function TelecomPage() {
 
         <div className="hero-image">
           <img
-            src="../assets/telec.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
+            src="/tele.jpg" // Asegúrate de tener esta imagen en tu carpeta de assets
             alt="Infraestructura de Telecomunicaciones"
           />
         </div>

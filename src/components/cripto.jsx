@@ -86,7 +86,7 @@ export default function CriptoPage() {
 
         <div className="hero-image">
           <img
-            src="/cripto.jfif"
+            src="/block.jpg"
             alt="Ingeniería Cripto"
           />
         </div>

@@ -86,7 +86,7 @@ export default function FrontendPage() {
 
         <div className="hero-image">
           <img
-            src="/frontend.jfif"
+            src="/frontend.jpg"
             alt="Ingeniería Frontend"
           />
         </div>

@@ -86,7 +86,7 @@ export default function BackupPage() {
 
         <div className="hero-image">
           <img
-            src="/backup.jfif"
+            src="/backup.png"
             alt="Ingeniería de Respaldo de Datos"
           />
         </div>

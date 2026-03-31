@@ -89,7 +89,7 @@ export default function InsurancePage() {
 
         <div className="hero-image">
           <img
-            src="/seguro.jfif" // Asegúrate de tener esta imagen en tu carpeta de assets
+            src="/seguros.png" // Asegúrate de tener esta imagen en tu carpeta de assets
             alt="Soluciones de Software para Seguros"
           />
         </div>

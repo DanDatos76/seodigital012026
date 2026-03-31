@@ -86,7 +86,7 @@ export default function BackendPage() {
 
         <div className="hero-image">
           <img
-            src="/backend.png"
+            src="/backendimg.jpg"
             alt="Ingeniería Backend"
           />
         </div>

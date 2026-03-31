@@ -86,7 +86,7 @@ export default function CloudPage() {
 
         <div className="hero-image">
           <img
-            src="/cloud.jfif"
+            src="/cloud.jpg"
             alt="Ingeniería Cloud"
           />
         </div>

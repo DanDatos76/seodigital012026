@@ -86,7 +86,7 @@ export default function BigdataPage() {
 
         <div className="hero-image">
           <img
-            src="/bigdata.jfif"
+            src="/bigdat.jpg"
             alt="Ingeniería de Big Data"
           />
         </div>

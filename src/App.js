@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
 // Componentes
@@ -79,7 +80,6 @@ import VettingProcess from './components/tecnologicos';
 import PressReleases from './components/prensa';
 import ContactHelp from './components/contacto';
 import FAQ from './components/faq';
-import TrophyCabinet from './components/premios';
 import CertifiedExpertise from './components/certificados';
 import CareersSEOdigital from './components/trabajar';
 import OpenPositionsSEOdigital from './components/vacantes';
@@ -88,6 +88,57 @@ import Culture from './components/cultura';
 import CookiesPolicy from './components/cookies';
 import AvisoLegalSEOdigital from './components/avisolegal';
 import CasosDeEstudio from './components/CasosDeEstudio';
+import PrivacyTerms from './components/privacyTerms';
+
+function CtaRedirectHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleCtaClick = (event) => {
+      if (event.defaultPrevented) {
+        return;
+      }
+
+      const clickable = event.target?.closest('button, a');
+      if (!clickable) {
+        return;
+      }
+
+      const classes = Array.from(clickable.classList || []);
+      const isCta = classes.some((className) => (
+        className.startsWith('cta')
+        || className.includes('-cta')
+        || className.startsWith('hero-button')
+        || className === 'btn-primary'
+        || className === 'btn-secondary'
+      ));
+
+      const ctaTarget = clickable.getAttribute('data-cta-target');
+
+      if (ctaTarget) {
+        event.preventDefault();
+        navigate(ctaTarget);
+        return;
+      }
+
+      if (!isCta || location.pathname === '/contacto') {
+        return;
+      }
+
+      event.preventDefault();
+      navigate('/contacto');
+    };
+
+    document.addEventListener('click', handleCtaClick);
+
+    return () => {
+      document.removeEventListener('click', handleCtaClick);
+    };
+  }, [location.pathname, navigate]);
+
+  return null;
+}
 
 // Componente interno para manejar las rutas animadas
 function AnimatedRoutes() {
@@ -173,7 +224,6 @@ function AnimatedRoutes() {
           <Route path="/prensa" element={<PageTransition><PressReleases /></PageTransition>} />
           <Route path="/contacto" element={<PageTransition><ContactHelp /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
-          <Route path="/premios" element={<PageTransition><TrophyCabinet /></PageTransition>} />
           <Route path="/certificaciones"  element={<PageTransition><CertifiedExpertise /></PageTransition>} /> 
           <Route path="/trabajar" element={<PageTransition><CareersSEOdigital/></PageTransition>} /> 
           <Route path="/vacantes" element={<PageTransition><OpenPositionsSEOdigital/></PageTransition>} /> 
@@ -181,6 +231,7 @@ function AnimatedRoutes() {
           <Route path="/cultura" element={<PageTransition><Culture/></PageTransition>} />
           <Route path="/cookies" element={<PageTransition><CookiesPolicy/></PageTransition>} />
           <Route path="/legal" element={<PageTransition><AvisoLegalSEOdigital /></PageTransition>} />
+          <Route path="/politica-y-terminos" element={<PageTransition><PrivacyTerms /></PageTransition>} />
           <Route path="/casos-de-estudio" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
         </Routes>
       </AnimatePresence>
@@ -191,6 +242,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
+      <CtaRedirectHandler />
       <Header />
       <AnimatedRoutes />
       <Footer />

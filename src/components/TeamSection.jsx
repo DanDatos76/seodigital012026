@@ -51,12 +51,11 @@ const TeamSection = () => {
       description: "David Santamaría Villaverde lidera la operación integral de SEOdigital en España, asegurando eficiencia, calidad de entrega y escalabilidad en cada proyecto de software. Cuenta con más de 12 años de experiencia en gestión de operaciones tecnológicas, coordinando equipos multidisciplinarios y desarrollos a medida en entornos de alta exigencia.Ha sido responsable de estructurar metodologías de trabajo, optimizar la planificación de recursos y fortalecer el control presupuestario para maximizar márgenes y reducir desviaciones operativas. Su enfoque orientado a procesos, indicadores de desempeño y mejora continua ha sido clave para garantizar resultados consistentes y sostenibles en el crecimiento de la compañía."
     },
     {
-      name: "CLARA SAN GIL",
-      role: "DIRECTORA COMERCIAL DE OPERACIONES",
-      image: "/team/Clara-San-Gil.jpeg",
-      description: "Clara San Gil lidera la Dirección Comercial de Operaciones de SEOdigital con una sólida trayectoria en optimización de procesos comerciales y expansión estratégica en el sector tecnológico. Su experiencia abarca más de 10 años integrando ventas, planificación financiera y eficiencia operativa, alineando equipos y objetivos bajo métricas de rendimiento claras. Clara ha sido clave en la implementación de modelos de revenue operations, sistemas de forecast y estructuras de seguimiento que fortalecen la previsibilidad y rentabilidad del negocio. Su visión analítica y su capacidad para estructurar operaciones comerciales escalables han sido determinantes para consolidar un crecimiento sostenido y financieramente sólido." 
+      name: "JUAN HERNÁNDEZ",
+      role: "Desarrollo de Software",
+      image: "/team/juanbg.jpeg",
+      description: "Juan Hernández es parte de nuestro equipo de desarrollo de software, con amplia experiencia en la gestión de equipos multidisciplinarios y la ejecución de proyectos de software de alta complejidad. Su enfoque orientado a resultados y su capacidad para alinear objetivos con recursos disponibles garantizan la entrega exitosa de cada proyecto. Su compromiso con la calidad y los plazos acordados es fundamental para el éxito de nuestros proyectos."
     }
-    
   ];
 
   return (
