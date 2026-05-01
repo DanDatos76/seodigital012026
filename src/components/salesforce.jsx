@@ -22,7 +22,7 @@ const SalesforcePage = () => {
             comerciales y escalar tus operaciones de forma inteligente.
           </p>
             <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -128,7 +128,7 @@ const SalesforcePage = () => {
         <div className="end-text">
           <h3>¿Listo para transformar tu gestión con Salesforce?</h3>
           <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >

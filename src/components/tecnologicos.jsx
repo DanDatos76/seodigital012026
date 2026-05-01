@@ -120,12 +120,12 @@ const VettingProcess = () => {
           </ul>
 
   <a 
-  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  href="https://wa.me/5491154177754?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
   target="_blank" 
   rel="noopener noreferrer"
 >
  <a 
-  href="https://wa.me/5491176550907?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
+  href="https://wa.me/5491154177754?text=Incorpor%C3%A1%20al%20Top%201%25%20a%20tu%20equipo" 
   target="_blank" 
   rel="noopener noreferrer"
 >

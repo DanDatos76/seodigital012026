@@ -68,7 +68,7 @@ export default function AgriculturePage() {
           <p className="hero-sub">Obtenga experiencia especializada y aumente la eficiencia.</p>
 
            <a 
-  href="https://wa.me/5491176550907?text=Acelere%20su%20Hoja%20de%20Ruta" 
+  href="https://wa.me/5491154177754?text=Acelere%20su%20Hoja%20de%20Ruta" 
   target="_blank" 
   rel="noopener noreferrer"
 >
@@ -227,7 +227,7 @@ export default function AgriculturePage() {
             Del concepto a la realidad. Cientos de soluciones de software personalizadas creadas desde 2009.
           </p>
           <a 
-  href="https://wa.me/5491176550907?text=Agendar%20una%20llamada" 
+  href="https://wa.me/5491154177754?text=Agendar%20una%20llamada" 
   target="_blank" 
   rel="noopener noreferrer"
 >

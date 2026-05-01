@@ -22,7 +22,7 @@ const PowerBIPage = () => {
             decisiones estratégicas en tiempo real.
           </p>
   <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -127,7 +127,7 @@ const PowerBIPage = () => {
         <div className="end-text">
           <h3>¿Listo para potenciar tu análisis con Power BI?</h3>
    <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >

@@ -89,6 +89,7 @@ import CookiesPolicy from './components/cookies';
 import AvisoLegalSEOdigital from './components/avisolegal';
 import CasosDeEstudio from './components/CasosDeEstudio';
 import PrivacyTerms from './components/privacyTerms';
+import WhatsAppFloating from './components/WhatsAppFloating';
 
 function CtaRedirectHandler() {
   const navigate = useNavigate();
@@ -246,6 +247,7 @@ function App() {
       <Header />
       <AnimatedRoutes />
       <Footer />
+      <WhatsAppFloating />
     </Router>
   );
 }

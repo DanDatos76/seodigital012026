@@ -21,7 +21,7 @@ const AWSPage = () => {
             cloud seguras, flexibles y de alto rendimiento sobre Amazon Web Services.
           </p>
             <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -127,7 +127,7 @@ const AWSPage = () => {
         <div className="end-text">
           <h3>¿Listo para llevar tu infraestructura a AWS?</h3>
            <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >

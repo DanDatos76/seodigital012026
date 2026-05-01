@@ -22,7 +22,7 @@ const Golang = () => {
             comenzar a obtener valor más rápido sin perder calidad.
           </p>
            <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -112,7 +112,7 @@ const Golang = () => {
          <div className="end-text">
   <h3>¿Listo para acelerar tu proyecto Golang?</h3>
   <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >

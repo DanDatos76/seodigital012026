@@ -3,7 +3,7 @@ import "../styles/contactHelp.css";
 import { Linkedin, Facebook, Instagram } from "lucide-react";
 
 const tallySrc =
-  "https://tally.so/embed/eq2ZYJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
+  "https://tally.so/embed/eq2ZYJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&hide-branding=1";
 
 const TikTokIcon = ({ size = 20 }) => (
   <svg
@@ -73,16 +73,19 @@ const ContactHelp = () => {
       </section>
       <section className="contact-form-embed">
         <h2>Contáctanos</h2>
-        <iframe
-          data-tally-src={tallySrc}
-          loading="lazy"
-          width="100%"
-          height="405"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          title="Contáctanos!"
-        ></iframe>
+        <div className="tally-container">
+          <iframe
+            data-tally-src={tallySrc}
+            loading="lazy"
+            width="100%"
+            height="405"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Contáctanos!"
+          ></iframe>
+          <div className="tally-cover"></div>
+        </div>
       </section>
       {/* OPTIONS */}
       <section className="contact-options">

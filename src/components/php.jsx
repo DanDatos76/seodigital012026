@@ -23,7 +23,7 @@ const PHPPage = () => {
             comprometer la calidad.
           </p>
   <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -128,7 +128,7 @@ const PHPPage = () => {
         <div className="end-text">
           <h3>¿Listo para acelerar tu proyecto PHP?</h3>
    <a 
-    href="https://wa.me/5491176550907" 
+    href="https://wa.me/5491154177754" 
     target="_blank" 
     rel="noopener noreferrer"
   >

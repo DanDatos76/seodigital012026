@@ -40,7 +40,7 @@ export default function Footer() {
              
                 <li>
     <a
-      href="/ datos.pdf"
+      href="/datos.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -57,7 +57,7 @@ export default function Footer() {
           <div className="footer-column">
             <h4> Aval</h4>
             <ul>
-              <li><a href="/certificacione">Certificados</a></li>
+              <li><a href="/certificaciones">Certificados</a></li>
             </ul>
           </div>
 
@@ -117,7 +117,7 @@ export default function Footer() {
                 <span>Facebook</span>
               </a>
             </div>
-            <button className="whatsapp-cta" onClick={() => window.open('https://wa.me/5491176550907', '_blank')}>
+            <button className="whatsapp-cta" onClick={() => window.open('https://wa.me/5491154177754', '_blank')}>
               <MessageCircle size={18} />
               Contacto Directo
             </button>

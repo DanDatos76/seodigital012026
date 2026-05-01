@@ -127,7 +127,7 @@
   }
   
   .logo img {
-    height: 200%;
+    height: 180%;
   }
 
   .menu-toggle {
@@ -142,7 +142,14 @@
   }
 
   .header-actions {
-    display: none;
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .header-actions .call-button {
+    padding: 6px 12px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 
   .nav {
@@ -238,7 +245,7 @@
   }
   
   .logo img {
-    height: 180%;
+    height: 150%;
   }
   
   .menu-toggle {
