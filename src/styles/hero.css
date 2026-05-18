@@ -185,6 +185,26 @@
   transform: translateY(0);
 }
 
+.hero-button.whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  box-shadow: 0 10px 30px -10px rgba(37, 211, 102, 0.4);
+}
+
+.hero-button.whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px -10px rgba(37, 211, 102, 0.5);
+}
+
+.hero-button.whatsapp:active {
+  transform: translateY(0);
+}
+
+.hero-cta-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
 .hero-button.secondary {
   background: white;
   color: #6223cc;

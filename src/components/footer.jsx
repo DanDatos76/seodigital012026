@@ -117,9 +117,9 @@ export default function Footer() {
                 <span>Facebook</span>
               </a>
             </div>
-            <button className="whatsapp-cta" onClick={() => window.open('https://wa.me/5491154177754', '_blank')}>
+            <button className="whatsapp-cta" onClick={() => window.open('https://wa.me/5491154177754?text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n.', '_blank')}>
               <MessageCircle size={18} />
-              Contacto Directo
+              Contacto directo por WhatsApp
             </button>
           </div>
 

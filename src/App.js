@@ -79,6 +79,7 @@ import IndustrySection from './components/nuestroslideres';
 import VettingProcess from './components/tecnologicos';
 import PressReleases from './components/prensa';
 import ContactHelp from './components/contacto';
+import AdminDashboard from './components/admin';
 import FAQ from './components/faq';
 import CertifiedExpertise from './components/certificados';
 import CareersSEOdigital from './components/trabajar';
@@ -224,6 +225,7 @@ function AnimatedRoutes() {
           <Route path="/tecnologicos" element={<PageTransition><VettingProcess /></PageTransition>} />
           <Route path="/prensa" element={<PageTransition><PressReleases /></PageTransition>} />
           <Route path="/contacto" element={<PageTransition><ContactHelp /></PageTransition>} />
+          <Route path="/admin" element={<PageTransition><AdminDashboard /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
           <Route path="/certificaciones"  element={<PageTransition><CertifiedExpertise /></PageTransition>} /> 
           <Route path="/trabajar" element={<PageTransition><CareersSEOdigital/></PageTransition>} /> 

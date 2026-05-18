@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/contactHelp.css";
-import { Linkedin, Facebook, Instagram } from "lucide-react";
-
-const tallySrc =
-  "https://tally.so/embed/eq2ZYJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&hide-branding=1";
+import { Linkedin, Facebook, Instagram, Loader2, Send } from "lucide-react";
 
 const TikTokIcon = ({ size = 20 }) => (
   <svg
@@ -21,36 +18,62 @@ const TikTokIcon = ({ size = 20 }) => (
 );
 
 const ContactHelp = () => {
-  useEffect(() => {
-    const d = document;
-    const w = "https://tally.so/widgets/embed.js";
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "Servicios",
+    message: ""
+  });
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const [loading, setLoading] = useState(false);
 
-    const loadEmbeds = () => {
-      if (typeof window.Tally !== "undefined") {
-        window.Tally.loadEmbeds();
-        return;
-      }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((iframe) => {
-        iframe.src = iframe.dataset.tallySrc;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: "", message: "" });
+
+    try {
+      const apiURL = process.env.NODE_ENV === "production"
+        ? "/api/send-email"
+        : "http://localhost:5001/api/send-email";
+
+      const response = await fetch(apiURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
       });
-    };
 
-    if (typeof window.Tally !== "undefined") {
-      loadEmbeds();
-      return;
-    }
+      const result = await response.json();
 
-    if (d.querySelector(`script[src="${w}"]`) === null) {
-      const s = d.createElement("script");
-      s.src = w;
-      s.onload = loadEmbeds;
-      s.onerror = loadEmbeds;
-      d.body.appendChild(s);
-    } else {
-      loadEmbeds();
+      if (response.ok) {
+        setStatus({
+          type: "success",
+          message: "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad."
+        });
+        setFormData({ name: "", email: "", subject: "Servicios", message: "" });
+      } else {
+        setStatus({
+          type: "error",
+          message: result.error || "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      setStatus({
+        type: "error",
+        message: "No se pudo conectar con el servidor de correo. Intente más tarde."
+      });
+    } finally {
+      setLoading(false);
     }
-  }, []);
+  };
 
   return (
     <div className="contact-wrapper">
@@ -71,20 +94,111 @@ const ContactHelp = () => {
           />
         </div>
       </section>
+
+      {/* CONTACT FORM */}
       <section className="contact-form-embed">
         <h2>Contáctanos</h2>
-        <div className="tally-container">
-          <iframe
-            data-tally-src={tallySrc}
-            loading="lazy"
-            width="100%"
-            height="405"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
-            title="Contáctanos!"
-          ></iframe>
-          <div className="tally-cover"></div>
+        <div className="contact-form-container">
+          <form onSubmit={handleSubmit} className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name" className="form-label">Nombre Completo *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="form-input"
+                placeholder="Juan Pérez"
+                required
+                disabled={loading}
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email" className="form-label">Correo Electrónico *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="form-input"
+                placeholder="juan@ejemplo.com"
+                required
+                disabled={loading}
+              />
+            </div>
+
+            <div className="form-group full-width">
+              <label htmlFor="subject" className="form-label">Motivo del Contacto *</label>
+              <select
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="form-select"
+                disabled={loading}
+              >
+                <option value="Servicios">Conocé nuestros servicios / Desarrollo de software</option>
+                <option value="Carreras">Carreras / Selección de talentos</option>
+                <option value="Prensa">Prensa y medios</option>
+                <option value="Consultas Generales">Consultas generales / Soporte</option>
+              </select>
+            </div>
+
+            <div className="form-group full-width">
+              <label htmlFor="message" className="form-label">Mensaje *</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="form-textarea"
+                placeholder="Contanos brevemente sobre tu proyecto o consulta..."
+                required
+                disabled={loading}
+              ></textarea>
+            </div>
+
+            <div className="submit-container">
+              <button type="submit" className="form-submit-btn" disabled={loading}>
+                {loading ? (
+                  <>
+                    <Loader2 size={18} className="animate-spin" />
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    <Send size={18} />
+                    Enviar Mensaje
+                  </>
+                )}
+              </button>
+
+              <div className="form-or-divider">
+                <span>O también podés</span>
+              </div>
+
+              <a 
+                href="https://wa.me/5491154177754?text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="form-whatsapp-link-btn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style={{ marginRight: '6px' }}>
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.855.002-2.63-1.023-5.101-2.887-6.966a9.782 9.782 0 0 0-6.974-2.879C6.46 2.905 2.036 7.324 2.033 12.76c-.001 1.693.453 3.342 1.32 4.793L2.33 21.03l3.666-1.611c.01-.006.021-.013.03-.021z"/>
+                </svg>
+                Consultar por WhatsApp
+              </a>
+
+              {status.message && (
+                <div className={`form-status ${status.type}`}>
+                  {status.message}
+                </div>
+              )}
+            </div>
+          </form>
         </div>
       </section>
       {/* OPTIONS */}
@@ -160,6 +274,20 @@ const ContactHelp = () => {
         <div className="info-block">
           <h4>Llamanos</h4>
           <p>+1 (408) 478-2739</p>
+        </div>
+
+        <div className="info-block">
+          <h4>WhatsApp</h4>
+          <p>
+            <a 
+              href="https://wa.me/5491154177754?text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="info-whatsapp-anchor"
+            >
+              Contacto directo por WhatsApp
+            </a>
+          </p>
         </div>
 
         <div className="info-block">

@@ -13,9 +13,10 @@ const WhatsAppFloating = () => {
       className="whatsapp-floating"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Contactar por WhatsApp"
+      aria-label="Contacto Directo por WhatsApp"
     >
-      <MessageCircle size={32} />
+      <MessageCircle size={22} className="whatsapp-icon" />
+      <span className="whatsapp-text">Contacto Directo</span>
     </a>
   );
 };

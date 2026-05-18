@@ -1,5 +1,6 @@
- import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MessageCircle } from "lucide-react";
 
 import MegaMenu from "./megaMenu";
 import MegaMenu2 from "./megaMenu2";
@@ -44,7 +45,7 @@ const Header = () => {
       document.body.style.overflow = '';
       document.body.style.height = '';
     }
-    
+
     return () => {
       document.body.style.overflow = '';
       document.body.style.height = '';
@@ -124,7 +125,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("soluciones")}
               onMouseLeave={handleMouseLeave}
             >
-              <span 
+              <span
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("soluciones")}
               >
@@ -133,7 +134,7 @@ const Header = () => {
                   <span className="mobile-arrow">{mobileSubmenu === "soluciones" ? "−" : "+"}</span>
                 )}
               </span>
-              
+
               {/* DESKTOP */}
               {activeMenu === "soluciones" && window.innerWidth > 1024 && (
                 <div
@@ -143,7 +144,7 @@ const Header = () => {
                   <MegaMenu closeMenu={() => setActiveMenu(null)} />
                 </div>
               )}
-              
+
               {/* MOBILE */}
               {mobileSubmenu === "soluciones" && window.innerWidth <= 1024 && (
                 <MegaMenu closeMenu={closeMobileMenu} />
@@ -156,7 +157,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("tecnologias")}
               onMouseLeave={handleMouseLeave}
             >
-              <span 
+              <span
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("tecnologias")}
               >
@@ -165,7 +166,7 @@ const Header = () => {
                   <span className="mobile-arrow">{mobileSubmenu === "tecnologias" ? "−" : "+"}</span>
                 )}
               </span>
-              
+
               {activeMenu === "tecnologias" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
@@ -174,7 +175,7 @@ const Header = () => {
                   <MegaMenu2 closeMenu={() => setActiveMenu(null)} />
                 </div>
               )}
-              
+
               {mobileSubmenu === "tecnologias" && window.innerWidth <= 1024 && (
                 <MegaMenu2 closeMenu={closeMobileMenu} />
               )}
@@ -186,7 +187,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("industrias")}
               onMouseLeave={handleMouseLeave}
             >
-              <span 
+              <span
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("industrias")}
               >
@@ -195,7 +196,7 @@ const Header = () => {
                   <span className="mobile-arrow">{mobileSubmenu === "industrias" ? "−" : "+"}</span>
                 )}
               </span>
-              
+
               {activeMenu === "industrias" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
@@ -204,7 +205,7 @@ const Header = () => {
                   <MegaMenu3 closeMenu={() => setActiveMenu(null)} />
                 </div>
               )}
-              
+
               {mobileSubmenu === "industrias" && window.innerWidth <= 1024 && (
                 <MegaMenu3 closeMenu={closeMobileMenu} />
               )}
@@ -216,7 +217,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("empresa")}
               onMouseLeave={handleMouseLeave}
             >
-              <span 
+              <span
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("empresa")}
               >
@@ -225,7 +226,7 @@ const Header = () => {
                   <span className="mobile-arrow">{mobileSubmenu === "empresa" ? "−" : "+"}</span>
                 )}
               </span>
-              
+
               {activeMenu === "empresa" && window.innerWidth > 1024 && (
                 <div
                   onMouseEnter={handleMegaEnter}
@@ -234,7 +235,7 @@ const Header = () => {
                   <MegaMenu5 closeMenu={() => setActiveMenu(null)} />
                 </div>
               )}
-              
+
               {mobileSubmenu === "empresa" && window.innerWidth <= 1024 && (
                 <MegaMenu5 closeMenu={closeMobileMenu} />
               )}
@@ -256,9 +257,22 @@ const Header = () => {
 
             {/* MOBILE CTA */}
             <li className="nav-item mobile-only">
+              <a
+                href="https://wa.me/5491154177754?text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+                className="direct-contact-button mobile-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMobileMenu}
+              >
+                <MessageCircle size={18} />
+                Contacto Directo
+              </a>
+            </li>
+            <li className="nav-item mobile-only">
               <Link
                 to="/contacto"
                 className="call-button mobile-btn"
+                onClick={closeMobileMenu}
               >
                 Agendar Llamada
               </Link>
@@ -268,9 +282,16 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <a href="/contacto" className="call-button">
-            Agendar Llamada
+          <a
+            href="https://wa.me/5491154177754?text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+            className="direct-contact-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MessageCircle size={16} />
+            Contacto por WhatsApp
           </a>
+
         </div>
       </div>
     </header>
