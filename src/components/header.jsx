@@ -291,7 +291,6 @@ const Header = () => {
             <MessageCircle size={16} />
             Contacto por WhatsApp
           </a>
-
         </div>
       </div>
     </header>
