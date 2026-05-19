@@ -8,6 +8,8 @@ const envPath = path.join(__dirname, '.env.local');
 let apiKey = process.env.RESEND_API_KEY;
 let firebaseUrl = process.env.FIREBASE_URL;
 let adminPassword = process.env.ADMIN_PASSWORD || 'seodigital2026';
+let resendFrom = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+let resendTo = process.env.RESEND_TO_EMAIL || 'juanma.herflo@gmail.com';
 
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, 'utf8');
@@ -25,6 +27,16 @@ if (fs.existsSync(envPath)) {
   const passwordMatch = envContent.match(/ADMIN_PASSWORD\s*=\s*([^\s]+)/);
   if (passwordMatch && passwordMatch[1]) {
     adminPassword = passwordMatch[1].trim();
+  }
+
+  const fromMatch = envContent.match(/RESEND_FROM_EMAIL\s*=\s*([^\s]+)/);
+  if (fromMatch && fromMatch[1]) {
+    resendFrom = fromMatch[1].trim();
+  }
+
+  const toMatch = envContent.match(/RESEND_TO_EMAIL\s*=\s*([^\s]+)/);
+  if (toMatch && toMatch[1]) {
+    resendTo = toMatch[1].trim();
   }
 }
 
@@ -265,8 +277,8 @@ const server = http.createServer((req, res) => {
         }
 
         const emailData = JSON.stringify({
-          from: 'onboarding@resend.dev',
-          to: 'juanma.herflo@gmail.com', // Verified target recipient
+          from: resendFrom,
+          to: resendTo,
           subject: subject ? `${subject} - de ${name}` : `Nuevo mensaje de contacto de ${name}`,
           html: `
             <div style="font-family: sans-serif; padding: 20px; color: #111827; max-width: 600px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
