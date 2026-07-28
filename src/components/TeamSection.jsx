@@ -8,11 +8,12 @@ const TeamSection = () => {
       role: "CEO",
       image: "/team/CEO-GUSTAVO-GRAVAGNA.jpg",
       description: "Gustavo Gravagna es el fundador y CEO de SEOdigital, con más de 15 años de experiencia liderando proyectos de transformación digital para empresas Fortune 500. Su visión estratégica ha posicionado a la compañía como líder en desarrollo de software personalizado. Ha dirigido equipos multidisciplinarios en más de 40 países, implementando soluciones innovadoras que han generado un impacto significativo en la eficiencia operativa y el crecimiento de nuestros clientes. Gustavo es reconocido internacionalmente como experto en tecnología empresarial y estrategia digital."
-    },  {
-      name: "TOBÍAS NÚÑEZ",
+    },
+    {
+      name: "JUAN HERNÁNDEZ",
       role: "CTO",
-      image: "/team/DEV-TOBIAS NUÑEZ.jpg",
-      description: "Tobías Núñez es un desarrollador senior con amplia experiencia en arquitecturas de software escalables y tecnologías de vanguardia. Con más de 10 años en la industria, Tobías ha liderado el desarrollo de sistemas críticos para empresas de e-commerce, fintech y SaaS. Su expertise abarca desde backend con Node.js, Python y microservicios, hasta implementaciones complejas de cloud computing en AWS y Azure. Tobías es un apasionado de las mejores prácticas de código limpio, testing automatizado y DevOps. Su capacidad para resolver problemas complejos y mentorar a desarrolladores junior lo convierte en un pilar fundamental de nuestro equipo técnico."
+      image: "/team/juanbg.jpeg",
+      description: "Juan Hernández es el Chief Technology Officer (CTO) de SEOdigital, liderando la estrategia tecnológica, la arquitectura de software escalable y los equipos de desarrollo. Con amplia experiencia en la gestión de proyectos tecnológicos de alta complejidad y liderazgo de equipos multidisciplinarios, Juan impulsa la innovación y la excelencia técnica en todas nuestras soluciones."
     },
     {
       name: "FRANCO OSMAN",
@@ -49,12 +50,6 @@ const TeamSection = () => {
       role: "CHIEF OPERATING OFFICER (COO) – ESPAÑA",
       image: "/team/David-Santamaría-Villaverde.jpeg",
       description: "David Santamaría Villaverde lidera la operación integral de SEOdigital en España, asegurando eficiencia, calidad de entrega y escalabilidad en cada proyecto de software. Cuenta con más de 12 años de experiencia en gestión de operaciones tecnológicas, coordinando equipos multidisciplinarios y desarrollos a medida en entornos de alta exigencia.Ha sido responsable de estructurar metodologías de trabajo, optimizar la planificación de recursos y fortalecer el control presupuestario para maximizar márgenes y reducir desviaciones operativas. Su enfoque orientado a procesos, indicadores de desempeño y mejora continua ha sido clave para garantizar resultados consistentes y sostenibles en el crecimiento de la compañía."
-    },
-    {
-      name: "JUAN HERNÁNDEZ",
-      role: "Desarrollo de Software",
-      image: "/team/juanbg.jpeg",
-      description: "Juan Hernández es parte de nuestro equipo de desarrollo de software, con amplia experiencia en la gestión de equipos multidisciplinarios y la ejecución de proyectos de software de alta complejidad. Su enfoque orientado a resultados y su capacidad para alinear objetivos con recursos disponibles garantizan la entrega exitosa de cada proyecto. Su compromiso con la calidad y los plazos acordados es fundamental para el éxito de nuestros proyectos."
     }
   ];
 

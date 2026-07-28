@@ -1,6 +1,6 @@
 .certified {
-  background: #f4f5f7;
-  padding: 80px 20px;
+  background: #f8f9fc;
+  padding: 90px 20px;
   text-align: center;
 }
 
@@ -8,103 +8,176 @@
 
 .certified-header {
   max-width: 800px;
-  margin: 0 auto 50px;
+  margin: 0 auto 60px;
 }
 
 .subtitle {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
-  color: #999;
+  color: #6223cc;
+  font-weight: 700;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .certified-header h2 {
-  font-size: 34px;
-  font-weight: 600;
-  color: #1e1e1e;
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.02em;
 }
 
 .certified-header .dot {
-  color:  #6223cc;
+  color: #6223cc;
 }
 
 .certified-header p {
-  margin-top: 15px;
-  color: #6b6b6b;
-  font-size: 15px;
+  margin-top: 18px;
+  color: #4b5563;
+  font-size: 16px;
   line-height: 1.6;
 }
 
 /* GRID */
 
 .certified-grid {
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
 }
 
 /* CARD */
 
 .cert-card {
-  background: white;
-  border-radius: 10px;
-  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
   display: flex;
-  gap: 20px;
-  align-items: center;
-  text-align: left;
-  border: 1px solid #e5e5e5;
-  transition: 0.3s;
+  flex-direction: column;
+  border: 1px solid rgba(98, 35, 204, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  position: relative;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6223cc 0%, #8b5cf6 100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(98, 35, 204, 0.14);
+  border-color: rgba(98, 35, 204, 0.35);
 }
 
-/* IMAGE */
+.cert-card:hover::before {
+  opacity: 1;
+}
 
-.cert-img img {
-  width: 170px;
-  height: auto;
+/* IMAGE CONTAINER */
+
+.cert-img-wrapper {
+  background: linear-gradient(180deg, #f4f0fd 0%, #ffffff 100%);
+  padding: 35px 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+  min-height: 180px;
+}
+
+.cert-img-large {
+  max-height: 130px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.06));
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-img-large {
+  transform: scale(1.06);
 }
 
 /* CONTENT */
 
-.cert-content h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #222;
+.cert-content {
+  padding: 28px 25px 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
 }
 
-.cert-year {
+.cert-badge {
   display: inline-block;
-  margin-bottom: 8px;
+  align-self: flex-start;
+  padding: 5px 12px;
+  background: #f0eafb;
+  color: #6223cc;
   font-size: 12px;
   font-weight: 700;
-  color: #6223cc;
+  border-radius: 20px;
+  margin-bottom: 14px;
   letter-spacing: 0.02em;
 }
 
+.cert-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+  line-height: 1.3;
+}
+
 .cert-content p {
-  font-size: 14px;
-  color: #6d6d6d;
-  line-height: 1.5;
+  font-size: 14.5px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .certified-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certified {
+    padding: 60px 16px;
+  }
+  
+  .certified-header h2 {
+    font-size: 28px;
   }
 
-  .cert-card {
-    flex-direction: column;
-    text-align: center;
+  .certified-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cert-img-wrapper {
+    min-height: 160px;
+    padding: 25px 20px 20px;
+  }
+  
+  .cert-img-large {
+    max-height: 110px;
   }
 }

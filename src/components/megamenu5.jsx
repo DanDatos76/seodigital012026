@@ -1,7 +1,6 @@
  import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
-import CertificacionLogo from "../assets/27001.png";
 
 const MegaMenuAbout = ({ closeMenu }) => {
   const [openSection, setOpenSection] = useState(null);
@@ -28,11 +27,11 @@ const MegaMenuAbout = ({ closeMenu }) => {
           </ul>
 
           <div className="client-quote">
-            <img
-              className="logo"
-              src={CertificacionLogo}
-              alt="Certificación ISO"
-            />
+            <div className="iso-logos-group">
+              <img src="/iso27001.png" alt="Certificación ISO 27001" />
+              <img src="/9001.png" alt="Certificación ISO 9001" />
+              <img src="/42001.png" alt="Certificación ISO 42001" />
+            </div>
           </div>
         </div>
 

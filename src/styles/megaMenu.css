@@ -98,37 +98,33 @@
 
 
 .client-quote {
-  margin-top: 40px; /* Ajustado el margen superior */
+  margin-top: 25px;
   font-size: 13px;
 }
 
-.client-quote img {
-  height: 40px; /* Ajusta si tienes una imagen de logo aquí */
-  margin-bottom: 8px;
+.iso-logos-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
-.client-quote p {
-  color: #6223cc;
-  line-height: 1.5; /* Mejor espaciado de línea */
-}
-
-.client-quote a {
-  color: #6223cc;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-/* Estilo para el enlace "All Solutions →" */
-.mega-column ul li a strong {
-    font-weight: 700; /* Asegura que el "All Solutions" sea negrita */
-}
-
-img.logo {
-  height: 150px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
+.iso-logos-group img {
+  height: 65px;
+  width: auto;
+  max-width: 75px;
   object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(98, 35, 204, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-#mega-menu-tecnologias > div > div.mega-column.left-column > div > img,#mega-menu-industries > div > div.mega-column.left-column > div > img{
-  height: 150px;
+
+.iso-logos-group img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(98, 35, 204, 0.25);
 }
 /* =============================== */
 /*   RESPONSIVE MEGA MENU          */

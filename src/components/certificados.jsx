@@ -4,19 +4,21 @@ import "../styles/certificados.css";
 const certifications = [
   
   {
-    title: "IRAM-ISO 27001-2022",
-    img: "/27001.png",
+    title: "IRAM-ISO 27001:2022",
+    badge: "Seguridad de la Información",
+    img: "/iso27001.png",
     text: "Nuestros procesos están alineados a la norma ISO/IEC 27001 y actualmente nos encontramos en proceso de certificación, reforzando nuestro compromiso con la seguridad, la confidencialidad y la mejora continua."
   },
   {
-    title: "IRAM-ISO 9001-2015",
+    title: "IRAM-ISO 9001:2015",
+    badge: "Gestión de Calidad",
     img: "/9001.png",
     text: "Nuestros procesos se encuentran alineados a los requisitos de la norma ISO 9001:2015 y seguimos las recomendaciones de la guía ISO/IEC 90003 para el desarrollo de software. Actualmente, nos encontramos en proceso de certificación formal para reforzar nuestro compromiso con la calidad y la mejora continua."
   },
   {
     title: "ISO 42001",
-    img: "/iso.png",
-    year: "2021",
+    badge: "Gobernanza de IA",
+    img: "/42001.png",
     text: "Incorporamos lineamientos de la norma ISO 42001 para fortalecer la gobernanza, trazabilidad y gestión responsable de sistemas de inteligencia artificial."
   }
 ];
@@ -36,13 +38,13 @@ export default function CertifiedExpertise() {
       <div className="certified-grid">
         {certifications.map((item, index) => (
           <div key={index} className="cert-card">
-            <div className="cert-img">
-              <img src={item.img} alt={item.title} />
+            <div className="cert-img-wrapper">
+              <img src={item.img} alt={item.title} className="cert-img-large" />
             </div>
 
             <div className="cert-content">
+              {item.badge && <span className="cert-badge">{item.badge}</span>}
               <h3>{item.title}</h3>
-              {item.year && <span className="cert-year">Año: {item.year}</span>}
               <p>{item.text}</p>
             </div>
           </div>

@@ -1,7 +1,6 @@
  import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/megaMenu.css";
-import RollsRoyceLogo from "../assets/27001.png";
 
 const MegaMenu = ({ closeMenu }) => {
   return (
@@ -33,12 +32,11 @@ const MegaMenu = ({ closeMenu }) => {
           </ul>
 
           <div className="client-quote">
-            <img
-              className="logo"
-              src={RollsRoyceLogo}
-              alt="Certificación ISO 27001"
-            />
-            
+            <div className="iso-logos-group">
+              <img src="/iso27001.png" alt="Certificación ISO 27001" />
+              <img src="/9001.png" alt="Certificación ISO 9001" />
+              <img src="/42001.png" alt="Certificación ISO 42001" />
+            </div>
           </div>
         </div>
 
