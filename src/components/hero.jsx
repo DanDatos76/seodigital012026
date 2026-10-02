@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/hero.css";
-import heroImg from "../assets/hero-img.jpg";
 
 const Hero = () => {
   return (
@@ -77,8 +76,8 @@ const Hero = () => {
             <div className="hero-image-decoration decoration-1"></div>
             <div className="hero-image-decoration decoration-2"></div>
             <img
-              src={heroImg}
-              alt="Professional software team collaborating in an office"
+              src="/imagen-seo.jpeg"
+              alt="SEOdigital - Desarrollo de Software de Élite"
               className="hero-image"
             />
           </div>

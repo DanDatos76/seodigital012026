@@ -254,26 +254,24 @@ const ContactHelp = () => {
         <div className="option-card">
           <h3>Consultas generales</h3>
           <p>
-            ¿Tenés otra consulta o necesitás soporte?
-            Estamos para ayudarte.
+            ¿Tenés alguna otra consulta o necesitás soporte técnico?
+            Estamos a tu entera disposición para ayudarte.
           </p>
- <a 
-  href="/contacto" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  <button className="cta"> Contacto</button>
-</a>
+          <a 
+            href="/contacto" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <button className="cta"> Contacto</button>
+          </a>
         </div>
       </section>
-
-
 
       {/* CONTACT INFO */}
       <section className="contact-info">
         <div className="info-block">
           <h4>Llamanos</h4>
-          <p>+1 (408) 478-2739</p>
+          <p>Contacto telefónico oficial en proceso de actualización</p>
         </div>
 
         <div className="info-block">
@@ -342,9 +340,9 @@ const ContactHelp = () => {
         <h2>SEOdigital en el mundo · Nuestras oficinas</h2>
 
         <div className="offices-grid">
-          <div className="office-card">
-            <h4> Central. Buenos Aires</h4>
-            <p> Cosquin 4062<br /> CABA, Argentina</p>
+          <div className="office-card highlight-office">
+            <h4>Oficina Central</h4>
+            <p>R. Caamaño 1370<br />Pilar, Buenos Aires<br />Argentina</p>
           </div>
 
           <div className="office-card">
@@ -384,8 +382,6 @@ const ContactHelp = () => {
             <h4>Medellín</h4>
             <p>Antioquia<br />Colombia</p>
           </div>
-
-           
         </div>
       </section>
 
