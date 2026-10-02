@@ -169,6 +169,7 @@
     cursor: pointer;
     padding: 5px;
     z-index: 1001;
+    margin-left: auto;
   }
 
   .header-actions {
