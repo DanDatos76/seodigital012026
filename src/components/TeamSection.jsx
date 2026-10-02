@@ -13,28 +13,28 @@ const TeamSection = () => {
     {
       name: "JUAN HERNÁNDEZ",
       role: "CTO",
-      image: "/team/juanbg.jpeg",
+      image: "/team/ing-juan.png",
       fullDescription: "Juan Hernández es el Chief Technology Officer (CTO) de SEOdigital, liderando la estrategia tecnológica, la arquitectura de software escalable y los equipos de desarrollo. Con amplia experiencia en la gestión de proyectos tecnológicos de alta complejidad y liderazgo de equipos multidisciplinarios, Juan impulsa la innovación y la excelencia técnica en todas nuestras soluciones.",
       description: "CTO responsable de la estrategia tecnológica, arquitectura escalable y excelencia técnica en nuestros equipos de desarrollo."
     },
     {
       name: "NOELIA BAREIRO",
       role: "SOCIA DIRECTORA | ADMINISTRACIÓN Y PLANIFICACIÓN",
-      image: "", // Asset pendiente
+      image: "/team/neolia-bareiro.png",
       fullDescription: "Socia directora de SEOdigital, participa en la planificación administrativa y organizacional de la compañía. Coordina procesos internos, gestión administrativa, seguimiento operativo y soporte a Dirección, contribuyendo a mantener una estructura eficiente para el crecimiento de la empresa.",
       description: "Participa en la planificación administrativa y organizacional, coordinando procesos internos para asegurar una estructura eficiente."
     },
     {
       name: "SOFIA AGUILERA",
       role: "PROJECT MANAGER",
-      image: "", // Asset pendiente
+      image: "/team/sofia-guilera.png",
       fullDescription: "Responsable de la coordinación y gestión integral de proyectos, articulando equipos, prioridades, entregables y seguimiento operativo. Su función es asegurar una ejecución ordenada, una comunicación fluida con cada cliente y el cumplimiento de los objetivos definidos durante todo el ciclo del proyecto.",
       description: "Coordinación y gestión integral de proyectos, articulando equipos y prioridades para asegurar una ejecución impecable."
     },
     {
       name: "EZEQUIEL ROSAS",
       role: "BUSINESS DEVELOPMENT | CALIFICACIÓN DE OPORTUNIDADES",
-      image: "", // Asset pendiente
+      image: "/team/ezequiel.png",
       fullDescription: "Forma parte del equipo de desarrollo comercial, especializado en la identificación y calificación inicial de nuevas oportunidades de negocio. Su función es comprender las necesidades de cada prospecto, validar el encaje con nuestras soluciones y preparar cada oportunidad para las siguientes etapas del proceso comercial.",
       description: "Especialista en desarrollo comercial e identificación y calificación inicial de nuevas oportunidades de negocio."
     },
