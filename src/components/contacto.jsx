@@ -271,7 +271,11 @@ const ContactHelp = () => {
       <section className="contact-info">
         <div className="info-block">
           <h4>Llamanos</h4>
-          <p>Contacto telefónico oficial en proceso de actualización</p>
+          <p>
+            <a href="tel:+5491176550907" className="info-phone-anchor">
+              +54 9 11 7655-0907
+            </a>
+          </p>
         </div>
 
         <div className="info-block">

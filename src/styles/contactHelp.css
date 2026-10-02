@@ -449,3 +449,14 @@
   color: #128c7e;
   text-decoration: underline;
 }
+
+.info-phone-anchor {
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-phone-anchor:hover {
+  color: #6223cc;
+  text-decoration: underline;
+}
