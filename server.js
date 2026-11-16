@@ -363,7 +363,11 @@ const server = http.createServer((req, res) => {
         contentType = 'image/png';
         break;
       case '.jpg':
-        contentType = 'image/jpg';
+      case '.jpeg':
+        contentType = 'image/jpeg';
+        break;
+      case '.webp':
+        contentType = 'image/webp';
         break;
       case '.svg':
         contentType = 'image/svg+xml';

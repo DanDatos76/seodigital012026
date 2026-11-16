@@ -89,6 +89,7 @@ import Culture from './components/cultura';
 import CookiesPolicy from './components/cookies';
 import AvisoLegalSEOdigital from './components/avisolegal';
 import CasosDeEstudio from './components/CasosDeEstudio';
+import CaseStudyDetail from './components/CaseStudyDetail';
 import PrivacyTerms from './components/privacyTerms';
 import WhatsAppFloating from './components/WhatsAppFloating';
 
@@ -236,6 +237,10 @@ function AnimatedRoutes() {
           <Route path="/legal" element={<PageTransition><AvisoLegalSEOdigital /></PageTransition>} />
           <Route path="/politica-y-terminos" element={<PageTransition><PrivacyTerms /></PageTransition>} />
           <Route path="/casos-de-estudio" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
+          <Route path="/casos-de-estudio/:slug" element={<PageTransition><CaseStudyDetail /></PageTransition>} />
+          <Route path="/clientes" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
+          <Route path="/our-work" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
+          <Route path="/trabajo" element={<PageTransition><CasosDeEstudio /></PageTransition>} />
         </Routes>
       </AnimatePresence>
     </>
