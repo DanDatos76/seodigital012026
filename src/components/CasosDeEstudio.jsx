@@ -15,6 +15,11 @@ import '../styles/casosDeEstudio.css';
 export default function CasosDeEstudio() {
   const [selectedIndustry, setSelectedIndustry] = useState('Todas las industrias');
   const [searchQuery, setSearchQuery] = useState('');
+  const [failedLogos, setFailedLogos] = useState({});
+
+  const handleLogoError = (id) => {
+    setFailedLogos((prev) => ({ ...prev, [id]: true }));
+  };
 
   // Casos destacados para el carrusel/hero superior (estilo BairesDev Google, Rolls-Royce, Urban Outfitters)
   const featuredCases = useMemo(() => {
@@ -75,9 +80,14 @@ export default function CasosDeEstudio() {
                 <div className="featured-card-content">
                   <div className="featured-card-top-header">
                     <span className="featured-card-tag">{fCase.industry}</span>
-                    {fCase.logo && (
+                    {fCase.logo && !failedLogos[`featured-${fCase.id}`] && (
                       <div className="featured-card-logo-box">
-                        <img src={fCase.logo} alt={`Logo ${fCase.title}`} className="featured-card-logo-img" />
+                        <img 
+                          src={fCase.logo} 
+                          alt={`Logo ${fCase.title}`} 
+                          className="featured-card-logo-img"
+                          onError={() => handleLogoError(`featured-${fCase.id}`)}
+                        />
                       </div>
                     )}
                   </div>
@@ -182,12 +192,13 @@ export default function CasosDeEstudio() {
                   {/* Fila Superior: Logo/Monograma y Enlace Directo */}
                   <div className="card-top-row">
                     <div className="card-logo-badge">
-                      {(c.logo || (c.coverImage && c.coverImage.includes('/cases/'))) ? (
+                      {(c.logo && !failedLogos[c.id]) ? (
                         <div className="card-brand-logo-box">
                           <img 
-                            src={c.logo || c.coverImage} 
+                            src={c.logo} 
                             alt={c.client} 
-                            className="card-brand-logo" 
+                            className="card-brand-logo"
+                            onError={() => handleLogoError(c.id)}
                           />
                         </div>
                       ) : (

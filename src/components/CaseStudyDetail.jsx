@@ -25,9 +25,11 @@ export default function CaseStudyDetail() {
   const [pdfSent, setPdfSent] = useState(false);
   const [pdfError, setPdfError] = useState('');
   const [copiedLink, setCopiedLink] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setLogoError(false);
     const found = getCaseBySlug(slug);
     if (found) {
       setCaseData(found);
@@ -200,12 +202,13 @@ export default function CaseStudyDetail() {
           <div className="summary-client-card">
             <div className="client-card-inner">
               <div className="client-logo-header">
-                {(caseData.logo || (caseData.coverImage && caseData.coverImage.includes('/cases/'))) ? (
+                {(caseData.logo && !logoError) ? (
                   <div className="client-logo-box">
                     <img 
-                      src={caseData.logo || caseData.coverImage} 
+                      src={caseData.logo} 
                       alt={`Logo ${caseData.client}`} 
-                      className="client-logo-img" 
+                      className="client-logo-img"
+                      onError={() => setLogoError(true)} 
                     />
                   </div>
                 ) : (

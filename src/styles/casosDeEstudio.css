@@ -164,6 +164,7 @@
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: 6px;
 }
 
 .featured-card-tag {
@@ -408,6 +409,7 @@
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: 6px;
 }
 
 .card-brand-monogram {

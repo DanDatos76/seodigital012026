@@ -18,6 +18,7 @@ export const casesData = [
     teamSize: "7 especialistas",
     engagementModel: "Desarrollo End-to-End & Arquitectura Cloud",
     featured: true,
+    logo: "/images/cases/plasticmap-logo.png",
     coverImage: "/images/cases/plasticmap.jpg",
     coverGradient: "linear-gradient(135deg, #0d9488 0%, #115e59 100%)",
     accentColor: "#0d9488",
@@ -66,7 +67,7 @@ export const casesData = [
     teamSize: "6 profesionales",
     engagementModel: "Desarrollo a Medida & Asistente IA Dedicado",
     featured: true,
-    coverImage: "/images/cases/zontes.jpg",
+    coverImage: "/automo.jpg",
     coverGradient: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
     accentColor: "#ef4444",
     technologies: [
@@ -165,7 +166,7 @@ export const casesData = [
     teamSize: "7 profesionales",
     engagementModel: "Desarrollo End-to-End & Aplicación Móvil Operativa",
     featured: true,
-    coverImage: "/images/cases/logistica-volumetrica.jpg",
+    coverImage: "/suministr.jpg",
     coverGradient: "linear-gradient(135deg, #1e3a8a 0%, #172554 100%)",
     accentColor: "#3b82f6",
     technologies: [
